@@ -63,7 +63,7 @@ Services available at no cost.)
 14. Mathematical Foundations
 15. Engineering Foundations 
 
-#For each skill, the following must be provided:
+# For each skill, the following must be provided:
 1. Name of Skill
 2. Classification of Skill
 3. Prerequisites for Skill

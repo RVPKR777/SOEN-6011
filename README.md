@@ -28,7 +28,7 @@ such that it is aligned with the software engineering principles of separation o
 concerns and modularity. For example, this could be done by an appropriate responsive
 design and modular CSS. 
 2
-SESTOPIA must be navigable and searchable.
+# SESTOPIA must be navigable and searchable.
 HTML, CSS, JavaScript, and PHP used in SESTOPIA must be valid. (In this context,
 “validation” means conformance to the specification. An IDE may or may not be
 sufficient for validation. A Web user agent is insufficient to check for validation. Each of
@@ -46,7 +46,7 @@ In its support for accessibility, SESTOPIA must conform to either Section 508 or
 WCAG 2.0 Level AA.
 SESTOPIA must be hosted globally and publicly. (There are several Web Hosting
 Services available at no cost.)
-There are 15 Knowledge Areas in SWEBOK:
+# There are 15 Knowledge Areas in SWEBOK:
 1. Software Requirements
 2. Software Design
 3. Software Construction

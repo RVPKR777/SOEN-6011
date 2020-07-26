@@ -64,16 +64,16 @@ Services available at no cost.)
 15. Engineering Foundations 
 
 #For each skill, the following must be provided:
-1.Name of Skill
-2.Classification of Skill
-3.Prerequisites for Skill
-4.Related Software Engineering Area(s)
-5.Rationale for Skill
-6.Roles for Skill
-7.Work Related to Skill (Related Activities and Artifacts)
-8.Real-World Example/Scenario of Skill (Text, Graphic, Audio, Video)
-9.Role of Academia or Industry in Cultivating the Skill
-10.Tools Supporting the Skill
-11.Skill Self-Assessment (My Skill Score (1 – 10) and Reasons for Self-Assigned Score)
-12.References 
+1. Name of Skill
+2. Classification of Skill
+3. Prerequisites for Skill
+4. Related Software Engineering Area(s)
+5. Rationale for Skill
+6. Roles for Skill
+7. Work Related to Skill (Related Activities and Artifacts)
+8. Real-World Example/Scenario of Skill (Text, Graphic, Audio, Video)
+9. Role of Academia or Industry in Cultivating the Skill
+10. Tools Supporting the Skill
+11. Skill Self-Assessment (My Skill Score (1 – 10) and Reasons for Self-Assigned Score)
+12. References 
 

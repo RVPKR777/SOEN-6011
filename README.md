@@ -1,6 +1,6 @@
 # SOEN-6011
 # PROJECT DESCRIPTION
-# 1. INTRODUCTION
+# INTRODUCTION
 Instead of learning big methodologies [...] focus on practices. [...] You can become an expert in a
 practice without being an expert in a complete methodology.
 — Ivar Jacobson
@@ -28,7 +28,7 @@ such that it is aligned with the software engineering principles of separation o
 concerns and modularity. For example, this could be done by an appropriate responsive
 design and modular CSS. 
 
-# 2. SESTOPIA must be navigable and searchable.
+# SESTOPIA must be navigable and searchable.
 HTML, CSS, JavaScript, and PHP used in SESTOPIA must be valid. (In this context,
 “validation” means conformance to the specification. An IDE may or may not be
 sufficient for validation. A Web user agent is insufficient to check for validation. Each of

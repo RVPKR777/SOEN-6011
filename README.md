@@ -69,16 +69,16 @@ The sources of information on a skill could include research publications, inter
 and job postings. The use of any sources in the development of SESTOPIA is
 encouraged, but must be acknowledged explicitly.
 For each skill, the following must be provided:
- Name of Skill
- Classification of Skill
- Prerequisites for Skill
- Related Software Engineering Area(s)
- Rationale for Skill
- Roles for Skill
- Work Related to Skill (Related Activities and Artifacts)
- Real-World Example/Scenario of Skill (Text, Graphic, Audio, Video)
- Role of Academia or Industry in Cultivating the Skill
- Tools Supporting the Skill
- Skill Self-Assessment (My Skill Score (1 – 10) and Reasons for Self-Assigned Score)
- References 
+# Name of Skill
+# Classification of Skill
+# Prerequisites for Skill
+# Related Software Engineering Area(s)
+# Rationale for Skill
+# Roles for Skill
+# Work Related to Skill (Related Activities and Artifacts)
+# Real-World Example/Scenario of Skill (Text, Graphic, Audio, Video)
+# Role of Academia or Industry in Cultivating the Skill
+# Tools Supporting the Skill
+# Skill Self-Assessment (My Skill Score (1 – 10) and Reasons for Self-Assigned Score)
+# References 
 

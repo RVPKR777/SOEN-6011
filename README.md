@@ -1,6 +1,6 @@
 # SOEN-6011
-PROJECT DESCRIPTION
-1. INTRODUCTION
+# PROJECT DESCRIPTION
+# 1. INTRODUCTION
 Instead of learning big methodologies [...] focus on practices. [...] You can become an expert in a
 practice without being an expert in a complete methodology.
 — Ivar Jacobson
@@ -27,8 +27,8 @@ and JavaScript or PHP on the server-side. The use of these Web technologies must
 such that it is aligned with the software engineering principles of separation of
 concerns and modularity. For example, this could be done by an appropriate responsive
 design and modular CSS. 
-2
-# SESTOPIA must be navigable and searchable.
+
+# 2. SESTOPIA must be navigable and searchable.
 HTML, CSS, JavaScript, and PHP used in SESTOPIA must be valid. (In this context,
 “validation” means conformance to the specification. An IDE may or may not be
 sufficient for validation. A Web user agent is insufficient to check for validation. Each of
@@ -62,23 +62,18 @@ Services available at no cost.)
 13. Computing Foundations
 14. Mathematical Foundations
 15. Engineering Foundations 
-3
-There must be no more than one skill per Software Engineering Knowledge Area. The
-skill must be unique across a team.
-The sources of information on a skill could include research publications, interviews,
-and job postings. The use of any sources in the development of SESTOPIA is
-encouraged, but must be acknowledged explicitly.
-For each skill, the following must be provided:
-# Name of Skill
-# Classification of Skill
-# Prerequisites for Skill
-# Related Software Engineering Area(s)
-# Rationale for Skill
-# Roles for Skill
-# Work Related to Skill (Related Activities and Artifacts)
-# Real-World Example/Scenario of Skill (Text, Graphic, Audio, Video)
-# Role of Academia or Industry in Cultivating the Skill
-# Tools Supporting the Skill
-# Skill Self-Assessment (My Skill Score (1 – 10) and Reasons for Self-Assigned Score)
-# References 
+
+#For each skill, the following must be provided:
+1.Name of Skill
+2.Classification of Skill
+3.Prerequisites for Skill
+4.Related Software Engineering Area(s)
+5.Rationale for Skill
+6.Roles for Skill
+7.Work Related to Skill (Related Activities and Artifacts)
+8.Real-World Example/Scenario of Skill (Text, Graphic, Audio, Video)
+9.Role of Academia or Industry in Cultivating the Skill
+10.Tools Supporting the Skill
+11.Skill Self-Assessment (My Skill Score (1 – 10) and Reasons for Self-Assigned Score)
+12.References 
 

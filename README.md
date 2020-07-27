@@ -1,6 +1,7 @@
 # SOEN-6011
 # PROJECT DESCRIPTION
-# INTRODUCTION
+## PROJECT URL: https://sestopia-group-i.netlify.app/index.html
+## INTRODUCTION
 Instead of learning big methodologies [...] focus on practices. [...] You can become an expert in a
 practice without being an expert in a complete methodology.
 — Ivar Jacobson
@@ -28,7 +29,7 @@ such that it is aligned with the software engineering principles of separation o
 concerns and modularity. For example, this could be done by an appropriate responsive
 design and modular CSS. 
 
-# SESTOPIA must be navigable and searchable.
+## SESTOPIA must be navigable and searchable.
 HTML, CSS, JavaScript, and PHP used in SESTOPIA must be valid. (In this context,
 “validation” means conformance to the specification. An IDE may or may not be
 sufficient for validation. A Web user agent is insufficient to check for validation. Each of
@@ -46,36 +47,42 @@ In its support for accessibility, SESTOPIA must conform to either Section 508 or
 WCAG 2.0 Level AA.
 SESTOPIA must be hosted globally and publicly. (There are several Web Hosting
 Services available at no cost.)
-# There are 15 Knowledge Areas in SWEBOK:
-1. Software Requirements
-2. Software Design
-3. Software Construction
-4. Software Testing
-5. Software Maintenance
-6. Software Configuration Management
-7. Software Engineering Management
-8. Software Engineering Process
-9. Software Engineering Models and Methods
-10. Software Quality
-11. Software Engineering Professional Practice
-12. Software Engineering Economics
-13. Computing Foundations
-14. Mathematical Foundations
-15. Engineering Foundations 
+## There are 15 Knowledge Areas in SWEBOK:
 
-# For each skill, the following must be provided:
-1. Name of Skill
-2. Classification of Skill
-3. Prerequisites for Skill
-4. Related Software Engineering Area(s)
-5. Rationale for Skill
-6. Roles for Skill
-7. Work Related to Skill (Related Activities and Artifacts)
-8. Real-World Example/Scenario of Skill (Text, Graphic, Audio, Video)
-9. Role of Academia or Industry in Cultivating the Skill
-10. Tools Supporting the Skill
-11. Skill Self-Assessment (My Skill Score (1 – 10) and Reasons for Self-Assigned Score)
-12. References 
+| No  | Knowledge Area |
+| ------------- | ------------- |
+| 1 | Software Requirements |
+| 2 | Software Design |
+| 3 | Software Construction |
+| 4 | Software Testing |
+| 5 | Software Maintenance |
+| 6 | Software Configuration Management |
+| 7 | Software Engineering Management |
+| 8 | Software Engineering process |
+| 9 | Software Engineering Models and Methods |
+| 10 | Software Quality |
+| 11 | Software Engineering Professional practice |
+| 12 | Software Engineering Economics |
+| 13 | Computing Foundations |
+| 14 | Mathematical Foundations  |
+| 15 | Engineering Foundations |
 
-# LIVE - URL
-https://sestopia-group-i.netlify.app/index.html
+
+## For each skill, the following must be provided:
+
+| No  | Information |
+| ------------- | ------------- |
+| 1 | Name of Skill |
+| 2 | Classification of Skill |
+| 3 | Prerequisites for Skill |
+| 4 | Related Software Engineering Area(s) |
+| 5 | Rationale for Skill |
+| 6 | Roles for Skill |
+| 7 | Work Related to Skill (Related Activities and Artifacts) |
+| 8 | Real-World Example/Scenario of Skill (Text, Graphic, Audio, Video) |
+| 9 | Role of Academia or Industry in Cultivating the Skill |
+| 10 | Tools Supporting the Skill |
+| 11 | Skill Self-Assessment (My Skill Score (1 – 10) and Reasons for Self-Assigned Score) |
+| 12 | References  |
+
+

@@ -1,193 +1,226 @@
 <html>
-<title>Sestopia</title>
+    <title>Sestopia</title>
+    <link rel = "icon" href =  "images/logoTitle.png"  type = "image/x-icon"> 
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
-<head>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" type="text/css" href="style.css">
-  <!-- Latest compiled and minified CSS -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <!-- jQuery library -->
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
-  <!-- jQuery library -->
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-    crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-    crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-    crossorigin="anonymous"></script>
+        <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="data.js"></script>    
+    <!-- <script src="index.js"></script> -->
+    <link rel="stylesheet" type="text/css" href="info.css">  
+    <script src="info.js"></script>
+    <script>
+      autocomplete(document.getElementById("myInput"), countries);
+      </script>
 
-  <!-- Latest compiled JavaScript -->
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="index.js"></script>
+    </head>
+    <body >
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+          <a class="navbar-brand" href="#">
+            <img src="images/logo.png" width="30" height="30" alt="">
+          </a>
+            <a class="navbar-brand" href="#">Sestopia</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                
+               
+               
+              </ul>
+             
+              
+            </div>
+          </nav>
+          <div class="jumbotron container-fluid">
 
-</head>
+            <div>
+    
+            </div>
+            
+              <div class="row container">
+               
+                   <input type="text" id="searchText" onkeyup="search();" placeholder="Search"
+                    class="form-control"></div>
+              
+              
+                <ul id="search" class="form-inline">
+                </ul>
+              </div>
+              
+              
+            
+        </div>
+         
+        <div class="container-fluid">
+         <div class=" body-card">
 
-<body style="background-color:#2b333d;">
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <a class="navbar-brand" href="#">Sestopia</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item active">
-          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">References</a>
-        </li>
-      </ul>
-    </div>
-  </nav>
-  <br>
-  <div class="card container">
-    <div class="  container ">
-      <div class="center-div">
-        <form class="form-control">
+
+        <div class="container-fluid" ><p>Contents</p>
+          <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo">Filters</button>
+          <div id="demo" class="collapse">
+            <div class="">
+<br>
+              <form >
+                <div class=" container">
+                  <div class= row>
+                 
+                    <label for="cars">Sort by Knowledge Area:</label> &nbsp;
+                        <select class="form-control" name="kareas" id="kareas">
+                          <option value="all" selected  >All</option>
+                          <hr>
+                          <option value="Construction">Software Construction</option>
+                          <option value="Design">Software Design</option>
+                          <option value="Testing">Software Testing</option>
+                          <option value="Requirements">Software Requirements</option>
+                          <option value="Quality">Software Quality</option>
+                          <option value="Configuration">Software Configuration Management</option>
+                          <option value="Process">Software Process & Life-Cycle</option>
+                          <option value="Maintanance">Software Maintanance Planning</option>
+                        </select>
+                  
+                   
+                  
+                </div>
+                </div>
+               
+
+             
+
+             
+               
+              </form>
+
+            </div>
+            
+          </div>
+          <hr></div>
+
           <div class="row">
-            <div class="col-sm-10"> <input type="text" id="searchText" onkeyup="search();" placeholder="Search"
-                class="form-control"></div>
+            <div class="col-xs-3" >
+              <div class="card" style="width:400px; height: 600px;" data-toggle="tooltip" data-placement="top" title="Software construction is a software engineering discipline. It is the detailed creation of working meaningful software through a combination of coding, verification, unit testing, integration testing, and debugging. - Wikipedia">
+                <div class="card-header">Software Construction</div>
+                <img class="card-img-top" src="images/api.png" alt="Card image">
+                <div class="card-body">
+                  <h4 class="card-title">API Design</h4>
+                  </div><div class="card-footer">
+                  <a href="infoPages/apiProgramming1.html" class="btn btn-primary">Click to see more!</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-xs-3">
+              <div class="card" style="width:400px; height: 600px;">
+                <div class="card-header">Software Design</div>
+                <img class="card-img-top" src="images/uiux.png" alt="Card image">
+                <div class="card-body">
+                  <h4 class="card-title">Software Interface Design </h4>
+                 </div><div class="card-footer">
+                  <a href="#" class="btn btn-primary">Click to see more!</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-xs-3">
+              <div class="card" style="width:400px; height: 600px;">
+                <div class="card-header">Software Testing</div>
+                <img class="card-img-top" src="images/unitest.png" alt="Card image">
+                <div class="card-body">
+                  <h4 class="card-title">Writing Unit Tests</h4>
+                  </div><div class="card-footer">
+                  <a href="#" class="btn btn-primary">Click to see more!</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-xs-3">
+              <div class="card" style="width:400px; height: 600px;">
+                <div class="card-header">Software Requirements</div>
+                <img class="card-img-top" src="images/srs.png" alt="Card image">
+                <div class="card-body">
+                  <h5 class="card-title">Software Requirements Elicitation</h5>
+                  </div><div class="card-footer">
+                  <a href="#" class="btn btn-primary">Click to see more!</a>
+                </div>
+              </div>
+            </div>
           </div>
-          <div style="overflow-y: scroll; height:150px;">
-            <ul id="search" class="form-control">
-            </ul>
-          </div>
-        </form>
+<div class="row"><hr></div>
+<div class="row">
+  <div class="col-xs-3">
+    <div class="card" style="width:400px; height: 610px;">
+      <div class="card-header">Software Quality</div>
+      <img class="card-img-top" src="images/qa.png" alt="Card image">
+      <div class="card-body">
+        <h5 class="card-title">Product and Process Assurance</h5>
+       </div><div class="card-footer">
+        <a href="#" class="btn btn-primary">Click to see more!</a>
       </div>
     </div>
-    <div class="container">
-      <p>Contents</p>
-      <hr>
-    </div>
-
-    <div class="container" style="overflow-y: scroll; height: 600px;">
-      <div class="row">
-        <div class="col-sm-3 ">
-          <a href="infoPages/apiProgramming1.html">
-            <div class="card">
-              <img src="images/api.png" alt="Avatar" class="skillLogo">
-              <hr>
-              <div class="container">
-                <h4>API designer</h4>
-                <p><b>Software Construction</b></p>
-              </div>
-            </div>
-          </a>
-        </div>
-        <div class="col-sm-3 ">
-          <a href="infoPages/interfaceDesign1.html">
-            <div class="card">
-              <img src="images/ux-ui-logo.svg" alt="Avatar" class="skillLogo">
-              <hr>
-              <div class="container">
-                <h4>Software Interface design</h4>
-                <p><b>Software Design</b></p>
-              </div>
-            </div>
-          </a>
-        </div>
-        <div class="col-sm-3 ">
-          <a href="infoPages/Software_testing1.html">
-            <div class="card">
-              <img src="images/test.png" alt="Avatar" class="skillLogo">
-              <hr>
-              <div class="container">
-                <h4>Writing Unit Tests</h4>
-                <p><b>Software Testing</b></p>
-              </div>
-            </div>
-          </a>
-        </div>
-        <div class="col-sm-3 ">
-          <div class="card">
-            <img src="images/SRS.png" alt="Avatar" class="skillLogo">
-            <hr>
-            <div class="container">
-              <h4>Software Requirements Elicitation</h4>
-              <p><b>Software Requirements</b></p>
-            </div>
-            <hr>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-sm-3 ">
-          <a href="infoPages/QualityAssurance.html">
-            <div class="card">
-              <img src="images/Assurance" alt="Avatar" class="skillLogo">
-              <hr>
-              <div class="container">
-                <h4>Product and Process Assurance</h4>
-                <p><b>Software Quality</b></p>
-
-              </div>
-            </div>
-          </a>
-        </div>
-        <div class="col-sm-3 ">
-          <a href="infoPages/ConfigManagement1.html">
-            <div class="card">
-              <img src="images/Architecture.png" alt="Avatar" class="skillLogo">
-              <hr>
-              <div class="container">
-                <h4>Configuration Management and Support</h4>
-                <p><b>Software Configuration Management</b></p>
-
-              </div>
-            </div>
-          </a>
-        </div>
-        <div class="col-sm-3 ">
-          <a href="infoPages/SDLC_Implementation_1.html">
-            <div class="card">
-              <img src="images/SDLC.jpg" alt="Avatar" class="skillLogo">
-              <hr>
-              <div class="container">
-                <h4>Software Development Life Cycle Implementation</h4>
-                <p><b>Software Process and Life Cycle</b></p>
-
-              </div>
-            </div>
-          </a>
-        </div>
-
-        <!--- <div class="col-sm-3 " >  
-                          <a href="infoPages/SDLC_Implementation_1.html">                        
-						              <div class="card">
-                                <img src="images/SDLC.jpg" alt="Avatar" style="width:100% ; height : 250;"> <hr>
-                                <div class="container">
-                                    <h4>Software Development 
-                                      Life Cycle Implementation</h4>
-                                    <p><b>Software Process and Life Cycle</b></p> 
-                                
-                                </div>
-                              </div>
-                          </a>
-                            </div>-->
-        <div class="col-sm-3 ">
-          <div class="card">
-            <img src="images/maintainance.png" alt="Avatar" class="skillLogo">
-            <hr>
-            <div class="container">
-              <h4>Software Maintenance Planning</h4>
-              <p><b>Software Maintenance</b></p>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <hr>
   </div>
-  <div class="footer">
-    <p>This website is made for education purpose only.</p>
+  <div class="col-xs-3">
+    <div class="card" style="width:400px; height: 610px;">
+      <div class="card-header">Software Configuration Management</div>
+      <img class="card-img-top" src="images/config.png" alt="Card image">
+      <div class="card-body">
+        <h5 class="card-title">Configuaration Management & Support</h5>
+        
+      </div><div class="card-footer">
+        <a href="#" class="btn btn-primary">Click to see more!</a>
+      </div>
+    </div>
   </div>
+  <div class="col-xs-3">
+    <div class="card" style="width:400px; height: 610px;">
+      <div class="card-header">Software Process & Life-Cycle</div>
+      <img class="card-img-top" src="images/sdlc.png" alt="Card image">
+      <div class="card-body">
+        <h5 class="card-title">Software Development Life Cycle Implementation</h5>
+        </div><div class="card-footer">
+        <a href="#" class="btn btn-primary">Click to see more!</a>
+      </div>
+    </div>
+  </div>
+  <div class="col-xs-3">
+    <div class="card" style="width:400px; height: 610px;">
+      <div class="card-header">Software Maintanance Planning</div>
+      <img class="card-img-top" src="images/maintainance.png" alt="Card image">
+      <div class="card-body">
+        <h5 class="card-title">Software Maintanance</h5>
+        </div><div class="card-footer">
+        <a href="#" class="btn btn-primary">Click to see more!</a>
+      </div>
+    </div>
+  </div>
+</div>
+          
+          
+         
 
-</body>
+        
+         
+            </div></div>
+               
+            </div>
+           
+           
+        </div>
+        <hr>
+      </div>
+        
 
+    </body>
+        
 </html>

@@ -4,7 +4,7 @@
 <head>
   <title>Sestopia -API Programming</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" type="text/css" href="../info.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <!-- Latest compiled and minified CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
@@ -24,7 +24,8 @@
   <!-- Latest compiled JavaScript -->
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="index.js"></script>
+  <script src="../data.js"></script>
+  <script src="../index.js"></script>
 
 </head>
 
@@ -48,6 +49,21 @@
 
     </div>
   </nav>
+  <div class="jumbotron container-fluid">
+
+    <div>
+
+    </div>
+   
+    <section class="main">
+        <form class="search" >
+            <input type="text" name="q" id="q" onfocus="inpOnFocus()" onfocusout="inpOutFocus();" class="form-control" placeholder="Search..." />
+            <ul id="myUL" class="results">                  
+                      
+            </ul>
+        </form>
+   </section>
+</div>
   <br>
   <nav aria-label="breadcrumb container float-right">
     <ol class="breadcrumb container bg-transparent ">
@@ -57,7 +73,7 @@
     </ol>
   </nav>
   <br>
-  <div class="container jumbotron">
+  <div class="container card">
     <div class="card" id="Api_Programming" name="Api_Programming">
       <div class="card-body">
         <h4 class="card-title">Name of Skill</h4>
@@ -120,7 +136,7 @@
     </div>
     <br>
 
-    <div class="card" id="SEA">
+    <div class="card">
       <div class="card-body">
         <h4 class="card-title">Related Software Engineering Area(s)</h4>
         <ul>

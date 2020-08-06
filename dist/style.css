@@ -61,10 +61,6 @@
     display: block
   }
 
-  #search ul:last-child{
-    border-bottom: none;
-  }
-
   #search li a{
     border: 1px solid #ddd;
     margin-top: -1px; /* Prevent double borders */
@@ -74,6 +70,10 @@
     font-size: 18px;
     color: black;
     display: block;
+  }
+
+  li a {
+    color:red;
   }
   
   #search li a:hover:not(.header) {

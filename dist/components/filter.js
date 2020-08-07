@@ -10,7 +10,7 @@ class Filter extends HTMLElement {
               <div class=" container">
                 <div class=row>
                   <label for="cars">Sort by Knowledge Area:</label> &nbsp;
-                  <select class="form-control" name="kareas" id="kareas">
+                  <select class="form-control" onchange="kareaChange()" name="kareas" id="kareas">
                     <option value="all" selected>All</option>
                     <hr>
                     <option value="Construction">Software Construction</option>

@@ -51,3 +51,89 @@ const search = () => {
         }
     }
 }
+
+kareaChange = () => {
+
+    var choice= document.getElementById("kareas");
+    console.log(choice.value)
+    switch(choice.value) {
+        case "Construction":
+         console.log("Software Construction Selected");
+         console.log("Hidding All");
+         changeDisplay("1");
+        break;
+
+        case "Design":
+         console.log("Software Design Selected");
+         console.log("Hidding All");
+        changeDisplay("2");       
+         break;
+
+         case "Testing":
+         console.log("Software Testing Selected");
+         console.log("Hidding All");
+        changeDisplay("3");       
+         break;
+
+         case "Requirements":
+         console.log("Software Requirements Selected");
+         console.log("Hidding All");
+        changeDisplay("4");       
+         break;
+
+         case "Quality":
+         console.log("Software Quality Selected");
+         console.log("Hidding All");
+        changeDisplay("5");       
+         break;
+
+         case "Configuration":
+         console.log("Software Configuration Selected");
+         console.log("Hidding All");
+        changeDisplay("6");       
+         break;
+
+         case "Process":
+         console.log("Software Process Selected");
+         console.log("Hidding All");
+        changeDisplay("7");       
+         break;
+
+         case "Maintanance":
+         console.log("Software Maintanance Selected");
+         console.log("Hidding All");
+        changeDisplay("8");       
+         break;
+         
+        default:
+            var i;
+            for(i=1; i<=8;i++)
+            document.getElementById(i).style.display= "block";
+           
+        break;
+      }
+    
+    
+    
+  }
+
+  changeDisplay=(i)=>{
+      debugger;
+      var n;
+      console.log(i);
+      
+      for(n=1; n <= 8; n++){
+            if(n == i){
+                console.log("true");
+                document.getElementById(i).style.display= "block";
+                continue;
+            }
+            else{
+                console.log("False");
+                document.getElementById(n).style.display = "none";
+            }
+      }
+
+
+
+    }

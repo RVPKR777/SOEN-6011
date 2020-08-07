@@ -1,6 +1,6 @@
 class NavBar extends HTMLElement {
     connectedCallback() {
-        this.innerHTML = `<nav class="navbar navbar-expand-lg navbar-dark bg-dark lighten-5 mb-4">
+        this.innerHTML = `<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <a class="navbar-brand" href="#">
           <img src="${this.getAttribute("logoPath")}" width="30" height="30" alt="">
         </a>
@@ -18,28 +18,33 @@ class NavBar extends HTMLElement {
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">References</a>
-            </li>
-    
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
-                aria-expanded="false">Skills</a>
-              <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
-                <a class="dropdown-item" href="#">API Programming</a>
-                <a class="dropdown-item" href="#">Interface Design</a>
-                <a class="dropdown-item" href="#">Writing Unit Tests</a>
-                <a class="dropdown-item" href="#">Software Requirements</a>
-                <a class="dropdown-item" href="#">Software Quality</a>
-                <a class="dropdown-item" href="#">Software Configuration Management</a>
-                <a class="dropdown-item" href="#">Software Process & Life-Cycle</a>
-                <a class="dropdown-item" href="#">Software Maintanance Planning</a>
-              </div>
-            </li>
+            </li>            
           </ul>
+          <ul class="nav navbar-nav navbar-right">
+          <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
+            aria-expanded="false">Skills</a>
+          <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" href="#">API Programming</a>
+            <a class="dropdown-item" href="#">Interface Design</a>
+            <a class="dropdown-item" href="#">Writing Unit Tests</a>
+            <a class="dropdown-item" href="#">Software Requirements</a>
+            <a class="dropdown-item" href="#">Software Quality</a>
+            <a class="dropdown-item" href="#">Software Configuration Management</a>
+            <a class="dropdown-item" href="#">Software Process & Life-Cycle</a>
+            <a class="dropdown-item" href="#">Software Maintanance Planning</a>
+          </div>
+        </li>
+          <li class="nav-item">
           <form class="search form-inline">
-            <input type="text" name="inputText" id="inputText" onkeyup="search()" class="form-control"
-              placeholder="Search..." />
-            <ul id="myUL" class="results"> </ul>
-          </form>
+          <input type="text" name="inputText" id="inputText" onkeyup="search()" class="form-control"
+            placeholder="Search..." />
+          <ul id="myUL" class="results"> </ul>
+        </form>
+          </li>
+         
+          </ul>
+         
         </div>
       </nav>`
     }

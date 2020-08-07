@@ -1,6 +1,6 @@
 class NavBar extends HTMLElement {
-    connectedCallback() {
-        this.innerHTML = `<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  connectedCallback() {
+    this.innerHTML = `<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <a class="navbar-brand" href="#">
           <img src="${this.getAttribute("logoPath")}" width="30" height="30" alt="">
         </a>
@@ -19,8 +19,6 @@ class NavBar extends HTMLElement {
             <li class="nav-item">
               <a class="nav-link" href="#">References</a>
             </li>            
-          </ul>
-          <ul class="nav navbar-nav navbar-right">
           <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
             aria-expanded="false">Skills</a>
@@ -35,19 +33,17 @@ class NavBar extends HTMLElement {
             <a class="dropdown-item" href="#">Software Maintanance Planning</a>
           </div>
         </li>
-          <li class="nav-item">
-          <form class="search form-inline">
-          <input type="text" name="inputText" id="inputText" onkeyup="search()" class="form-control"
-            placeholder="Search..." />
-          <ul id="myUL" class="results"> </ul>
-        </form>
-          </li>
-         
+        ${this.getAttribute("renderSearch") ? `<li class="nav-item">
+        <form class="search form-inline">
+        <input type="text" name="inputText" id="inputText" onkeyup="search()" class="form-control"
+          placeholder="Search..." />
+        <ul id="myUL" class="results"> </ul>
+      </form>
+        </li>`: ""}
           </ul>
-         
         </div>
       </nav>`
-    }
+  }
 }
 
-customElements.define("nav-bar",NavBar);
+customElements.define("nav-bar", NavBar);

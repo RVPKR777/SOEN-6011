@@ -39,52 +39,59 @@
 
 <body>
   <nav-bar logoPath="images/logo.png"></nav-bar>
-  <div class="jumbotron "></div>
+  <div class="jumbotron">
+      <form class="search form-inline centerForm" style="float: center;">
+        <input type="text" name="inputText" id="inputText" onkeyup="search()" class="form-control"
+          placeholder="Search..." />
+        <ul id="myUL" class="results"> </ul>
+      </form>
+  </div>
   <div class="container-fluid" id="content">
-    
-      <skill-filter></skill-filter>
-      <div class="row ">
-        <skill-card  id ="1" cardHeader="Software Construction" cardTitle="API Design" skillLogoPath="./images/api.png"
-          skillPagePath="./infoPages/apiProgramming1.html" title="Software construction is a software engineering discipline. It is the detailed creation of working meaningful software through a combination of coding,
+
+    <skill-filter></skill-filter>
+    <div class="row ">
+      <skill-card id="1" cardHeader="Software Construction" cardTitle="API Design" skillLogoPath="./images/api.png"
+        skillPagePath="./infoPages/apiProgramming1.html" title="Software construction is a software engineering discipline. It is the detailed creation of working meaningful software through a combination of coding,
           verification, unit testing, integration testing, and debugging. - Wikipedia" class="card-align">
-        </skill-card>
+      </skill-card>
 
-        <skill-card id ="2" cardHeader="Software Design" cardTitle="Software Interface Design" skillLogoPath="./images/uiux.png"
-          skillPagePath="./infoPages/interfaceDesign1.html" title="" class="card-align">
-        </skill-card> 
+      <skill-card id="2" cardHeader="Software Design" cardTitle="Software Interface Design"
+        skillLogoPath="./images/uiux.png" skillPagePath="./infoPages/interfaceDesign1.html" title="" class="card-align">
+      </skill-card>
 
-        <skill-card id="3" cardHeader="Software Testing" cardTitle="Writing Unit Tests" skillLogoPath="./images/unitest.png"
-          skillPagePath="./infoPages/Software_testing1.html" title="" class="card-align">
-        </skill-card>
+      <skill-card id="3" cardHeader="Software Testing" cardTitle="Writing Unit Tests"
+        skillLogoPath="./images/unitest.png" skillPagePath="./infoPages/Software_testing1.html" title=""
+        class="card-align">
+      </skill-card>
 
-        <skill-card id="4" cardHeader="Software Requirements" cardTitle="Software Requirements Elicitation"
-          skillLogoPath="./images/srs.png" skillPagePath="#" title="" class="card-align">
-        </skill-card>
-      </div>
+      <skill-card id="4" cardHeader="Software Requirements" cardTitle="Software Requirements Elicitation"
+        skillLogoPath="./images/srs.png" skillPagePath="#" title="" class="card-align">
+      </skill-card>
+    </div>
 
-      <div class="row">
-        <hr>
-      </div>
+    <div class="row">
+      <hr>
+    </div>
 
-      <div class="row">
-        <skill-card id="5" cardHeader="Software Quality" cardTitle="Product and Process Assurance"
-          skillLogoPath="./images/qa.png" skillPagePath="#" title="" class="card-align">
-        </skill-card>
+    <div class="row">
+      <skill-card id="5" cardHeader="Software Quality" cardTitle="Product and Process Assurance"
+        skillLogoPath="./images/qa.png" skillPagePath="#" title="" class="card-align">
+      </skill-card>
 
-        <skill-card id="6" cardHeader="Software Configuration Management" cardTitle="Configuaration Management & Support"
-          skillLogoPath="./images/config.png" skillPagePath="#" title="" class="card-align">
-        </skill-card>
+      <skill-card id="6" cardHeader="Software Configuration Management" cardTitle="Configuaration Management & Support"
+        skillLogoPath="./images/config.png" skillPagePath="#" title="" class="card-align">
+      </skill-card>
 
-        <skill-card id="7" cardHeader="Software Process & Life-Cycle"
-          cardTitle="Software Development Life Cycle Implementation" skillLogoPath="./images/sdlc.png" skillPagePath="#"
-          title="" class="card-align">
-        </skill-card>
+      <skill-card id="7" cardHeader="Software Process & Life-Cycle"
+        cardTitle="Software Development Life Cycle Implementation" skillLogoPath="./images/sdlc.png" skillPagePath="#"
+        title="" class="card-align">
+      </skill-card>
 
-        <skill-card id="8" cardHeader="Software Maintanance Planning" cardTitle="Software Maintanance"
-          skillLogoPath="./images/maintainance.png" skillPagePath="#" title="" class="card-align">
-        </skill-card>
-      </div>
-    
+      <skill-card id="8" cardHeader="Software Maintanance Planning" cardTitle="Software Maintanance"
+        skillLogoPath="./images/maintainance.png" skillPagePath="#" title="" class="card-align">
+      </skill-card>
+    </div>
+
   </div>
   </div>
   <hr>

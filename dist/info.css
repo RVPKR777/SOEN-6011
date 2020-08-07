@@ -12,6 +12,11 @@ body {
     margin-right: 5% !important;
 } */
 
+.centerForm {
+    margin: 0 auto;
+    width: 250px;
+}
+
 a {
     color: #1e7ad3;
     text-decoration: none;

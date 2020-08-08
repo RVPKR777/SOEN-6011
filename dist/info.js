@@ -14,7 +14,7 @@ const makeLiAndOptionalAhrefTag = (href, innerHTML) => {
     if (href) {
         li.innerHTML = `<a href=${href}>${innerHTML}</a>`;
     } else {
-        li.innerHTML = "Not Found";
+        li.innerHTML = "No Search Results Found for the Specified Search Query";
     }
     return li;
 };
@@ -29,7 +29,7 @@ const search = () => {
     ul.innerHTML = "";
     let input = document.getElementById("inputText").value;
     input = input.toLowerCase();
-    if (input === "") {
+    if (input === "" || input.length < 2) {
         ul.innerHTML = "";
         ul.style.display = "none";
         return;

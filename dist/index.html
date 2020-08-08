@@ -3,99 +3,102 @@
 <link rel="icon" href="images/logoTitle.png" type="image/x-icon">
 
 <head>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- Latest compiled and minified CSS -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
-  <!-- jQuery library -->
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-    crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-    crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-    crossorigin="anonymous"></script>
+    <!-- jQuery library -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+            crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+            crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+            crossorigin="anonymous"></script>
 
-  <!-- Latest compiled JavaScript -->
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <!-- <script src="index.js"></script> -->
-  <link rel="stylesheet" type="text/css" href="info.css">
-  <script src="info.js"></script>
-  <script src="./components/navbar.js"></script>
-  <script src="./components/filter.js"></script>
-  <script src="./components/skillCardComponent.js"></script>
-  <script>
-    autocomplete(document.getElementById("myInput"), countries);
-  </script>
-  <noscript>
-    <meta http-equiv="refresh" content="0;url=noscript.html">
-  </noscript>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- <script src="index.js"></script> -->
+    <link rel="stylesheet" type="text/css" href="info.css">
+    <script src="info.js"></script>
+    <script src="./components/navbar.js"></script>
+    <script src="./components/filter.js"></script>
+    <script src="./components/skillCardComponent.js"></script>
+    <noscript>
+        <meta http-equiv="refresh" content="0;url=noscript.html">
+    </noscript>
 
 </head>
 
 <body>
-  <nav-bar logoPath="images/logo.png"></nav-bar>
-  <div class="jumbotron">
-      <form class="search form-inline centerForm" style="float: center;">
+<nav-bar logoPath="images/logo.png"></nav-bar>
+<div class="jumbotron">
+    <form autocomplete="off" class="search">
+        <div class="input-group">
+            <input type="search" aria-label="Search" class="form-control" name="inputText" id="inputText" placeholder="Search For Technical Terms" onkeyup="search()">
+            <ul id="myUL" class="results"></ul>
+        </div>
+    </form>
+    <!--<form class="search form-inline centerForm" style="float: center">
         <input type="text" name="inputText" id="inputText" onkeyup="search()" class="form-control"
-          placeholder="Search..." />
-        <ul id="myUL" class="results"> </ul>
-      </form>
-  </div>
-  <div class="container-fluid" id="content">
+               placeholder="Search..."/>
+        <ul id="myUL" class="results"></ul>
+    </form>-->
+</div>
+<div class="container-fluid" id="content">
 
     <skill-filter></skill-filter>
-    <div class="row ">
-      <skill-card id="1" cardHeader="Software Construction" cardTitle="API Design" skillLogoPath="./images/api.png"
-        skillPagePath="./infoPages/apiProgramming1.html" title="Software construction is a software engineering discipline. It is the detailed creation of working meaningful software through a combination of coding,
+    <div class="row">
+        <skill-card id="1" cardHeader="Software Construction" cardTitle="API Design" skillLogoPath="./images/api.png"
+                    skillPagePath="./infoPages/apiProgramming1.html" title="Software construction is a software engineering discipline. It is the detailed creation of working meaningful software through a combination of coding,
           verification, unit testing, integration testing, and debugging. - Wikipedia" class="card-align">
-      </skill-card>
+        </skill-card>
 
-      <skill-card id="2" cardHeader="Software Design" cardTitle="Software Interface Design"
-        skillLogoPath="./images/uiux.png" skillPagePath="./infoPages/interfaceDesign1.html" title="" class="card-align">
-      </skill-card>
+        <skill-card id="2" cardHeader="Software Design" cardTitle="Software Interface Design"
+                    skillLogoPath="./images/uiux.png" skillPagePath="./infoPages/interfaceDesign1.html" title="" class="card-align">
+        </skill-card>
 
-      <skill-card id="3" cardHeader="Software Testing" cardTitle="Writing Unit Tests"
-        skillLogoPath="./images/unitest.png" skillPagePath="./infoPages/Software_testing1.html" title=""
-        class="card-align">
-      </skill-card>
+        <skill-card id="3" cardHeader="Software Testing" cardTitle="Writing Unit Tests"
+                    skillLogoPath="./images/unitest.png" skillPagePath="./infoPages/Software_testing1.html" title=""
+                    class="card-align">
+        </skill-card>
 
-      <skill-card id="4" cardHeader="Software Requirements" cardTitle="Software Requirements Elicitation"
-        skillLogoPath="./images/SRS.png" skillPagePath="#" title="" class="card-align">
-      </skill-card>
+        <skill-card id="4" cardHeader="Software Requirements" cardTitle="Software Requirements Elicitation"
+                    skillLogoPath="./images/SRS.png" skillPagePath="#" title="" class="card-align">
+        </skill-card>
     </div>
 
     <div class="row">
-      <hr>
+        <hr>
     </div>
 
     <div class="row">
-      <skill-card id="5" cardHeader="Software Quality" cardTitle="Product and Process Assurance"
-        skillLogoPath="./images/qa.png" skillPagePath="#" title="" class="card-align">
-      </skill-card>
+        <skill-card id="5" cardHeader="Software Quality" cardTitle="Product and Process Assurance"
+                    skillLogoPath="./images/qa.png" skillPagePath="#" title="" class="card-align">
+        </skill-card>
 
-      <skill-card id="6" cardHeader="Software Configuration Management" cardTitle="Configuaration Management & Support"
-        skillLogoPath="./images/config.png" skillPagePath="#" title="" class="card-align">
-      </skill-card>
+        <skill-card id="6" cardHeader="Software Configuration Management" cardTitle="Configuaration Management & Support"
+                    skillLogoPath="./images/config.png" skillPagePath="#" title="" class="card-align">
+        </skill-card>
 
-      <skill-card id="7" cardHeader="Software Process & Life-Cycle"
-        cardTitle="Software Development Life Cycle Implementation" skillLogoPath="./images/sdlc.png" skillPagePath="#"
-        title="" class="card-align">
-      </skill-card>
+        <skill-card id="7" cardHeader="Software Process & Life-Cycle"
+                    cardTitle="Software Development Life Cycle Implementation" skillLogoPath="./images/sdlc.png" skillPagePath="#"
+                    title="" class="card-align">
+        </skill-card>
 
-      <skill-card id="8" cardHeader="Software Maintanance Planning" cardTitle="Software Maintanance"
-        skillLogoPath="./images/maintainance.png" skillPagePath="#" title="" class="card-align">
-      </skill-card>
+        <skill-card id="8" cardHeader="Software Maintanance Planning" cardTitle="Software Maintanance"
+                    skillLogoPath="./images/maintainance.png" skillPagePath="#" title="" class="card-align">
+        </skill-card>
     </div>
 
-  </div>
-  </div>
-  <hr>
-  </div>
+</div>
+</div>
+<hr>
+</div>
 </body>
 
 </html>

@@ -3,7 +3,7 @@ const searchFor = {
         {href: "infoPages/apiProgramming2.html#Roles", innerText: "Robust API"},
         {href: "infoPages/apiProgramming2.html#Roles", innerText: "Robust API"},
         {href: "infoPages/apiProgramming2.html#Roles", innerText: "Robust API"}],
-    "apiProgramming": [{href: "infoPages/apiProgramming1.html#Prerequisites", innerText: "What is an API?"},
+    "api programming": [{href: "infoPages/apiProgramming1.html#Prerequisites", innerText: "What is an API?"},
         {href: "infoPages/apiProgramming2.html#Roles", innerText: "Robust API"}],
     "html": [{href: "infoPages/interfaceDesign1.html#Prerequisites", innerText: "HTML"}],
     "maintenance": []
@@ -87,18 +87,23 @@ kareaChange = () => {
             break;
 
         default:
-            for (let i = 1; i <= 8; i++)
+            let i;
+            for (i = 1; i <= 8; i++)
                 document.getElementById(i).style.display = "block";
             break;
     }
 }
 
 changeDisplay = (i) => {
-    for (let n = 1; n <= 8; n++) {
-        if (n === i) {
+    let n;
+    for (n = 1; n <= 8; n++) {
+        if (n == i) {
             document.getElementById(i).style.display = "block";
         } else {
+            console.log("False");
             document.getElementById(n).style.display = "none";
         }
     }
+
+
 }

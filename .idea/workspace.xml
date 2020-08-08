@@ -3,9 +3,15 @@
   <component name="ChangeListManager">
     <list default="true" id="cb9bac86-7b36-49c0-8528-1b0a49692a1b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/components/navbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/components/navbar.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/info.css" beforeDir="false" afterPath="$PROJECT_DIR$/dist/info.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/info.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/info.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/index2.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/index2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/info.css" beforeDir="false" afterPath="$PROJECT_DIR$/dist/css/info.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/infoPages/apiProgramming1.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/infoPages/apiProgramming1.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/infoPages/apiProgramming2.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/infoPages/apiProgramming2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/infoPages/apiProgramming3.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/infoPages/apiProgramming3.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/noJs.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/noJs.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/noscript.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/noscript.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,6 +35,11 @@
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/dist/css" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -37,7 +48,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1596905001691</updated>
-      <workItem from="1596905002762" duration="11721000" />
+      <workItem from="1596905002762" duration="14836000" />
     </task>
     <servers />
   </component>

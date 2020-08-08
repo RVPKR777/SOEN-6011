@@ -1,6 +1,6 @@
 class NavBar extends HTMLElement {
-  connectedCallback() {
-    this.innerHTML = `<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    connectedCallback() {
+        this.innerHTML = `<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <a class="navbar-brand" href="#">
           <img src="${this.getAttribute("logoPath")}" width="30" height="30" alt="">
         </a>
@@ -19,31 +19,31 @@ class NavBar extends HTMLElement {
             <li class="nav-item">
               <a class="nav-link" href="#">References</a>
             </li>            
-          <li class="nav-item dropdown">
+          ${this.getAttribute("renderSkillsDropdown") ? `<li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
             aria-expanded="false">Skills</a>
           <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
-            <a class="dropdown-item" href="#">API Programming</a>
-            <a class="dropdown-item" href="#">Interface Design</a>
-            <a class="dropdown-item" href="#">Writing Unit Tests</a>
+            <a class="dropdown-item" href="../infoPages/apiProgramming1.html">API Programming</a>
+            <a class="dropdown-item" href="../infoPages/interfaceDesign1.html">Interface Design</a>
+            <a class="dropdown-item" href="../infoPages/Software_testing1.html">Writing Unit Tests</a>
             <a class="dropdown-item" href="#">Software Requirements</a>
-            <a class="dropdown-item" href="#">Software Quality</a>
-            <a class="dropdown-item" href="#">Software Configuration Management</a>
-            <a class="dropdown-item" href="#">Software Process & Life-Cycle</a>
+            <a class="dropdown-item" href="../infoPages/QualityAssurance.html">Software Quality</a>
+            <a class="dropdown-item" href="../infoPages/ConfigManagement1.html">Software Configuration Management</a>
+            <a class="dropdown-item" href="../infoPages/SDLC_Implementation_1.html">Software Process & Life-Cycle</a>
             <a class="dropdown-item" href="#">Software Maintanance Planning</a>
           </div>
-        </li>
+        </li>` : ""}
         ${this.getAttribute("renderSearch") ? `<li class="nav-item">
         <form class="search form-inline">
         <input type="text" name="inputText" id="inputText" onkeyup="search()" class="form-control"
           placeholder="Search..." />
         <ul id="myUL" class="results"> </ul>
       </form>
-        </li>`: ""}
+        </li>` : ""}
           </ul>
         </div>
       </nav>`
-  }
+    }
 }
 
 customElements.define("nav-bar", NavBar);

@@ -1,39 +1,43 @@
 <!doctype html>
 <html lang="en">
 
-    <head>
-        <title>Sestopia -API Design</title>
-          <meta name="viewport" content="width=device-width, initial-scale=1">
-          <link rel="stylesheet" type="text/css" href="../css/content.css">
-          <!-- Latest compiled and minified CSS -->
-          <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-  
-          <!-- jQuery library -->
-          <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-  
-          <!-- Latest compiled JavaScript -->
-          <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-          <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-      
-          <script src="../js/info.js"></script>
-      <link rel="stylesheet" type="text/css" href="../css/content.css">
-      <script src="../components/navbar.js"></script>
-      <script src="../components/skillCardComponent.js"></script>
-  
-      </head>
+<head>
+    <title>Sestopia -API Design</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="../css/content.css">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- jQuery library -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+            crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+            crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+            crossorigin="anonymous"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script src="../js/info.js"></script>
+    <link rel="stylesheet" type="text/css" href="../css/content.css">
+    <script src="../components/navbar.js"></script>
+    <script src="../components/skillCardComponent.js"></script>
+
+</head>
 
 
 <body>
-<nav-bar logoPath="../images/logo.png" renderHome="true" renderSearch="true" renderSkillsDropdown="true" collapse="true"></nav-bar>
+<nav-bar renderHome="true" renderSearch="true" renderSkillsDropdown="true" collapse="true"></nav-bar>
 <div class="jumbotron container">
     <h1>Contents</h1>
     <hr>
     <p>
-        <a href="apiProgramming1.html#Api_Programming" target="_blank" class="stretched-link btn btn-primary space-btn">Name of Skill</a>
+        <a href="apiProgramming1.html#1" target="_blank" class="stretched-link btn btn-primary space-btn">Name of Skill</a>
         <a href="apiProgramming1.html#2" target="_blank" class="stretched-link btn btn-danger space-btn">Classification of Skill</a>
-        <a href="apiProgramming1.html#Prerequisites" target="_blank" class="stretched-link btn btn-success space-btn">Prerequisites for Skill</a>
+        <a href="apiProgramming1.html#3" target="_blank" class="stretched-link btn btn-success space-btn">Prerequisites for Skill</a>
         <a href="apiProgramming1.html#4" target="_blank" class="stretched-link btn btn-danger space-btn">Related Software Engineering Areas(s)</a>
         <a href="apiProgramming2.html#5" target="_blank" class="stretched-link btn btn-primary space-btn">Rationale for Skill</a>
         <a href="apiProgramming2.html#6" target="_blank" class="stretched-link btn btn-danger space-btn">Roles for Skill</a>
@@ -48,7 +52,7 @@
 </div>
 <nav aria-label="breadcrumb container float-right">
     <ol class="breadcrumb container bg-transparent ">
-        <li class="breadcrumb-item"><a href="../index.html">Home</a></li>
+        <li class="breadcrumb-item"><a href="../html/index.html">Home</a></li>
         <li class="breadcrumb-item"><a href="apiProgramming1.html">API Programming</a></li>
         <li class="breadcrumb-item active" aria-current="page">Page 2</li>
     </ol>
@@ -57,16 +61,36 @@
 <div class="container">
     <br>
 
-    <div class="card" id="6">
+    <div class="card" id="9">
         <div class="card-body">
             <h4 class="card-title">Role of Academia or Industry in Cultivating the Skill </h4>
+            <ol> Role of Academia
+                <li>Development of background skills needed to be a good API programmer:
+                    <ul>
+                        <li>Concepts of Programming</li>
+                        <li>Data Structures</li>
+                        <li>Algorithms</li>
+                        <li>Database Design and Database operations</li>
+                        <li>Multi-Threading Concepts</li>
+                        <li>Various client (HTML, CSS, JavaScript) and server (PHP, Javascript, Java, Python, Erlang) side programming languages.</li>
+                    </ul>
+                </li>
+            </ol>
+            <ol> Role of Industry
+                <li>I have been working at Addope Media for over an year as a Software Developer. During this period, I have learnt
+                    about API's and started working with Node.js framework. I attained proficiency in developing API's using Node.js
+                    and performing database operations on MongoDB Collections.
+                </li>
+                <li>I have learnt to develop robust API's, versioning of API's, designing database while working at Addope Media.</li>
+                <li>Use of API's in micro-service architecture</li>
+            </ol>
         </div>
     </div>
     <br>
 
-    <div class="card" id="7">
+    <div class="card" id="10">
         <div class="card-body">
-            <h4 class="card-title">Tools Supporting the Skill </h4>
+            <h4 class="card-title">Tools Supporting the Skill</h4>
             <ul>
                 <li><a href="https://geekflare.com/api-tools/">Best Tools to Design, Build, Test API's</a></li>
                 <li><a href="https://mytech.reviews/best-free-api-documentation-tools/">API Documentation Tools</a>
@@ -75,16 +99,16 @@
     </div>
     <br>
 
-    <div class="card" id="8">
+    <div class="card" id="11">
         <div class="card-body">
-            <h4 class="card-title">Skill Self-Assessment (My Skill Score (1 – 10) and Reasons for Self-Assigned Score)</h4>
+            <h4 class="card-title">Skill Self-Assessment (My Skill Score (1 - 10) and Reasons for Self-Assigned Score)</h4>
             <p>8</p>
             <p><strong>Reason:</strong></p>
         </div>
     </div>
     <br>
 
-    <div class="card" id="9">
+    <div class="card" id="12">
         <div class="card-body">
             <h4 class="card-title">References</h4>
         </div>

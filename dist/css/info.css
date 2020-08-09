@@ -22,10 +22,10 @@ a:hover {
     text-decoration: underline
 }
 
- .jumbotron {
+.jumbotron {
     background-image: url("../images/img.jpg") !important;
     background-size: cover !important;
-} 
+}
 
 .container, .main {
     width: 100%;
@@ -77,10 +77,12 @@ input {
     column-count: 2;
 }
 
-@media (min-width: 992px) {
-    -webkit-column-count: 4;
-    -moz-column-count: 4;
-    column-count: 4;
+@media screen and (min-width: 992px) {
+    .card-columns {
+        -webkit-column-count: 3;
+        -moz-column-count: 3;
+        column-count: 3;
+    }
 }
 
 .search {

@@ -1,11 +1,11 @@
 const searchFor = {
-    "api": [{href: "infoPages/apiProgramming1.html#Prerequisites", innerText: "What is an API?"},
-        {href: "infoPages/apiProgramming2.html#Roles", innerText: "Robust API"},
-        {href: "infoPages/apiProgramming2.html#Roles", innerText: "Robust API"},
-        {href: "infoPages/apiProgramming2.html#Roles", innerText: "Robust API"}],
-    "api programming": [{href: "infoPages/apiProgramming1.html#Prerequisites", innerText: "What is an API?"},
-        {href: "infoPages/apiProgramming2.html#Roles", innerText: "Robust API"}],
-    "html": [{href: "infoPages/interfaceDesign1.html#Prerequisites", innerText: "HTML"}],
+    "api": [{href: "../infoPages/apiProgramming1.html#3", innerText: "What is an API?"},
+        {href: "../infoPages/apiProgramming2.html#6", innerText: "Robust API"},
+        {href: "../infoPages/apiProgramming2.html#Roles", innerText: "Robust API"},
+        {href: "../infoPages/apiProgramming2.html#Roles", innerText: "Robust API"}],
+    "api programming": [{href: "../infoPages/apiProgramming1.html#Prerequisites", innerText: "What is an API?"},
+        {href: "../infoPages/apiProgramming2.html#Roles", innerText: "Robust API"}],
+    "html": [{href: "../infoPages/interfaceDesign1.html#Prerequisites", innerText: "HTML"}],
     "maintenance": []
 }
 
@@ -104,6 +104,4 @@ changeDisplay = (i) => {
             document.getElementById(n).style.display = "none";
         }
     }
-
-
 }

@@ -18,6 +18,8 @@
       <change beforePath="$PROJECT_DIR$/dist/infoPages/Software_testing1.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/infoPages/Software_testing1.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/infoPages/Software_testing2.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/infoPages/Software_testing2.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/infoPages/Software_testing3.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/infoPages/Software_testing3.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/info.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/js/info.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/infoPages/apiProgramming1.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/infoPages/apiProgramming1.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/infoPages/apiProgramming2.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/infoPages/apiProgramming2.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/infoPages/apiProgramming3.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/infoPages/apiProgramming3.html" afterDir="false" />
@@ -30,6 +32,7 @@
       <change beforePath="$PROJECT_DIR$/dist/noJs.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/html/noJs.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/noscript.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/html/noscript.html" afterDir="false" />
     </list>
+    <list default="true" id="cb9bac86-7b36-49c0-8528-1b0a49692a1b" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />

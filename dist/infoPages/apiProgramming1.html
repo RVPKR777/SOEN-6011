@@ -78,7 +78,7 @@
             <p>A person should have these skills to be a good API Programmer:</p>
             <ol>
                 <li>First of All, Knowledge of "What is an API"?
-                    <a href="https://www.youtube.com/watch?v=s7wmiS2mSXY" target="blank">
+                    <a href="https://www.youtube.com/watch?v=s7wmiS2mSXY" target="_blank">
                         <i style="font-size: 24px; color: red;" class="fa fa-youtube-play"></i>
                     </a>
                 </li>
@@ -91,7 +91,7 @@
                         <li>XML</li>
                     </ul>
                 </li>
-                <li><a href="https://www.tutorialspoint.com/http/http_methods.htm" target="blank">Types of Request</a>
+                <li><a href="https://www.tutorialspoint.com/http/http_methods.htm" target="_blank">Types of Request with Example</a>
                     <ul>
                         <li>GET</li>
                         <li>POST</li>
@@ -101,14 +101,14 @@
                         <li>HEAD</li>
                         <li>OPTIONS <a
                                 href="https://dev.to/p0oker/why-is-my-browser-sending-an-options-http-request-instead-of-post-5621"
-                                target="blank">
+                                target="_blank">
                             A Nice Example</a>
                         </li>
                         <li>TRACE</li>
                         <li>CONNECT</li>
                     </ul>
                 </li>
-                <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Status" target="blank">Types of Response
+                <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Status" target="_blank">Types of Response
                     Status Code</a>
                     <ul>
                         <li>100-199: Informational Responses</li>
@@ -121,17 +121,34 @@
                 <li>Types of API
                     <ul>
                         <li>REST: Representational State Transfer <a
-                                href="https://www.smashingmagazine.com/2018/01/understanding-using-rest-api/" target="blank">
-                            Complete Example</a></li>
+                                href="https://www.smashingmagazine.com/2018/01/understanding-using-rest-api/" target="_blank">
+                            Complete Example</a>
+                            <ul> REST provides a set of Rules that developers follow to create an API. Characteristics of REST:
+                                <li>It is like a Post-Card; lightweight and fast</li>
+                                <li>Stateless Communications Protocol</li>
+                                <li>Structures data in XML, YAML, JSON format</li>
+                                <li>Data Driven</li>
+                                <li>Uses WADL: Web Application Description Language</li>
+                            </ul>
+                        </li>
                         <li>SOAP: Simple Object Access Protocol <a
                                 href="https://www.altexsoft.com/blog/engineering/what-is-soap-formats-protocols-message-structure-and-how-soap-is-different-from-rest/"
-                                target="blank">Complete Example</a></li>
+                                target="_blank">Complete Example</a>
+                            <ul> Characteristics of SOAP:
+                                <li>It is like an Envelope; the request is wrapped by an XML root element</li>
+                                <li>Can be sent over any protocol, for example: HTTP, TCP, SMTP</li>
+                                <li>SOAP message must be XML-formatted and contains Header and Body</li>
+                                <li>Strongly Function Driven</li>
+                                <li>Uses WSDL: Web Service Description Language; a contract between the provider and consumer. A signature of web service.</li>
+                            </ul>
+                        </li>
                         <li>Difference SOAP vs REST API <a href="https://www.soapui.org/learn/api/soap-vs-rest-api/"
-                                                           target="blank">Explained</a></li>
+                                                           target="_blank">Explained</a></li>
                     </ul>
                 </li>
                 <li>
-                    Knowledge of Multi-Threading: To be able to perform asynchronous operations.
+                    Knowledge of Multi-Threading: To be able to perform asynchronous operations,
+                    for example: API's causing side-effects i.e. Database Operations, an API call to another service.
                 </li>
             </ol>
         </div>
@@ -142,8 +159,11 @@
         <div class="card-body">
             <h4 class="card-title">Related Software Engineering Area(s)</h4>
             <ol>
-                <li>Software Testing</li>
-                <li>Software Construction</li>
+                <li>Software Testing: Testing API's through Integration Tests, End-to-End Testing, writing Unit Tests for functions
+                    used by API's
+                </li>
+                <li>Software Construction: Database Designing, Documentation</li>
+                <li>Software Maintenance: Versioning of API's, Database Design Changes</li>
             </ol>
         </div>
     </div>

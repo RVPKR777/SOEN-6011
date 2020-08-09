@@ -1,38 +1,41 @@
 <!doctype html>
 <html lang="en-us">
 
-    <head>
-        <title>Sestopia -API Design</title>
-          <meta name="viewport" content="width=device-width, initial-scale=1">
-          <link rel="stylesheet" type="text/css" href="../css/content.css">
-          <!-- Latest compiled and minified CSS -->
-          <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-  
-          <!-- jQuery library -->
-          <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-  
-          <!-- Latest compiled JavaScript -->
-          <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-          <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-      
-      <script src="info.js"></script>
-      <link rel="stylesheet" type="text/css" href="../css/content.css">
-      <script src="../components/navbar.js"></script>
-      <script src="../components/skillCardComponent.js"></script>
-  
-      </head>
+<head>
+    <title>Sestopia -API Design</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- jQuery library -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+            crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+            crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+            crossorigin="anonymous"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="../js/info.js"></script>
+    <link rel="stylesheet" type="text/css" href="../css/content.css">
+    <script src="../components/navbar.js"></script>
+    <script src="../components/skillCardComponent.js"></script>
+
+</head>
 
 <body>
-<nav-bar logoPath="../images/logo.png" renderHome="true" renderSearch="true" renderSkillsDropdown="true" collapse="true"></nav-bar>
+<nav-bar renderHome="true" renderSearch="true" renderSkillsDropdown="true" collapse="true"></nav-bar>
 <div class="jumbotron container ">
     <h1>Contents</h1>
     <hr>
     <p>
-        <a href="apiProgramming1.html#Api_Programming" target="_blank" class="stretched-link btn btn-primary space-btn">Name of Skill</a>
+        <a href="apiProgramming1.html#1" target="_blank" class="stretched-link btn btn-primary space-btn">Name of Skill</a>
         <a href="apiProgramming1.html#2" target="_blank" class="stretched-link btn btn-danger space-btn">Classification of Skill</a>
-        <a href="apiProgramming1.html#Prerequisites" target="_blank" class="stretched-link btn btn-success space-btn">Prerequisites for Skill</a>
+        <a href="apiProgramming1.html#3" target="_blank" class="stretched-link btn btn-success space-btn">Prerequisites for Skill</a>
         <a href="apiProgramming1.html#4" target="_blank" class="stretched-link btn btn-danger space-btn">Related Software Engineering Areas(s)</a>
         <a href="apiProgramming2.html#5" target="_blank" class="stretched-link btn btn-primary space-btn">Rationale for Skill</a>
         <a href="apiProgramming2.html#6" target="_blank" class="stretched-link btn btn-danger space-btn">Roles for Skill</a>
@@ -46,14 +49,14 @@
 </div>
 <nav aria-label="breadcrumb container float-right">
     <ol class="breadcrumb container bg-transparent ">
-        <li class="breadcrumb-item"><a href="../index.html">Home</a></li>
+        <li class="breadcrumb-item"><a href="../html/index.html">Home</a></li>
         <li class="breadcrumb-item"><a href="apiProgramming1.html">API Programming</a></li>
         <li class="breadcrumb-item active" aria-current="page">Page 1</li>
     </ol>
 </nav>
 <br>
 <div class="container">
-    <div class="card" id="Api_Programming" name="Api_Programming">
+    <div class="card" id="1">
         <div class="card-body">
             <h4 class="card-title">Name of Skill</h4>
             <p class="card-text">API Programming</p>
@@ -69,7 +72,7 @@
     </div>
     <br>
 
-    <div class="card" id="Prerequisites" name="Prerequisites">
+    <div class="card" id="3">
         <div class="card-body">
             <h4 class="card-title">Prerequisites for Skill</h4>
             <p>A person should have these skills to be a good API Programmer:</p>
@@ -79,7 +82,7 @@
                         <i style="font-size: 24px; color: red;" class="fa fa-youtube-play"></i>
                     </a>
                 </li>
-                <li>Knowledge of atleast one server-side programming language and beginner level proficiency in coding</li>
+                <li>Knowledge of at-least one server-side programming language and beginner level proficiency in coding</li>
                 <li>Knowledge of frameworks and libraries supported by that programming language for writing API's</li>
                 <li>What are HTTP Request, Response?</li>
                 <li>What is the format of Request and Response?
@@ -88,7 +91,7 @@
                         <li>XML</li>
                     </ul>
                 </li>
-                <li>Types of Request
+                <li><a href="https://www.tutorialspoint.com/http/http_methods.htm" target="blank">Types of Request</a>
                     <ul>
                         <li>GET</li>
                         <li>POST</li>
@@ -99,16 +102,37 @@
                         <li>OPTIONS <a
                                 href="https://dev.to/p0oker/why-is-my-browser-sending-an-options-http-request-instead-of-post-5621"
                                 target="blank">
-                            A Nice Example</a></li>
+                            A Nice Example</a>
+                        </li>
+                        <li>TRACE</li>
+                        <li>CONNECT</li>
+                    </ul>
+                </li>
+                <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Status" target="blank">Types of Response
+                    Status Code</a>
+                    <ul>
+                        <li>100-199: Informational Responses</li>
+                        <li>200-299: Successful Responses</li>
+                        <li>300-399: Redirects</li>
+                        <li>400-499: Client Errors</li>
+                        <li>500-599: Server Errors</li>
                     </ul>
                 </li>
                 <li>Types of API
                     <ul>
-                        <li>REST: Representational State Transfer</li>
-                        <li>SOAP: Simple Object Access Protocol</li>
+                        <li>REST: Representational State Transfer <a
+                                href="https://www.smashingmagazine.com/2018/01/understanding-using-rest-api/" target="blank">
+                            Complete Example</a></li>
+                        <li>SOAP: Simple Object Access Protocol <a
+                                href="https://www.altexsoft.com/blog/engineering/what-is-soap-formats-protocols-message-structure-and-how-soap-is-different-from-rest/"
+                                target="blank">Complete Example</a></li>
+                        <li>Difference SOAP vs REST API <a href="https://www.soapui.org/learn/api/soap-vs-rest-api/"
+                                                           target="blank">Explained</a></li>
                     </ul>
                 </li>
-                <li>Type of Content that can be handled by Request and Response, and how?</li>
+                <li>
+                    Knowledge of Multi-Threading: To be able to perform asynchronous operations.
+                </li>
             </ol>
         </div>
     </div>
@@ -117,10 +141,10 @@
     <div class="card" id="4">
         <div class="card-body">
             <h4 class="card-title">Related Software Engineering Area(s)</h4>
-            <ul>
-                <li></li>
-                <li></li>
-            </ul>
+            <ol>
+                <li>Software Testing</li>
+                <li>Software Construction</li>
+            </ol>
         </div>
     </div>
     <br>

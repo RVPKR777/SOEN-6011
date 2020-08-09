@@ -2,7 +2,7 @@ class NavBar extends HTMLElement {
     connectedCallback() {
         this.innerHTML = `<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <a class="navbar-brand" href="#">
-          <img src="${this.getAttribute("logoPath")}" width="30" height="30" alt="Sestopia Logo">
+          <img src="../images/logo.png" width="30" height="30" alt="Sestopia Logo">
         </a>
         <a class="navbar-brand" href="#">Sestopia</a>
     
@@ -14,7 +14,7 @@ class NavBar extends HTMLElement {
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
             ${this.getAttribute("renderHome") ? `<li class="nav-item active">
-              <a class="nav-link" href="../index.html">Home <span class="sr-only">(current)</span></a>
+              <a class="nav-link" href="../html/index.html">Home <span class="sr-only">(current)</span></a>
             </li>` : ""}
                        
           ${this.getAttribute("renderSkillsDropdown") ? `<li class="nav-item dropdown">

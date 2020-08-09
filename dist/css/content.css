@@ -1,21 +1,23 @@
-.jumbotron1{
+.jumbotron1 {
     background-color: #323ea8 !important;
     color: white !important;
     align-items: center;
     text-shadow: whitesmoke;
 }
-body{
+
+body {
     background-color: white;
 }
 
-.card{
+.card {
     background-color: white !important;
 }
-.footer{
+
+.footer1 {
     background-color: #252b25;
     color: white;
 }
 
-.space-btn{
+.space-btn {
     margin: .20%;
 }

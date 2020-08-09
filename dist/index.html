@@ -1,193 +1,102 @@
 <html>
 <title>Sestopia</title>
+<link rel="icon" href="images/logoTitle.png" type="image/x-icon">
 
 <head>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" type="text/css" href="style.css">
-  <!-- Latest compiled and minified CSS -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
-  <!-- jQuery library -->
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-    crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-    crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-    crossorigin="anonymous"></script>
+    <!-- jQuery library -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+            crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+            crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+            crossorigin="anonymous"></script>
 
-  <!-- Latest compiled JavaScript -->
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="index.js"></script>
-
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/info.css">
+    <script src="info.js"></script>
+    <script src="./components/navbar.js"></script>
+    <script src="./components/filter.js"></script>
+    <script src="./components/skillCardComponent.js"></script>
+    <noscript>
+        <meta http-equiv="refresh" content="0;url=noscript.html">
+    </noscript>
 </head>
 
-<body style="background-color:#2b333d;">
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <a class="navbar-brand" href="#">Sestopia</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item active">
-          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">References</a>
-        </li>
-      </ul>
+<body>
+<nav-bar logoPath="images/logo.png"></nav-bar>
+<div class="jumbotron">
+    <form autocomplete="off" class="search">
+        <div class="input-group">
+            <input aria-label="Search" class="form-control" name="inputText" id="inputText" placeholder="Search For Technical Terms" onkeyup="search()">
+            <ul id="myUL" class="results"></ul>
+        </div>
+    </form>
+    <!--<form class="search form-inline centerForm" style="float: center">
+        <input type="text" name="inputText" id="inputText" onkeyup="search()" class="form-control"
+               placeholder="Search..."/>
+        <ul id="myUL" class="results"></ul>
+    </form>-->
+</div>
+<div class="container-fluid" id="content" style="margin-right: 10%;">
+
+    <skill-filter></skill-filter>
+    <div class="row">
+        <skill-card id="1" cardHeader="Software Construction" cardTitle="API Design" skillLogoPath="./images/api.png"
+                    skillPagePath="./infoPages/apiProgramming1.html" title="Software construction is a software engineering discipline. It is the detailed creation of working meaningful software through a combination of coding,
+          verification, unit testing, integration testing, and debugging. - Wikipedia" class="card-align">
+        </skill-card>
+
+        <skill-card id="2" cardHeader="Software Design" cardTitle="Software Interface Design"
+                    skillLogoPath="./images/uiux.png" skillPagePath="./infoPages/interfaceDesign1.html" title="" class="card-align">
+        </skill-card>
+
+        <skill-card id="3" cardHeader="Software Testing" cardTitle="Writing Unit Tests"
+                    skillLogoPath="./images/unitest.png" skillPagePath="./infoPages/Software_testing1.html" title=""
+                    class="card-align">
+        </skill-card>
+
+        <skill-card id="4" cardHeader="Software Requirements" cardTitle="Software Requirements Elicitation"
+                    skillLogoPath="./images/SRS.png" skillPagePath="#" title="" class="card-align">
+        </skill-card>
     </div>
-  </nav>
-  <br>
-  <div class="card container">
-    <div class="  container ">
-      <div class="center-div">
-        <form class="form-control">
-          <div class="row">
-            <div class="col-sm-10"> <input type="text" id="searchText" onkeyup="search();" placeholder="Search"
-                class="form-control"></div>
-          </div>
-          <div style="overflow-y: scroll; height:150px;">
-            <ul id="search" class="form-control">
-            </ul>
-          </div>
-        </form>
-      </div>
-    </div>
-    <div class="container">
-      <p>Contents</p>
-      <hr>
+
+    <div class="row">
+        <hr>
     </div>
 
-    <div class="container" style="overflow-y: scroll; height: 600px;">
-      <div class="row">
-        <div class="col-sm-3 ">
-          <a href="infoPages/apiProgramming1.html">
-            <div class="card">
-              <img src="images/api.png" alt="Avatar" class="skillLogo">
-              <hr>
-              <div class="container">
-                <h4>API designer</h4>
-                <p><b>Software Construction</b></p>
-              </div>
-            </div>
-          </a>
-        </div>
-        <div class="col-sm-3 ">
-          <a href="infoPages/interfaceDesign1.html">
-            <div class="card">
-              <img src="images/ux-ui-logo.svg" alt="Avatar" class="skillLogo">
-              <hr>
-              <div class="container">
-                <h4>Software Interface design</h4>
-                <p><b>Software Design</b></p>
-              </div>
-            </div>
-          </a>
-        </div>
-        <div class="col-sm-3 ">
-          <a href="infoPages/Software_testing1.html">
-            <div class="card">
-              <img src="images/test.png" alt="Avatar" class="skillLogo">
-              <hr>
-              <div class="container">
-                <h4>Writing Unit Tests</h4>
-                <p><b>Software Testing</b></p>
-              </div>
-            </div>
-          </a>
-        </div>
-        <div class="col-sm-3 ">
-          <div class="card">
-            <img src="images/SRS.png" alt="Avatar" class="skillLogo">
-            <hr>
-            <div class="container">
-              <h4>Software Requirements Elicitation</h4>
-              <p><b>Software Requirements</b></p>
-            </div>
-            <hr>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-sm-3 ">
-          <a href="infoPages/QualityAssurance.html">
-            <div class="card">
-              <img src="images/Assurance" alt="Avatar" class="skillLogo">
-              <hr>
-              <div class="container">
-                <h4>Product and Process Assurance</h4>
-                <p><b>Software Quality</b></p>
+    <div class="row">
+        <skill-card id="5" cardHeader="Software Quality" cardTitle="Product and Process Assurance"
+                    skillLogoPath="./images/qa.png" skillPagePath="#" title="" class="card-align">
+        </skill-card>
 
-              </div>
-            </div>
-          </a>
-        </div>
-        <div class="col-sm-3 ">
-          <a href="infoPages/ConfigManagement1.html">
-            <div class="card">
-              <img src="images/Architecture.png" alt="Avatar" class="skillLogo">
-              <hr>
-              <div class="container">
-                <h4>Configuration Management and Support</h4>
-                <p><b>Software Configuration Management</b></p>
+        <skill-card id="6" cardHeader="Software Configuration Management" cardTitle="Configuration Management & Support"
+                    skillLogoPath="./images/config.png" skillPagePath="#" title="" class="card-align">
+        </skill-card>
 
-              </div>
-            </div>
-          </a>
-        </div>
-        <div class="col-sm-3 ">
-          <a href="infoPages/SDLC_Implementation_1.html">
-            <div class="card">
-              <img src="images/SDLC.jpg" alt="Avatar" class="skillLogo">
-              <hr>
-              <div class="container">
-                <h4>Software Development Life Cycle Implementation</h4>
-                <p><b>Software Process and Life Cycle</b></p>
+        <skill-card id="7" cardHeader="Software Process & Life-Cycle"
+                    cardTitle="Software Development Life Cycle Implementation" skillLogoPath="./images/sdlc.png" skillPagePath="#"
+                    title="" class="card-align">
+        </skill-card>
 
-              </div>
-            </div>
-          </a>
-        </div>
-
-        <!--- <div class="col-sm-3 " >  
-                          <a href="infoPages/SDLC_Implementation_1.html">                        
-						              <div class="card">
-                                <img src="images/SDLC.jpg" alt="Avatar" style="width:100% ; height : 250;"> <hr>
-                                <div class="container">
-                                    <h4>Software Development 
-                                      Life Cycle Implementation</h4>
-                                    <p><b>Software Process and Life Cycle</b></p> 
-                                
-                                </div>
-                              </div>
-                          </a>
-                            </div>-->
-        <div class="col-sm-3 ">
-          <div class="card">
-            <img src="images/maintainance.png" alt="Avatar" class="skillLogo">
-            <hr>
-            <div class="container">
-              <h4>Software Maintenance Planning</h4>
-              <p><b>Software Maintenance</b></p>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
+        <skill-card id="8" cardHeader="Software Maintanance Planning" cardTitle="Software Maintanance"
+                    skillLogoPath="./images/maintainance.png" skillPagePath="#" title="" class="card-align">
+        </skill-card>
     </div>
-    <hr>
-  </div>
-  <div class="footer">
-    <p>This website is made for education purpose only.</p>
-  </div>
 
+</div>
+</div>
+<hr>
+</div>
 </body>
 
 </html>

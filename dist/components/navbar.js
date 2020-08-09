@@ -16,9 +16,7 @@ class NavBar extends HTMLElement {
             <li class="nav-item active">
               <a class="nav-link" href="../index.html">Home <span class="sr-only">(current)</span></a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">References</a>
-            </li>            
+                       
           ${this.getAttribute("renderSkillsDropdown") ? `<li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
             aria-expanded="false">Skills</a>
@@ -35,13 +33,15 @@ class NavBar extends HTMLElement {
         </li>` : ""}
         ${this.getAttribute("renderSearch") ? `<li class="nav-item">
         <form class="search form-inline">
-        <input type="text" name="inputText" id="inputText" onkeyup="search()" class="form-control"
+        <input type="text" name="inputText" id="inputText" onkeyup="search()" class="form-control" style="margin-left:10%"
           placeholder="Search..." />
         <ul id="myUL" class="results"> </ul>
       </form>
         </li>` : ""}
           </ul>
+        
         </div>
+        
       </nav>`
     }
 }

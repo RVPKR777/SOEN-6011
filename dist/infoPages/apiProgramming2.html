@@ -22,14 +22,32 @@
   <!-- Latest compiled JavaScript -->
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <link rel="stylesheet" type="text/css" href="../css/info.css">
+  <link rel="stylesheet" type="text/css" href="../css/content.css">
   <script src="../info.js"></script>
   <script src="../components/navbar.js"></script>
   <script src="../components/skillCardComponent.js"></script>
 </head>
 
 <body>
-  <nav-bar logoPath="../images/logo.png"></nav-bar>
+  <nav-bar logoPath="../images/logo.png" renderSearch="true" renderSkillsDropdown="true"></nav-bar>
+  <div class="jumbotron container">
+    <h1>Contents</h1><hr>
+    <p>
+      <a href="apiProgramming1.html#Api_Programming" target="_blank" class="stretched-link btn btn-primary space-btn">Name of Skill</a>
+      <a href="apiProgramming1.html#2" target="_blank" class="stretched-link btn btn-danger space-btn">Classification of Skill</a>
+      <a href="apiProgramming1.html#Prerequisites" target="_blank" class="stretched-link btn btn-success space-btn">Prerequisites for Skill</a>
+      <a href="apiProgramming1.html#4" target="_blank" class="stretched-link btn btn-danger space-btn">Related Software Engineering Areas(s)</a>
+      <a href="apiProgramming2.html#5" target="_blank" class="stretched-link btn btn-primary space-btn">Rationale for Skill</a>
+      <a href="apiProgramming2.html#6" target="_blank" class="stretched-link btn btn-danger space-btn">Roles for Skill</a>
+      <a href="apiProgramming2.html#7" target="_blank" class="stretched-link btn btn-success space-btn">Work Related To Skill</a>
+      <a href="apiProgramming2.html#8" target="_blank" class="stretched-link btn btn-danger space-btn">Real World Example</a>
+      <a href="apiProgramming3.html#9" target="_blank" class="stretched-link btn btn-primary space-btn">Role of Academia/Industry</a>
+      <a href="apiProgramming3.html#10" target="_blank" class="stretched-link btn btn-danger space-btn">Tools supporting the skill</a>
+      <a href="apiProgramming3.html#11" target="_blank" class="stretched-link btn btn-success space-btn">Skill Self Assessment</a>
+      <a href="apiProgramming3.html#12" target="_blank" class="stretched-link btn btn-danger space-btn">References</a>
+       
+    </p>
+  </div>
   <nav aria-label="breadcrumb container float-right">
     <ol class="breadcrumb container bg-transparent ">
       <li class="breadcrumb-item"><a href="../index.html">Home</a></li>
@@ -39,7 +57,7 @@
   </nav>
   </br>
   <div class="container">
-    <div class="card">
+    <div class="card" id="5">
       <div class="card-body">
         <h4 class="card-title">Rationale for Skill</h4>
         <ul>
@@ -54,7 +72,7 @@
     </div>
     <br>
 
-    <div class="card">
+    <div class="card" id="6">
       <div class="card-body">
         <h4 class="card-title">Roles for Skill</h4>
         <ul>
@@ -66,7 +84,7 @@
     </div>
     <br>
 
-    <div class="card">
+    <div class="card" id="7">
       <div class="card-body">
         <h4 class="card-title">Work Related to Skill (Related Activities and Artifacts)</h4>
         <ol>
@@ -75,7 +93,7 @@
     </div>
     <br>
 
-    <div class="card">
+    <div class="card" id="8">
       <div class="card-body">
         <h4 class="card-title">Real-World Example/Scenario of Skill (Text, Graphic, Audio, Video)</h4>
         <ol>
@@ -107,10 +125,11 @@
     </div>
   </div>
 
-  <div class="footer">
-    <p>This website is made for education purpose only.</p>
-
-  </div>
+  <footer class="footer container">
+    <div class="container">
+      <span class="text-muted"> &copy; Authored and Designed by <b> TEAM I</b></span>
+    </div>
+  </footer>
 
 </body>
 

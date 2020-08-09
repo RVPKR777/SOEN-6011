@@ -1,0 +1,24 @@
+.jumbotron{
+    background-color: #323ea8 !important;
+    color: white !important;
+    align-items: center;
+    text-shadow: whitesmoke;
+
+}
+body{
+    background-color: white;
+  
+}
+
+.card{
+    background-color: white !important;
+}
+.footer{
+    background-color: #252b25;
+    color: white;
+}
+
+.space-btn{
+    
+    margin: .20%;
+}

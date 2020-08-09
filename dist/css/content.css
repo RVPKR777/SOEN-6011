@@ -1,13 +1,11 @@
-.jumbotron{
+.jumbotron1{
     background-color: #323ea8 !important;
     color: white !important;
     align-items: center;
     text-shadow: whitesmoke;
-
 }
 body{
     background-color: white;
-  
 }
 
 .card{
@@ -19,6 +17,5 @@ body{
 }
 
 .space-btn{
-    
     margin: .20%;
 }

@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="cb9bac86-7b36-49c0-8528-1b0a49692a1b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/dist/components/navbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/components/navbar.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/css/info.css" beforeDir="false" afterPath="$PROJECT_DIR$/dist/css/info.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/html/index.html" afterDir="false" />
@@ -18,17 +19,24 @@
       <change beforePath="$PROJECT_DIR$/dist/infoPages/Software_testing1.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/infoPages/Software_testing1.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/infoPages/Software_testing2.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/infoPages/Software_testing2.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/infoPages/Software_testing3.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/infoPages/Software_testing3.html" afterDir="false" />
+=======
+      <change beforePath="$PROJECT_DIR$/dist/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/info.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/js/info.js" afterDir="false" />
+>>>>>>> 6a2737c0aeaf23ef61b98c950a4405b4158a1fac
       <change beforePath="$PROJECT_DIR$/dist/infoPages/apiProgramming1.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/infoPages/apiProgramming1.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/infoPages/apiProgramming2.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/infoPages/apiProgramming2.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/infoPages/apiProgramming3.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/infoPages/apiProgramming3.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/infoPages/interfaceDesign1.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/infoPages/interfaceDesign1.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/infoPages/interfaceDesign2.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/infoPages/interfaceDesign2.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/infoPages/interfaceDesign3.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/infoPages/interfaceDesign3.html" afterDir="false" />
+<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/dist/infoPages/maintenance1.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/infoPages/maintenance1.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/infoPages/maintenance2.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/infoPages/maintenance2.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/infoPages/maintenance3.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/infoPages/maintenance3.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/noJs.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/html/noJs.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/noscript.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/html/noscript.html" afterDir="false" />
+=======
+>>>>>>> 6a2737c0aeaf23ef61b98c950a4405b4158a1fac
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,8 +64,11 @@
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/dist/js" />
+<<<<<<< HEAD
       <recent name="$PROJECT_DIR$/dist/html" />
       <recent name="$PROJECT_DIR$/dist" />
+=======
+>>>>>>> 6a2737c0aeaf23ef61b98c950a4405b4158a1fac
       <recent name="$PROJECT_DIR$/dist/css" />
     </key>
   </component>

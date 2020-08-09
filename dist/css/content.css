@@ -1,4 +1,4 @@
-.jumbotron1 {
+.jumbotron {
     background-color: #323ea8 !important;
     color: white !important;
     align-items: center;
@@ -13,7 +13,7 @@ body {
     background-color: white !important;
 }
 
-.footer1 {
+.footer {
     background-color: #252b25;
     color: white;
 }

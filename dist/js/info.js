@@ -9,12 +9,13 @@ const searchFor = {
     "rest soap wadl wsdl": [{href: "../infoPages/apiProgramming1.html#3", innerText: "REST SOAP API"}],
     "postman soapui swagger documentation": [{href: "../infoPages/apiProgramming1.html#10", innerText: "API Development Tools"}],
     "html": [{href: "../infoPages/interfaceDesign1.html#Prerequisites", innerText: "HTML"}],
-    "maintenance": [],
-    "testing":[{href: "../infopages/Software_testing1.html#1", innerText:"Unit Testing"}],
-    "types of unit testing":[{href:"../infopages/Software_testing1.html#2", innerText:"Types of Unit Testing"}],
-    "tools":[{href:"../infopages/Software_testing3.html#10", innerText:"Unit testing tools"}],
-    "automated unit testing":[{href:"../infopages/Software_testing1.html#2", innerText:"Automated Unit Testing"}],
-    "manual unit testing": [{href:"../infopages/Software_testing1.html#2", innerText:"Manual Unit Testing"}]
+    "testing unit test": [{href: "../infoPages/Software_testing1.html#1", innerText: "Unit Testing"}, {href: "../infoPages/Software_testing1.html#2",
+        innerText: "Types of Unit Testing"}, {href: "../infoPages/Software_testing1.html#2", innerText: "Automated Unit Testing"}, {href: "../infoPages/Software_testing1.html#2",
+        innerText: "Manual Unit Testing"}],
+    "automated": [{href:"../infoPages/Software_testing1.html#2", innerText:"Automated Unit Testing"}],
+    "manual": [{href:"../infoPages/Software_testing1.html#2", innerText:"Manual Unit Testing"}],
+    "tools": [{href: "../infoPages/Software_testing3.html#10", innerText: "Unit testing tools"}]
+};
 
 const makeLiAndOptionalAhrefTag = (href, innerHTML) => {
     const li = document.createElement("li");

@@ -2,35 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cb9bac86-7b36-49c0-8528-1b0a49692a1b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/dist/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/index.html.bak" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/noJs.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/noscript.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/components/navbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/components/navbar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/html/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/html/index.html.bak" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/html/noJs.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/html/noscript.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/infoPages/ConfigManagement1.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/infoPages/ConfigManagement1.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/infoPages/ConfigManagement2.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/infoPages/ConfigManagement2.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/infoPages/ConfigManagement3.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/infoPages/ConfigManagement3.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/infoPages/QualityAssurance.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/infoPages/QualityAssurance.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/infoPages/SDLC_Implementation_1.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/infoPages/SDLC_Implementation_1.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/infoPages/SDLC_Implementation_2.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/infoPages/SDLC_Implementation_2.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/infoPages/SDLC_Implementation_3.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/infoPages/SDLC_Implementation_3.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/infoPages/Software_testing1.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/infoPages/Software_testing1.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/infoPages/Software_testing2.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/infoPages/Software_testing2.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/infoPages/Software_testing3.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/infoPages/Software_testing3.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/infoPages/apiProgramming1.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/infoPages/apiProgramming1.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/infoPages/apiProgramming2.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/infoPages/apiProgramming2.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/infoPages/apiProgramming3.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/infoPages/apiProgramming3.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/infoPages/interfaceDesign1.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/infoPages/interfaceDesign1.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/infoPages/interfaceDesign2.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/infoPages/interfaceDesign2.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/infoPages/interfaceDesign3.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/infoPages/interfaceDesign3.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/infoPages/maintenance1.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/infoPages/maintenance1.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/infoPages/maintenance2.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/infoPages/maintenance2.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/infoPages/maintenance3.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/infoPages/maintenance3.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/noJs.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/noJs.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/noscript.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/noscript.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,6 +58,10 @@
     <option name="version" value="3" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="1026" y="280" width="564" height="915" key="RollbackChangesDialog" timestamp="1597017904446">
+      <screen x="67" y="38" width="2493" height="1402" />
+    </state>
+    <state x="1026" y="280" width="564" height="915" key="RollbackChangesDialog/67.38.2493.1402@67.38.2493.1402" timestamp="1597017904446" />
     <state x="567" y="198" key="SettingsEditor" timestamp="1596907353183">
       <screen x="67" y="38" width="2493" height="1402" />
     </state>

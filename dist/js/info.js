@@ -10,8 +10,11 @@ const searchFor = {
     "postman soapui swagger documentation": [{href: "../infoPages/apiProgramming1.html#10", innerText: "API Development Tools"}],
     "html": [{href: "../infoPages/interfaceDesign1.html#Prerequisites", innerText: "HTML"}],
     "maintenance": [],
-    "testing":[{href: "../infopages/software_testing1.html", innerText:"Unit Testing"}]
-}
+    "testing":[{href: "../infopages/software_testing1.html", innerText:"Unit Testing"}],
+    "types of unit testing":[{href:"../infopages/software_testing1.html", innerText:"Types of Unit Testing"}],
+    "tools":[{href:"../infopages/software_testing3.html", innerText:"Unit testing tools"}],
+    "automated unit testing":[{href:"../infopages/software_testing1.html", innerText:"Automated Unit Testing"}],
+    "manual unit testing": [{href:"../infopages/software_testing1.html", innerText:"Manual Unit Testing"}]
 
 const makeLiAndOptionalAhrefTag = (href, innerHTML) => {
     const li = document.createElement("li");

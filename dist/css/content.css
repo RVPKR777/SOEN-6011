@@ -192,3 +192,8 @@ body {
 .navbar {
     background-color: #2B333D !important;
 }
+
+i {
+    font-size: 24px;
+    color: red
+}

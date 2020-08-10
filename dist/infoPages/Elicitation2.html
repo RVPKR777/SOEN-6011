@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>Sestopia -API Design</title>
+    <title>Sestopia -Software Requirements Elicitation </title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
@@ -50,7 +50,7 @@
 <nav aria-label="breadcrumb container float-right">
     <ol class="breadcrumb container bg-transparent ">
         <li class="breadcrumb-item"><a href="../index.html">Home</a></li>
-        <li class="breadcrumb-item"><a href="apiProgramming1.html">API Programming</a></li>
+        <li class="breadcrumb-item"><a href="apiProgramming1.html">Software Requirements Elicitation</a></li>
         <li class="breadcrumb-item active" aria-current="page">Page 2</li>
     </ol>
 </nav>
@@ -60,11 +60,9 @@
         <div class="card-body">
             <h4 class="card-title">Rationale for Skill</h4>
             <ul>
-                <li>API's are a critical part of Backend of any client-server architecture application.</li>
-                <li>The goal of API programming is to make the user's interaction as robust as possible, in terms of
-                    accomplishing user goals, such that the operation succeeds except for user-side error, for example: input
-                    data validation in which user needs to perform the operation again with valid data and the operation should
-                    succeed.
+                <li>A well-defined problem with clear requirements helps in creating a correct solution that adds value to business 
+					and helps in understanding the problem domain in a more accurate way.</li>
+                <li>The goal of requirements elicitation is to increase the scope,eliminate the budget overrun and helps in adequate process redesign.
                 </li>
             </ul>
         </div>
@@ -75,27 +73,11 @@
         <div class="card-body">
             <h4 class="card-title">Roles for Skill</h4>
             <ul>
-                <li><a href="https://blog.apiary.io/The-Role-of-the-API-Designer" target="_blank">Roles of an API Designer</a>
-                    <ul>
-                        <li>Build New Culture if a Legacy culture exists</li>
-                        <li>Distributing complexity across multiple API's</li>
-                    </ul>
-                </li>
-                <li>Roles for which API Design is a subset:
-                    <ul>
-                        <li>Full-Stack Developer
-                            <ul>
-                                <li>Backend Developer
-                                    <ul>
-                                        <li>Database Designer</li>
-                                        <li>API Designer</li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </li>
-                    </ul>
-                </li>
+                        <li>Business Analyst</li>
+                        <li>Business System Analyst</li>
+						<li>Application Architect</li>
             </ul>
+               
         </div>
     </div>
     <br>
@@ -103,29 +85,46 @@
     <div class="card" id="7">
         <div class="card-body">
             <h4 class="card-title">Work Related to Skill (Related Activities and Artifacts)</h4>
-            <ol>
-                <li>Code Good API's
-                    <a href="https://www.toptal.com/api-developers/5-golden-rules-for-designing-a-great-web-api" target="_blank">
-                        5 Golden Rules for Great Web API Design</a>
-                </li>
-                <li>Develop Robust API</li>
-                <li>Versioning API</li>
-                <li>Security
+           <ol>
+				<ul>Requirements gathered must be SMART (Specific, Measurable, Agreed Upon, Realistic, Time-based) and the following techniques are used.
+              
+                <li>Classic/Traditional Techniques:
                     <ul>
-                        <li>SHA-1 Token</li>
-                        <li>JWT: JSON Web Token</li>
-                        <li>SSL</li>
-                        <li>OAuth 2</li>
+                        <li>Interviews - Purpose is to investigate and to get all-inclusive view of the entire system.</li>
+                        <li>Surveys - Used to get maximum requirements from different people that may be at different locations.</li>
+                        <li>Questionnaires - The information is obtained about the stakeholders and about the organizational environment.</li>
+                     
                     </ul>
                 </li>
-                <li>Write proper documentation to make the use of API easy, less cumbersome and clear: Reduces Cognitive
-                    Distance, Adherence Distance between Designer and Other StakeHolders
-                </li>
-                <li>API Programming is closely related to producing side-effects i.e. Database operations. Thus, it is
-                    required for the api programmer to be skilled at performing database operations such as create table, insert
-                    into table, select, delete, aggregate et cetera.
-                </li>
-                <li>Code Review</li>
+				<li>Cognitive/Analytical Techniques:
+					<ul>
+						<li>Card Sorting - A technique in which cards are provided to the client according to the name of domains entity.</li>
+                        <li>Laddering - Limited set of standards are asked to the customer and questions are set in hierarchical order.</li>
+                        <li>Repertory Grids - Used to identify the resemblance and dissimilarity among the different domain units.</li>
+					</ul>
+				</li>
+				
+				<li>Modern and Group Elicitation Techniques:
+					<ul>
+						<li>Brain Storming - Every member can express his own idea about the product and is used to build the most important verdict about the product.</li>
+                        <li>JAD - Joint Application Development involved available stakeholders inspecting through common conversation.</li>
+                        <li>Prototyping - Initial product version which is prepared for getting feedback from stakeholder and making sure changes are incorporated in the next version.</li>
+					</ul>
+				</li>
+				
+				
+				<li>Social Analysis:
+					<ul>
+						<li>Ethnography - A situation to interact with the stakeholders to check out political environment inside the organization.</li>
+                        <li>Direct Observation - Carried out with the direct involvement of the observer in the society.</li>
+                        <li>Passive Observation - Carried without the direct involvement of the observer in the society.</li>
+					</ul>
+				</li>
+
+
+
+				
+
             </ol>
         </div>
     </div>
@@ -135,14 +134,10 @@
         <div class="card-body">
             <h4 class="card-title">Real-World Example/Scenario of Skill (Text, Graphic, Audio, Video)</h4>
             <ol>
-                <li>Google provides API's for Developers <a href="https://developers.google.com/apis-explorer"
-                                                            target="_blank">Google's API Explorer</a></li>
-                <li>Twitter API's to send, retrieve tweets, direct messages, media, geo-location, tweet statistics <a
-                        href="https://developer.twitter.com/en/docs" target="_blank">Twitter API Docs</a>
-                </li>
-                <li>Facebook provides API's to manage content by programming <a
-                        href="https://developers.facebook.com/" target="_blank">Facebook Developers Guide</a>
-                </li>
+                <li>A simple example of why Chrysler PT Cruiser failed, and Apple iPad succeeded
+				<a href="https://www.brighthubpm.com/project-planning/116143-real-examples-of-business-requirements/"
+                                                            target="_blank">Business Requirements</a></li>
+               
             </ol>
         </div>
     </div>
@@ -152,11 +147,11 @@
         <div class="col-sm-4"></div>
         <div class="col-sm-4">
             <ul class="pagination">
-                <li class="page-item"><a class="page-link" href="apiProgramming1.html">Previous</a></li>
-                <li class="page-item"><a class="page-link" href="apiProgramming1.html">1</a></li>
+                <li class="page-item"><a class="page-link" href="Elicitation1.html">Previous</a></li>
+                <li class="page-item"><a class="page-link" href="Elicitation1.html">1</a></li>
                 <li class="page-item active"><a class="page-link" href="#">2</a></li>
-                <li class="page-item"><a class="page-link" href="apiProgramming3.html">3</a></li>
-                <li class="page-item"><a class="page-link" href="apiProgramming3.html">Next</a></li>
+                <li class="page-item"><a class="page-link" href="Elicitation3.html">3</a></li>
+                <li class="page-item"><a class="page-link" href="Elicitation3.html">Next</a></li>
             </ul>
         </div>
     </div>

@@ -1,93 +1,180 @@
 <!doctype html>
 <html lang="en">
     <head>
-      <title>Sestopia -User Interface Design</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" type="text/css" href="style.css">
-        <!-- Latest compiled and minified CSS -->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+      <title>Sestopia -API Design</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
-        <!-- jQuery library -->
-        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <!-- jQuery library -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+            crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+            crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+            crossorigin="anonymous"></script>
 
-        <!-- Latest compiled JavaScript -->
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="data.js"></script>    
-    <script src="index.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="../js/info.js"></script>
+    <link rel="stylesheet" type="text/css" href="../css/content.css">
+    <script src="../components/navbar.js"></script>
+    <script src="../components/skillCardComponent.js"></script>
+	<style>
+					table {
+					  font-family: arial, sans-serif;
+					  border-collapse: collapse;
+					  width: 80%;
+					}
+
+					td, th {
+					  border: 1px solid #bbb;
+					  text-align: left;
+					  padding: 8px;
+					}
+
+					tr:nth-child(even) {
+					  background-color: #ddd;
+					}
+					</style>
 
     </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="#">Sestopia</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-      
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">References</a>
-            </li>  
-          </ul>
-          
+<nav-bar logoPath="../images/logo.png" renderHome="true" renderSearch="true" renderSkillsDropdown="true" collapse="true"></nav-bar>
+<div class="jumbotron container ">
+    <h1>Contents</h1>
+    <hr>
+    <p>
+        <a href="ConfigManagement1.html#1" target="_blank" class="stretched-link btn btn-primary space-btn">Name of Skill</a>
+        <a href="ConfigManagement1.html#2" target="_blank" class="stretched-link btn btn-danger space-btn">Classification of Skill</a>
+        <a href="ConfigManagement1.html#3" target="_blank" class="stretched-link btn btn-success space-btn">Prerequisites for Skill</a>
+        <a href="ConfigManagement1.html#4" target="_blank" class="stretched-link btn btn-danger space-btn">Related Software Engineering Areas(s)</a>
+        <a href="ConfigManagement2.html#5" target="_blank" class="stretched-link btn btn-primary space-btn">Rationale for Skill</a>
+        <a href="ConfigManagement2.html#6" target="_blank" class="stretched-link btn btn-danger space-btn">Roles for Skill</a>
+        <a href="ConfigManagement2.html#7" target="_blank" class="stretched-link btn btn-success space-btn">Work Related To Skill</a>
+        <a href="ConfigManagement2.html#8" target="_blank" class="stretched-link btn btn-danger space-btn">Real World Example</a>
+        <a href="ConfigManagement3.html#9" target="_blank" class="stretched-link btn btn-primary space-btn">Role of Academia/Industry</a>
+        <a href="ConfigManagement3.html#10" target="_blank" class="stretched-link btn btn-danger space-btn">Tools supporting the skill</a>
+        <a href="ConfigManagement3.html#11" target="_blank" class="stretched-link btn btn-success space-btn">Skill Self Assessment</a>
+        <a href="ConfigManagement3.html#12" target="_blank" class="stretched-link btn btn-danger space-btn">References</a>
+    </p>
+</div>
+<nav aria-label="breadcrumb container float-right">
+    <ol class="breadcrumb container bg-transparent ">
+        <li class="breadcrumb-item"><a href="../index.html">Home</a></li>
+        <li class="breadcrumb-item"><a href="ConfigManagement1.html">Software Configuration Mangement and Support</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Page 1</li>
+    </ol>
+</nav>
+<br>
+<div class="container">
+    <div class="card" id="1">
+        <div class="card-body">
+            <h4 class="card-title">Name of Skill</h4>
+            <p class="card-text">Software Configuration Management and Support </p>
         </div>
-      </nav>
-      <br>
-      <nav aria-label="breadcrumb container float-right">
-        <ol class="breadcrumb container bg-transparent ">
-          <li class="breadcrumb-item"><a href="../index.html">Home</a></li>
-          <li class="breadcrumb-item"><a href="#">Configuration Management Administration and Support </a></li>
-          <li class="breadcrumb-item active" aria-current="page">Page 1</li>
-        </ol>
-      </nav>
-      <br>
-      <div class="container jumbotron"> 
-        <div class="card" id ="User_Interface_Design" name="User_Interface_Design">
-            <div class="card-body">
-              <h4 class="card-title">Name of Skill</h4>
-              <p class="card-text">Configuration Management Administration and Support</p>
-
-            </div>
-          </div>
-          <br>
+    </div>
+    <br>
 
           <div class="card">
-            <div class="card-body">
+            <div class="card-body" id = "2">
               <h4 class="card-title">Classification of Skill</h4>
-              <p class="card-text">Software Configuration Management</p>
+              <p class="card-text">In Software Engineering, Software Configuration Management(SCM or S/W CM) is a process to manage, organize, track and control changes to all the entities of the software during software development lifecycle in a systematic way. The main purpose of SCM is to produce a software with minimal mistakes. SCM practices include revision control and it can accurately determine who made it.</p>
               
             </div>
           </div>
           <br>
 
           <div class="card" id ="Prerequisites" name="Prerequisites">
-            <div class="card-body">
+            <div class="card-body" id = "3">
               <h4 class="card-title">Prerequisites for Skill</h4>
-              <p>To be a good Configuration management administrator , a person should: </p>
-                <ol>
-                    <li>Be a Subject Matter Expert for Configuration Management </li>
-                    <li>Ensures that all CIs are recorded in the CMDB and that the information is complete and accurate</li>
-                    <li>Reviews and validates updates to the CMDB and creates exception reports when applicable</li>
-                    <li>Validates the compliancy of CI changes to CMDB from automated sources with Configuration Management process policies</li>
-                
-                </ol>
-            </div>
+              <p>A Software Configuration Management Administrator/Engineer should posses the following skills: </p>
+                <p><b>1: Experience with version control systems:</b></br>
+				<ul>
+				<li>Tracking changes</li>
+				<li>Committing</li>
+				<li>Revisions and changesets</li>
+				<li>Getting updates</li>
+				<li>Resolving conflicts</li>
+				<li>Branching and Merging</li>
+				</ul></p>
+				
+				<p><b>2: Experience with Software Development LifeCycle(SDLC) process:</b></br>
+				<ul>
+				<li>Planning and Requirement Analysis</li>
+				<li>Defining Requirements</li>
+				<li>Designing Architecture</li>
+				<li>Building the product</li>
+				<li>Testing</li>
+				<li>Deployement</li>
+				</ul></p>
+				
+				<p><b>3: Knowledge on Infrastructure/Applicaton and Configuration items:</b></br></p>
+				<p><b>Configuration Item(CI):</b> It is a part of system which can be identified as a self-contained unit for change control and identification purpose. They play an important role in Configuration management systems.</br>
+				The most commonly used CI's are the following:
+				<ul>
+				<li><b>HWCI</b></li>
+				<li><b>CI or CSCI</b></li>
+				<li><b>Interface CI</b></li>
+				<li><b>NDCI</b></li>
+				<li><b>COTSCI</b></li>
+				</p>
+				</ul>
+				
+				
+				
+				<p><b>Below are few examples for Configuration Items:</b></br>
+					
+				<table>
+				  <tr>
+					<th>Configuration Items</th>
+					<th>Common CI's</th>
+				  </tr>
+				  <tr>
+					<td>Services</td>
+					<td>Email, printing, collaboration, presentation, data processing, user registration</td>
+				  </tr>
+				  <tr>
+					<td>Software</td>
+					<td>Applications, databases, virtual machines, containers, licenses</td>
+				  </tr>
+				  <tr>
+					<td>Hardware</td>
+					<td>Servers, routers, computers, swetches</td>
+				  </tr>
+				  <tr>
+					<td>Devices</td>
+					<td>Laptops, tablets, smartphones,, keyboards, mice, monitors</td>
+				  </tr>
+				  <tr>
+					<td>Documents</td>
+					<td>Policies, governance, release notes, user guides, troubleshooting manuals</td>
+				  </tr>
+				  <tr>
+					<td>Locations</td>
+					<td>Offices, data centers, server rooms</td>
+				  </tr>
+				  <tr>
+					<td>Staff</td>
+					<td>Service desk agents, support specialists, developers</td>
+				  </tr>
+				</table>
+				</p>
+				</div>
           </div>
           <br>
 
           <div class="card">
-            <div class="card-body">
+            <div class="card-body" id = "4">
               <h4 class="card-title">Related Software Engineering Area(s)</h4>
               <ul>
-                <li></li>
-                <li></li>
+                <li>Release Management</li>
+                <li>Software Testing</li>
+				<li>DevOps</li>
                 </ul>
             </div>
           </div>

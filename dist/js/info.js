@@ -1,13 +1,21 @@
 const searchFor = {
-    "api": [{href: "../infoPages/apiProgramming1.html#3", innerText: "What is an API?"},
-        {href: "../infoPages/apiProgramming2.html#6", innerText: "Robust API"},
-        {href: "../infoPages/apiProgramming2.html#Roles", innerText: "Robust API"},
-        {href: "../infoPages/apiProgramming2.html#Roles", innerText: "Robust API"}],
-    "api programming": [{href: "../infoPages/apiProgramming1.html#Prerequisites", innerText: "What is an API?"},
-        {href: "../infoPages/apiProgramming2.html#Roles", innerText: "Robust API"}],
+    "api": [{href: "../infoPages/apiProgramming1.html#3", innerText: "What is an API?"}, {href: "../infoPages/apiProgramming1.html#3", innerText: "Types of API"},
+        {href: "../infoPages/apiProgramming1.html#8", innerText: "Real World Example of API"}, {href: "../infoPages/apiProgramming1.html#10", innerText: "API Development Tools"},
+        {href: "..infoPages/apiProgramming1.html#10", innerText: "OpenAPI Specification"}],
+    "request response": [{href: "../infoPages/apiProgramming1.html#3", innerText: "Request Response"}],
+    "get post put delete patch head options trace connect": [{href: "../infoPages/apiProgramming1.html#3", innerText: "Types of Request"}],
+    "xml yaml json": [{href: "../infoPages/apiProgramming1.html#3", innerText: "Request Response Format"}],
+    "sha oauth2 jwt ssl": [{href: "../infoPages/apiProgramming1.html#7", innerText: "Security for API"}],
+    "rest soap wadl wsdl": [{href: "../infoPages/apiProgramming1.html#3", innerText: "REST SOAP API"}],
+    "postman soapui swagger documentation": [{href: "../infoPages/apiProgramming1.html#10", innerText: "API Development Tools"}],
     "html": [{href: "../infoPages/interfaceDesign1.html#Prerequisites", innerText: "HTML"}],
-    "maintenance": []
-}
+    "testing unit test": [{href: "../infoPages/Software_testing1.html#1", innerText: "Unit Testing"}, {href: "../infoPages/Software_testing1.html#2",
+        innerText: "Types of Unit Testing"}, {href: "../infoPages/Software_testing1.html#2", innerText: "Automated Unit Testing"}, {href: "../infoPages/Software_testing1.html#2",
+        innerText: "Manual Unit Testing"}],
+    "automated": [{href:"../infoPages/Software_testing1.html#2", innerText:"Automated Unit Testing"}],
+    "manual": [{href:"../infoPages/Software_testing1.html#2", innerText:"Manual Unit Testing"}],
+    "tools": [{href: "../infoPages/Software_testing3.html#10", innerText: "Unit testing tools"}]
+};
 
 const makeLiAndOptionalAhrefTag = (href, innerHTML) => {
     const li = document.createElement("li");

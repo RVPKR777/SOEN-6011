@@ -34,7 +34,7 @@ class NavBar extends HTMLElement {
         ${this.getAttribute("renderSearch") ? `<li class="nav-item">
         <form autocomplete="off" class="search">
         <div class="input-groupNavBar">
-            <input aria-label="Search" class="form-control" name="inputText" id="inputText" placeholder="Search For Technical Terms" onkeyup="search()">
+            <input aria-label="Search" class="form-control" name="inputText" id="inputText" placeholder="Search" onkeyup="search()">
         </div>
         <ul id="myUL" class="results"></ul>
         </form>

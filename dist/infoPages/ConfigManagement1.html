@@ -20,9 +20,9 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="../js/info.js"></script>
+    <script src="../components/bookmarkButton.js"></script>
     <link rel="stylesheet" type="text/css" href="../css/content.css">
     <script src="../components/navbar.js"></script>
-    <script src="../components/skillCardComponent.js"></script>
 	<style>
 					table {
 					  font-family: arial, sans-serif;
@@ -74,6 +74,8 @@
 <div class="container">
     <div class="card" id="1">
         <div class="card-body">
+		<bookmark-button buttonId="button1" bookmarkKey="SCM1" bookmarkLink="../infoPages/ConfigManagement1.html#1" bookmarkName="Software Configuration Management: Name of Skill"
+                             enabled="disabled"></bookmark-button>
             <h4 class="card-title">Name of Skill</h4>
             <p class="card-text">Software Configuration Management and Support </p>
         </div>
@@ -82,8 +84,15 @@
 
           <div class="card">
             <div class="card-body" id = "2">
+				<bookmark-button buttonId="button2" bookmarkKey="SCM2" bookmarkLink="../infoPages/ConfigManagement1.html#2" bookmarkName="Software Configuration Management: Classification of Skill"
+                             enabled="disabled"></bookmark-button>
               <h4 class="card-title">Classification of Skill</h4>
-              <p class="card-text">In Software Engineering, Software Configuration Management(SCM or S/W CM) is a process to manage, organize, track and control changes to all the entities of the software during software development lifecycle in a systematic way. The main purpose of SCM is to produce a software with minimal mistakes. SCM practices include revision control and it can accurately determine who made it.</p>
+              <p class="card-text">In Software Engineering, Software Configuration Management(SCM or S/W CM) is a process to manage, organize, track and control changes to all the entities of the software during software development lifecycle in a systematic way. The purpose of SCM is to see that a software is produced with minimal mistakes. SCM practices include revision control and it can accurately determine who made it.</br>
+			  The main procedures found in a typical software configuration management system are :
+			  <li><b>Configuration identification : </b>It is the process which defines the properties of configuration items and the following attributes are baselined.</li>
+			  <li><b>Configuration control : </b>It is a set of instructions which are required to change a configuration and to rebaseline them.</li>
+			  <li><b>Configuration status documentation : </b>It is the ability to record/report the any information related to that configuration object.</li>
+			  <li><b>Configuration audits : </b>An audit occurs everytime at project delivery or when a change is made whether it is functional or physical configuration.</li></p>
               
             </div>
           </div>
@@ -91,6 +100,8 @@
 
           <div class="card" id ="Prerequisites" name="Prerequisites">
             <div class="card-body" id = "3">
+			<bookmark-button buttonId="button3" bookmarkKey="SCM3" bookmarkLink="../infoPages/ConfigManagement1.html#3" bookmarkName="Software Configuration Management: Prerequisites for Skill"
+                             enabled="disabled"></bookmark-button>
               <h4 class="card-title">Prerequisites for Skill</h4>
               <p>A Software Configuration Management Administrator/Engineer should posses the following skills: </p>
                 <p><b>1: Experience with version control systems:</b></br>
@@ -114,14 +125,14 @@
 				</ul></p>
 				
 				<p><b>3: Knowledge on Infrastructure/Applicaton and Configuration items:</b></br></p>
-				<p><b>Configuration Item(CI):</b> It is a part of system which can be identified as a self-contained unit for change control and identification purpose. They play an important role in Configuration management systems.</br>
+				<p><b>Configuration Item(CI):</b> A part of the system which can be self contained unit for change control.</br>
 				The most commonly used CI's are the following:
 				<ul>
-				<li><b>HWCI</b></li>
-				<li><b>CI or CSCI</b></li>
-				<li><b>Interface CI</b></li>
-				<li><b>NDCI</b></li>
-				<li><b>COTSCI</b></li>
+				<li><b>HWCI : </b>Hardware type configuration item</li>
+				<li><b>CI or CSCI : </b> Software type configuration item</li>
+				<li><b>System CI : </b>System type configuration item</li>
+				<li><b>NDCI : </b>Non-developed configuration item</li>
+				<li><b>COTSCI : </b>Component Off the shelf configuration item</li>
 				</p>
 				</ul>
 				
@@ -170,12 +181,16 @@
 
           <div class="card">
             <div class="card-body" id = "4">
+			<bookmark-button buttonId="button4" bookmarkKey="SCM4" bookmarkLink="../infoPages/ConfigManagement1.html#4" bookmarkName="Software Configuration Management: Related Software Engineering Area(s)"
+                             enabled="disabled"></bookmark-button>
               <h4 class="card-title">Related Software Engineering Area(s)</h4>
-              <ul>
-                <li>Release Management</li>
-                <li>Software Testing</li>
-				<li>DevOps</li>
-                </ul>
+			  <p><b>1 - Release Management</b>
+               Release management is nothing but the process of planing, scheduling and managing a software build during different stages of software development lifecycle.</p>
+			   <p><b>2 - Software Testing</b>
+               Software Testing is verification of the application in different with different use cases</p>
+			   <p><b>3 - Devops</b>
+               DevOps is the process of automating and integration between software development and teams for faster building of applications with more reliable features.</p>
+                
             </div>
           </div>
           <br>

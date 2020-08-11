@@ -40,6 +40,7 @@ class NavBar extends HTMLElement {
         </form>
         </li>` : ""}
           </ul>
+          <p style="padding-top:1%;padding-right:1%; color :white">Dark Mode/Light Mode</p><input type="checkbox" id="day_night" onchange="myFunction()">
         </div>
       </nav>`
     }

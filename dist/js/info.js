@@ -59,6 +59,63 @@ const search = () => {
     }
 }
 
+const currentTheme = localStorage.getItem('theme');
+console.log("It is ",currentTheme);
+
+
+$(document).ready(function(){
+
+    if(currentTheme == "light"){
+        console.log("Change to Light");
+        $(".label").css('color', 'black');
+        $('input[type="checkbox"]').prop('checked', false);
+    }
+    if(currentTheme == "dark"){
+        console.log("Change to dark");
+        $( document.body).toggleClass( "dark-mode" );
+        $(".label").css('color', 'white');
+        $('input[type="checkbox"]').prop('checked', true);
+         
+    }   
+
+    $('input[type="checkbox"]').click(function(){
+        if($(this).prop("checked") == true){
+            console.log("Checkbox is checked.");
+            var element = document.body;
+            element.classList.toggle("dark-mode");
+            //$(".card").toggleClass( "dark-mode-card" );
+            $(".label").css('color', 'white');
+            localStorage.setItem('theme', 'dark');
+            console.log("Saved the state of Dark ");
+        }
+        else if($(this).prop("checked") == false){
+            console.log("Checkbox is unchecked.");
+            $(".label").css('color', 'black');
+            var element = document.body;
+            $(document.body).removeClass( "dark-mode" );
+            localStorage.setItem('theme', 'light');
+            console.log("Saved the state of Light ");
+        }
+    });
+});
+
+function myFunction() {
+    debugger;   
+    if(document.getElementById("day_night").checked == true){
+        
+        
+
+
+        
+
+    }
+    else if(document.getElementById("day_night").checked == false){
+        
+    }
+    
+    
+ }
+
 kareaChange = () => {
     const choice = document.getElementById("kareas");
     switch (choice.value) {
@@ -113,3 +170,5 @@ changeDisplay = (i) => {
         }
     }
 }
+
+

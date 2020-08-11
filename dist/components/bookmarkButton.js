@@ -1,4 +1,13 @@
 class BookmarkButton extends HTMLElement {
+    constructor() {
+        super();
+        this.addEventListener("click", () => this.manage());
+    }
+
+    manage() {
+        manageBookmark(this.getAttribute("bookmarkKey"), this.getAttribute("bookmarkLink"), this.getAttribute("bookmarkName"), this.getAttribute("buttonId"));
+    }
+
     connectedCallback() {
         //always use this.getAttribute() in connectedCallback as the attributes might not have been defined yet in constructor.
         if (typeof (Storage) !== undefined) {
@@ -7,11 +16,7 @@ class BookmarkButton extends HTMLElement {
             } else {
                 this.value = "Add Bookmark";
             }
-            this.innerHTML = `<input type="button" value="${this.value}" id=${this.getAttribute("buttonId")} onclick="manageBookmark(${this.getAttribute("bookmarkKey")},
-            ${this.getAttribute("bookmarkLink")}, ${this.getAttribute("bookmarkName")}, ${this.getAttribute("buttonId")})">`;
-            // <button id="${this.getAttribute("buttonId")}"
-            //         onclick="manageBookmark(${this.getAttribute("bookmarkKey")},${this.getAttribute("bookmarkLink")},
-            //                 ${this.getAttribute("bookmarkName")}, ${this.getAttribute("buttonId")})">${this.value}</button>
+            this.innerHTML = `<input type="button" value="${this.value}" id=${this.getAttribute("buttonId")}>`;
         } else {
             this.innerHTML = ``;
         }

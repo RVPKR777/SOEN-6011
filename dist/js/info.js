@@ -138,16 +138,11 @@ const setBookmarkImageSrc = (bookmarkKey, buttonId) => {
 const manageBookmark = (bookmarkKey, bookmarkLink, bookmarkName, buttonId) => {
     console.log(JSON.parse(localStorage.getItem(bookmarkKey)));
     const button = document.getElementById(buttonId);
-    if (typeof (Storage) !== undefined) {
-        if (localStorage.getItem(bookmarkKey)) {
-            localStorage.removeItem(bookmarkKey);
-            button.value = "Add Bookmark";
-            return;
-        }
-        localStorage.setItem(bookmarkKey, JSON.stringify({bookmarkLink, bookmarkName}));
-        button.value = "Remove Bookmark";
+    if (localStorage.getItem(bookmarkKey)) {
+        localStorage.removeItem(bookmarkKey);
+        button.value = "Add Bookmark";
         return;
     }
-    button.style.display = "none";
-    alert("Sorry, Your Browser does not support Web Storage")
+    localStorage.setItem(bookmarkKey, JSON.stringify({bookmarkLink, bookmarkName}));
+    button.value = "Remove Bookmark";
 };

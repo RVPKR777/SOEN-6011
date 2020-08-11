@@ -2,6 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cb9bac86-7b36-49c0-8528-1b0a49692a1b" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/components/bookmarkButton.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/components/bookmarkButton.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/infoPages/apiProgramming1.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/infoPages/apiProgramming1.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/infoPages/apiProgramming2.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/infoPages/apiProgramming2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/infoPages/apiProgramming3.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/infoPages/apiProgramming3.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/js/info.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/js/info.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -38,15 +43,15 @@
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/dist/components" />
-      <recent name="$PROJECT_DIR$/dist/images" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/dist" />
       <recent name="$PROJECT_DIR$/dist/js" />
       <recent name="$PROJECT_DIR$/dist/html" />
       <recent name="$PROJECT_DIR$/dist/css" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/dist/components" />
+      <recent name="$PROJECT_DIR$/dist/images" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />

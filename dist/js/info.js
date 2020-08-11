@@ -74,18 +74,13 @@ const search = () => {
 }
 
 const currentTheme = localStorage.getItem('theme');
-console.log("It is ", currentTheme);
-
 
 $(document).ready(function () {
-
     if (currentTheme === "light") {
-        console.log("Change to Light");
         $(".label").css('color', 'black');
         $('input[type="checkbox"]').prop('checked', false);
     }
     if (currentTheme === "dark") {
-        console.log("Change to dark");
         $(document.body).toggleClass("dark-mode");
         $(".label").css('color', 'white');
         $('input[type="checkbox"]').prop('checked', true);
@@ -94,23 +89,21 @@ $(document).ready(function () {
 
     $('input[type="checkbox"]').click(function () {
         if ($(this).prop("checked")) {
-            const element = document.body;
+            var element = document.body;
             element.classList.toggle("dark-mode");
-            //$(".card").toggleClass( "dark-mode-card" );
             $(".label").css('color', 'white');
             localStorage.setItem('theme', 'dark');
-        } else if (!($(this).prop("checked"))) {
+        } else {
             $(".label").css('color', 'black');
-            const element = document.body;
             $(document.body).removeClass("dark-mode");
-            console.log("Saved the state of Light ");
+            localStorage.setItem('theme', 'light');
         }
     });
 });
 
 function myFunction() {
     if (document.getElementById("day_night").checked) {
-    } else if (document.getElementById("day_night").checked) {
+    } else {
     }
 }
 

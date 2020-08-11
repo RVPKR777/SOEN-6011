@@ -14,12 +14,12 @@ class BookmarkButton extends HTMLElement {
         if (typeof (Storage) !== undefined) {
             if (localStorage.getItem(this.getAttribute("bookmarkKey"))) {
                 this.value = "Remove Bookmark";
-                this.innerHTML = `<input type="button" class="btn btn-warning" value="${this.value}" id=${this.getAttribute("buttonId")}>`;
+                this.innerHTML = `<input type="button" class="btn btn-warning" value="${this.value}" id=${this.getAttribute("buttonId")}`;
             } else {
                 this.value = "Add Bookmark";
                 this.innerHTML = `<input type="button" class="btn btn-link" value="${this.value}" id=${this.getAttribute("buttonId")}>`;
             }
-           // this.innerHTML = `<input type="button" value="${this.value}" id=${this.getAttribute("buttonId")}>`;
+            this.innerHTML += `<hr>`;
         } else {
             this.innerHTML = ``;
         }

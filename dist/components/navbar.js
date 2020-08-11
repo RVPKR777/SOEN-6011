@@ -49,16 +49,19 @@ class NavBar extends HTMLElement {
           </div>
         </li>` : ""}
         ${this.getAttribute("renderSearch") ? `<li class="nav-item">
-        <form autocomplete="off" class="search">
+        <form autocomplete="off" class="search form-inline my-2 my-lg-2">
         <div class="input-groupNavBar">
-            <input aria-label="Search" class="form-control" name="inputText" id="inputText" placeholder="Search" onkeyup="search()">
+            <input aria-label="Search" class="form-control mr-xl-2" name="inputText" id="inputText" placeholder="Search" onkeyup="search()">
         </div>
         <ul id="myUL" class="results"></ul>
         </form>
         </li>` : ""}
           </ul>
-          ${this.renderDarkLightMode ? `<p style="padding-top:1%;padding-right:1%; color :white">Dark Mode/Light Mode</p><input type="checkbox" id="day_night"
-            onchange="myFunction()">` : ""}
+          ${this.renderDarkLightMode ? `
+          <label style="padding-right:1%; color :white" class="form-inline">Dark /Light Mode</Label>   
+          <input type="checkbox" id="day_night" onchange="myFunction()">
+         ` : ""}
+          
         </div>
       </nav>`
     }

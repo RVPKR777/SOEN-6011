@@ -17,8 +17,9 @@ const searchFor = {
         innerText: "Manual Unit Testing"
     }],
     "automated": [{href: "../infoPages/Software_testing1.html#2", innerText: "Automated Unit Testing"}],
+    "software": [{href: "../infoPages/Software_testing1.html#2", innerText: "Software Testing"}],
     "manual": [{href: "../infoPages/Software_testing1.html#2", innerText: "Manual Unit Testing"}],
-    "tools": [{href: "../infoPages/Software_testing3.html#10", innerText: "Unit testing tools"}]
+    "tools": [{href: "../infoPages/Software_testing3.html#10", innerText: "Unit testing Tools"}]
 };
 
 const makeLiAndOptionalAhrefTag = (href, innerHTML) => {

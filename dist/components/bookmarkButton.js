@@ -6,6 +6,7 @@ class BookmarkButton extends HTMLElement {
 
     manage() {
         manageBookmark(this.getAttribute("bookmarkKey"), this.getAttribute("bookmarkLink"), this.getAttribute("bookmarkName"), this.getAttribute("buttonId"));
+        //$(this.getAttribute("buttonId"))
     }
 
     connectedCallback() {
@@ -13,10 +14,12 @@ class BookmarkButton extends HTMLElement {
         if (typeof (Storage) !== undefined) {
             if (localStorage.getItem(this.getAttribute("bookmarkKey"))) {
                 this.value = "Remove Bookmark";
+                this.innerHTML = `<input type="button" class="btn btn-warning" value="${this.value}" id=${this.getAttribute("buttonId")}>`;
             } else {
                 this.value = "Add Bookmark";
+                this.innerHTML = `<input type="button" class="btn btn-link" value="${this.value}" id=${this.getAttribute("buttonId")}>`;
             }
-            this.innerHTML = `<input type="button" value="${this.value}" id=${this.getAttribute("buttonId")}>`;
+           // this.innerHTML = `<input type="button" value="${this.value}" id=${this.getAttribute("buttonId")}>`;
         } else {
             this.innerHTML = ``;
         }

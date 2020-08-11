@@ -171,8 +171,10 @@ const manageBookmark = (bookmarkKey, bookmarkLink, bookmarkName, buttonId) => {
     if (localStorage.getItem(bookmarkKey)) {
         localStorage.removeItem(bookmarkKey);
         button.value = "Add Bookmark";
+        button.className="btn btn-link";
         return;
     }
     localStorage.setItem(bookmarkKey, JSON.stringify({bookmarkLink, bookmarkName}));
     button.value = "Remove Bookmark";
+    button.className="btn btn-warning";
 };

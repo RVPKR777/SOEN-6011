@@ -10,8 +10,8 @@ class SkillCard extends HTMLElement {
           <div class="card-header">${this.getAttribute("cardHeader")}</div>
           <img class="card-img-top" src="${this.getAttribute("skillLogoPath")}" alt="Card image">
           <div class="card-body"><br>
-            <h6 class="card-title">${this.getAttribute("cardTitle")}</b></h6>
-            <p>${this.getAttribute("detail")}</p>
+            <h6 class="card-title">${this.getAttribute("cardTitle")}</h6>
+            <h6>Author: ${this.getAttribute("author")}</h6>
           </div>
           <div class="card-footer">
             <a href=${this.getAttribute("skillPagePath")} class="btn btn-primary">Click to see more!</a>
@@ -20,4 +20,5 @@ class SkillCard extends HTMLElement {
       </div>`;
     }
 }
+
 customElements.define("skill-card", SkillCard);

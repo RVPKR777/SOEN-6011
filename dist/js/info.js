@@ -187,7 +187,7 @@ const renderBookmarkList = () => {
             if (key !== "theme") {
                 console.log(key);
                 const ahref = makeAhrefTagForBookmark(key);
-                div.appendChild(ahref);
+                div.appendChild(ahref).className = "dropdown-item";
             }
         }
     }

@@ -1,127 +1,161 @@
 <!doctype html>
-<html lang="en">
+<html lang="en-us">
 
 <head>
-  <title>Sestopia -Software Maintenance Planning</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" type="text/css" href="style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <!-- Latest compiled and minified CSS -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>Sestopia -Software Maintenance Planning</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
-  <!-- jQuery library -->
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-    crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-    crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-    crossorigin="anonymous"></script>
+    <!-- jQuery library -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+            crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+            crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+            crossorigin="anonymous"></script>
 
-  <!-- Latest compiled JavaScript -->
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="index.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="../js/info.js"></script>
+    <link rel="stylesheet" type="text/css" href="../css/content.css">
+    <script src="../components/navbar.js"></script>
+    <script src="../components/skillCardComponent.js"></script>
 
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <a class="navbar-brand" href="#">Sestopia</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item active">
-          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">References</a>
-        </li>
-      </ul>
-
-    </div>
-  </nav>
-  <br>
-  <nav aria-label="breadcrumb container float-right">
+<nav-bar logoPath="../images/logo.png" renderHome="true" renderSearch="true" renderSkillsDropdown="true" collapse="true"></nav-bar>
+<div class="jumbotron container ">
+    <h1>Contents</h1>
+    <hr>
+    <p>
+        <a href="maintenance1.html#1" target="_blank" class="stretched-link btn btn-primary space-btn">Name of Skill</a>
+        <a href="maintenance1.html#2" target="_blank" class="stretched-link btn btn-danger space-btn">Classification of Skill</a>
+        <a href="maintenance1.html#3" target="_blank" class="stretched-link btn btn-success space-btn">Prerequisites for Skill</a>
+        <a href="maintenance1.html#4" target="_blank" class="stretched-link btn btn-danger space-btn">Related Software Engineering Area(s)</a>
+        <a href="maintenance2.html#5" target="_blank" class="stretched-link btn btn-primary space-btn">Rationale for Skill</a>
+        <a href="maintenance2.html#6" target="_blank" class="stretched-link btn btn-danger space-btn">Roles for Skill</a>
+        <a href="maintenance2.html#7" target="_blank" class="stretched-link btn btn-success space-btn">Work Related To Skill</a>
+        <a href="maintenance2.html#8" target="_blank" class="stretched-link btn btn-danger space-btn">Real World Examples</a>
+        <a href="maintenance3.html#9" target="_blank" class="stretched-link btn btn-primary space-btn">Role of Academia/Industry</a>
+        <a href="maintenance3.html#10" target="_blank" class="stretched-link btn btn-danger space-btn">Tools supporting the skill</a>
+        <a href="maintenance3.html#11" target="_blank" class="stretched-link btn btn-success space-btn">Skill Self Assessment</a>
+        <a href="maintenance3.html#12" target="_blank" class="stretched-link btn btn-danger space-btn">References</a>
+    </p>
+</div>
+<nav aria-label="breadcrumb container float-right">
     <ol class="breadcrumb container bg-transparent ">
-      <li class="breadcrumb-item"><a href="../index.html">Home</a></li>
-      <li class="breadcrumb-item"><a href="#">Software Maintenance</a></li>
-      <li class="breadcrumb-item active" aria-current="page">Page 1</li>
+        <li class="breadcrumb-item"><a href="../index.html">Home</a></li>
+        <li class="breadcrumb-item"><a href="maintenance1.html">Software Maintenance Planning</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Page 1</li>
     </ol>
-  </nav>
-  <br>
-  <div class="container jumbotron">
-    <div class="card" id="Api_Programming" name="Api_Programming">
-      <div class="card-body">
-        <h4 class="card-title">Name of Skill</h4>
-        <p class="card-text">Software Maintenance Planning</p>
-
-      </div>
+</nav>
+<br>
+<div class="container">
+    <div class="card" id="1">
+        <div class="card-body">
+            <h4 class="card-title">Name of Skill</h4>
+            <p class="card-text"><h6>Software Maintenance Planning</h6>
+            It is the process included in Software Development stage which specifies how users will request modifications or report problem.The budget includes cost and resource estimates.
+            </p>
+        </div>
     </div>
     <br>
 
-    <div class="card">
-      <div class="card-body">
-        <h4 class="card-title">Classification of Skill</h4>
-        <p class="card-text">Software Maintenance</p>
-      </div>
+    <div class="card" id="2">
+        <div class="card-body">
+            <h4 class="card-title">Classification of Skill</h4>
+            <ul><li>It is a Technical Skill as it requires knowledge of various CMMS software, types of maintenance required for the software, Regression Testing.</li>
+            <li>It also requires soft skills like communication.</li></ul>
+        </div>
     </div>
     <br>
 
-    <div class="card" id="Prerequisites" name="Prerequisites">
-      <div class="card-body">
-        <h4 class="card-title">Prerequisites for Skill</h4>
-        <p>A person should have these skills to be good at doing Software Maintenance:</p>
-        <ol>
-          <li> Knowledge of different coding styles and languages.</li>
-          <li> Knowledge about how to do cost estimation.</li>
-          <li> Knowledge of System Testing & Acceptance Testing.</li>
-          <li> Knowledge of what changes will effect whom.</li>
-          <li> Knowledge about change & risk management.</li>
-          <li> Communication & Team-work skill.</li>
-          <li> Should have deep knowledge about all maintenance activities.</li>
-        </ol>
-      </div>
+    <div class="card" id="3">
+        <div class="card-body">
+            <h4 class="card-title">Prerequisites for Skill</h4>
+            <p>To be good at Maintenance Planning, following things should be needed:</p>
+            <ol>
+                <li>Should have proper knowledge about maintenance types.
+                  <a href="https://www.youtube.com/watch?v=nA4ev7jM6ek" target="_blank">
+                  <i style="font-size: 24px; color: red;" class="fa fa-youtube-play"></i></a>
+                  <ul>
+                     <li>Corrective Maintenance</li>
+                     <li>Adaptive Maintenance</li>
+                     <li>Perfective Maintenance</li>
+                     <li>Preventive Maintenance</li>
+                  </ul>
+                </li>
+                <li>Should have knowledge about the maintenance cost estimation.
+                    <a href="https://www.youtube.com/watch?v=rCSnKS-NFVI" target="_blank">
+                    <i style="font-size: 24px; color: red;" class="fa fa-youtube-play"></i></a>
+                </li>      
+                <li>Learn various maintenance tools.
+                    <a href="https://www.onupkeep.com/learning/maintenance-tools/" target="_blank">
+                    <i style="font-size: 24px; color: red;" class="fa fa-youtube-play"></i></a>
+                </li>
+                <li> <a href="https://www.onupkeep.com/learning/maintenance-software/" target="_blank">Learn various Maintenance softwares.</a>
+                   <ul>
+                        <li><a href="https://www.onupkeep.com/what-is-a-cmms" target="_blank">CMMS (Computerized Maintenance Management System)</a>
+                            <a href="https://www.youtube.com/watch?v=WTtOt5I9FAE" target="_blank">
+                            <i style="font-size: 24px; color: red;" class="fa fa-youtube-play"></i></a>
+                            <p>It maintains a database of information about an organization's maintenance operations.</p></li>
+                        <li><a href="https://www.onupkeep.com/what-is-enterprise-asset-management-eam" target="_blank">EAM (Enterprise Asset Management)</a>
+                            <a href="https://www.youtube.com/watch?v=5cI8tXclF2E" target="_blank">
+                            <i style="font-size: 24px; color: red;" class="fa fa-youtube-play"></i></a>
+                            <p>It collects and analyzes data for physical assets during all phases of the asset lifecycle, including the acquisition, maintenance, and disposal phase.</p></li>
+                        <li><a href="https://www.onupkeep.com/learning/maintenance-software/work-order-management-software" target="_blank">Work order management software</a>
+                            <p>is a kind of database for work orders, facilities requests, and action plan</p></li>
+                        <li><a href="https://www.onupkeep.com/learning/maintenance-software/inventory-management-software" target="_blank">Inventory management software</a>
+                            <p>It is a digital system that stores data on parts and supplies, enabling real-time insights on quantities and fulfillment needs.</p></li>
+                   </ul>
+               </li>
+               <li>Communication skill to communicate effectively with all levels of the organization.</li>
+               <li>Ability to work in a self-directed manner and provide direction to others.</li>
+               <li>Ability to recognize opportunities for process improvements and assist with implementing them.</li>
+               <li>Traits that every Maintenance Planner must have:
+                    <a href="https://www.youtube.com/watch?v=iu6IllHqmjM" target="_blank">
+                    <i style="font-size: 24px; color: red;" class="fa fa-youtube-play"></i></a></li>       
+            </ol>
+        </div>
     </div>
     <br>
 
-    <div class="card" id="SEA">
-      <div class="card-body">
-        <h4 class="card-title">Related Software Engineering Area(s)</h4>
-        <ul>
-          <li></li>
-          <li></li>
-        </ul>
-      </div>
+    <div class="card" id="4">
+        <div class="card-body">
+            <h4 class="card-title">Related Software Engineering Area(s)</h4>
+            <ol>
+                <li><a href="https://en.wikipedia.org/wiki/Software_testing" target="_blank">Software Testing</a></li>
+                <li><a href="https://en.wikipedia.org/wiki/Software_development" target="_blank">Software Development</a></li>
+                <li><a href="https://en.wikipedia.org/wiki/Software_construction" target="_blank">Software Construction</a></li>
+            </ol>
+        </div>
     </div>
     <br>
 
     <div class="row">
-      <div class="col-sm-4"></div>
-      <div class="col-sm-4"></div>
-      <div class="col-sm-4">
-        <ul class="pagination">
-          <li class="page-item active"><a class="page-link" href="#">1</a></li>
-          <li class="page-item "><a class="page-link" href="maintenance2.html">2</a></li>
-          <li class="page-item"><a class="page-link" href="maintenance3.html">3</a></li>
-          <li class="page-item"><a class="page-link" href="maintenance2.html">Next</a></li>
-        </ul>
-      </div>
+        <div class="col-sm-4"></div>
+        <div class="col-sm-4"></div>
+        <div class="col-sm-4">
+            <ul class="pagination">
+                <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                <li class="page-item "><a class="page-link" href="maintenance2.html">2</a></li>
+                <li class="page-item"><a class="page-link" href="maintenance3.html">3</a></li>
+                <li class="page-item"><a class="page-link" href="maintenance2.html">Next</a></li>
+            </ul>
+        </div>
     </div>
-  </div>
+</div>
 
-  <div class="footer">
-    <p>This website is made for education purpose only.</p>
-
-  </div>
-
+<footer class="footer container">
+    <div class="container">
+        <span class="text-muted"> &copy; Authored and Designed by <b> TEAM I</b></span>
+    </div>
+</footer>
 </body>
 
 </html>

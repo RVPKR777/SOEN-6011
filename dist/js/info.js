@@ -9,11 +9,15 @@ const searchFor = {
     "rest soap wadl wsdl": [{href: "../infoPages/apiProgramming1.html#3", innerText: "REST SOAP API"}],
     "postman soapui swagger documentation": [{href: "../infoPages/apiProgramming1.html#10", innerText: "API Development Tools"}],
     "html": [{href: "../infoPages/interfaceDesign1.html#Prerequisites", innerText: "HTML"}],
-    "testing unit test": [{href: "../infoPages/Software_testing1.html#1", innerText: "Unit Testing"}, {href: "../infoPages/Software_testing1.html#2",
-        innerText: "Types of Unit Testing"}, {href: "../infoPages/Software_testing1.html#2", innerText: "Automated Unit Testing"}, {href: "../infoPages/Software_testing1.html#2",
-        innerText: "Manual Unit Testing"}],
-    "automated": [{href:"../infoPages/Software_testing1.html#2", innerText:"Automated Unit Testing"}],
-    "manual": [{href:"../infoPages/Software_testing1.html#2", innerText:"Manual Unit Testing"}],
+    "testing unit test": [{href: "../infoPages/Software_testing1.html#1", innerText: "Unit Testing"}, {
+        href: "../infoPages/Software_testing1.html#2",
+        innerText: "Types of Unit Testing"
+    }, {href: "../infoPages/Software_testing1.html#2", innerText: "Automated Unit Testing"}, {
+        href: "../infoPages/Software_testing1.html#2",
+        innerText: "Manual Unit Testing"
+    }],
+    "automated": [{href: "../infoPages/Software_testing1.html#2", innerText: "Automated Unit Testing"}],
+    "manual": [{href: "../infoPages/Software_testing1.html#2", innerText: "Manual Unit Testing"}],
     "tools": [{href: "../infoPages/Software_testing3.html#10", innerText: "Unit testing tools"}]
 };
 
@@ -113,3 +117,36 @@ changeDisplay = (i) => {
         }
     }
 }
+
+/*
+const setBookmarkImageSrc = (bookmarkKey, buttonId) => {
+    console.log(bookmarkKey, buttonId);
+    const button = document.getElementById(buttonId);
+    if (typeof (Storage) !== undefined) {
+        if (localStorage.getItem(bookmarkKey)) {
+            button.value = "-";
+        } else {
+            button.value = "+";
+        }
+        return;
+    }
+    button.style.display = "none";
+};
+*/
+
+const manageBookmark = (bookmarkKey, bookmarkLink, bookmarkName, buttonId) => {
+    console.log(JSON.parse(localStorage.getItem(bookmarkKey)));
+    const button = document.getElementById(buttonId);
+    if (typeof (Storage) !== undefined) {
+        if (localStorage.getItem(bookmarkKey)) {
+            localStorage.removeItem(bookmarkKey);
+            button.value = "Add Bookmark";
+            return;
+        }
+        localStorage.setItem(bookmarkKey, JSON.stringify({bookmarkLink, bookmarkName}));
+        button.value = "Remove Bookmark";
+        return;
+    }
+    button.style.display = "none";
+    alert("Sorry, Your Browser does not support Web Storage")
+};

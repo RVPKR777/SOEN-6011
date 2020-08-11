@@ -9,6 +9,21 @@ body {
     background-color: white;
 }
 
+.body-style{
+    background: #f7f7f7;
+    color: #404040;
+}
+.dark-mode {
+    background-color: #404040;
+    /* color: white; */
+  }
+
+  .dark-mode-card {
+    border: white;
+    background-color: #2a012d;
+    color: white;
+  }
+
 .card {
     background-color: white !important;
 }

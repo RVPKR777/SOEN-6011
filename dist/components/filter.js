@@ -1,7 +1,7 @@
 class Filter extends HTMLElement {
     connectedCallback() {
         this.innerHTML = `<div class="container-fluid">
-        <p>Contents</p>
+        <p class="label">Contents</p>
         <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo">Filters</button>
         <div id="demo" class="collapse">
           <div class="">
@@ -20,7 +20,7 @@ class Filter extends HTMLElement {
                     <option value="Quality">Software Quality</option>
                     <option value="Configuration">Software Configuration Management</option>
                     <option value="Process">Software Process & Life-Cycle</option>
-                    <option value="Maintanance">Software Maintanance Planning</option>
+                    <option value="Maintanance">Software Maintenance Planning</option>
                   </select>
                 </div>
               </div>

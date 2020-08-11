@@ -28,7 +28,7 @@ class NavBar extends HTMLElement {
             <a class="dropdown-item" href="../infoPages/QualityAssurance.html">Software Quality</a>
             <a class="dropdown-item" href="../infoPages/ConfigManagement1.html">Software Configuration Management</a>
             <a class="dropdown-item" href="../infoPages/SDLC_Implementation_1.html">Software Process & Life-Cycle</a>
-            <a class="dropdown-item" href="#">Software Maintenance Planning</a>
+            <a class="dropdown-item" href="../infoPages/maintenance1.html">Software Maintenance Planning</a>
           </div>
         </li>` : ""}
         ${this.getAttribute("renderSearch") ? `<li class="nav-item">
@@ -40,6 +40,7 @@ class NavBar extends HTMLElement {
         </form>
         </li>` : ""}
           </ul>
+          <p style="padding-top:1%;padding-right:1%; color :white">Dark Mode/Light Mode</p><input type="checkbox" id="day_night" onchange="myFunction()">
         </div>
       </nav>`
     }

@@ -1,5 +1,16 @@
 class NavBar extends HTMLElement {
+    constructor() {
+        super();
+        this.renderBookmarkList = false;
+        this.renderDarkLightMode = false;
+    }
+
     connectedCallback() {
+        if (typeof (Storage) !== undefined) {
+            this.renderDarkLightMode = true;
+            this.renderBookmarkList = true;
+        }
+
         this.innerHTML = `<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <a class="navbar-brand" href="#">
           <img src="${this.getAttribute("logoPath")}" width="30" height="30" alt="Sestopia Logo">
@@ -31,6 +42,12 @@ class NavBar extends HTMLElement {
             <a class="dropdown-item" href="../infoPages/maintenance1.html">Software Maintenance Planning</a>
           </div>
         </li>` : ""}
+        ${this.renderBookmarkList ? `<li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
+            aria-expanded="false" onclick="renderBookmarkList()">Bookmarks</a>
+          <div id="bookmarkDropdown" class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
+          </div>
+        </li>` : ""}
         ${this.getAttribute("renderSearch") ? `<li class="nav-item">
         <form autocomplete="off" class="search">
         <div class="input-groupNavBar">
@@ -40,7 +57,8 @@ class NavBar extends HTMLElement {
         </form>
         </li>` : ""}
           </ul>
-          <p style="padding-top:1%;padding-right:1%; color :white">Dark Mode/Light Mode</p><input type="checkbox" id="day_night" onchange="myFunction()">
+          ${this.renderDarkLightMode ? `<p style="padding-top:1%;padding-right:1%; color :white">Dark Mode/Light Mode</p><input type="checkbox" id="day_night"
+            onchange="myFunction()">` : ""}
         </div>
       </nav>`
     }

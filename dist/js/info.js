@@ -9,12 +9,16 @@ const searchFor = {
     "rest soap wadl wsdl": [{href: "../infoPages/apiProgramming1.html#3", innerText: "REST SOAP API"}],
     "postman soapui swagger documentation": [{href: "../infoPages/apiProgramming1.html#10", innerText: "API Development Tools"}],
     "html": [{href: "../infoPages/interfaceDesign1.html#Prerequisites", innerText: "HTML"}],
-    "testing unit test": [{href: "../infoPages/Software_testing1.html#1", innerText: "Unit Testing"}, {href: "../infoPages/Software_testing1.html#2",
-        innerText: "Types of Unit Testing"}, {href: "../infoPages/Software_testing1.html#2", innerText: "Automated Unit Testing"}, {href: "../infoPages/Software_testing1.html#2",
-        innerText: "Manual Unit Testing"}],
-    "automated": [{href:"../infoPages/Software_testing1.html#2", innerText:"Automated Unit Testing"}],
-    "software": [{href:"../infoPages/Software_testing1.html#2", innerText:"Software Testing"}],
-    "manual": [{href:"../infoPages/Software_testing1.html#2", innerText:"Manual Unit Testing"}],
+    "testing unit test": [{href: "../infoPages/Software_testing1.html#1", innerText: "Unit Testing"}, {
+        href: "../infoPages/Software_testing1.html#2",
+        innerText: "Types of Unit Testing"
+    }, {href: "../infoPages/Software_testing1.html#2", innerText: "Automated Unit Testing"}, {
+        href: "../infoPages/Software_testing1.html#2",
+        innerText: "Manual Unit Testing"
+    }],
+    "automated": [{href: "../infoPages/Software_testing1.html#2", innerText: "Automated Unit Testing"}],
+    "software": [{href: "../infoPages/Software_testing1.html#2", innerText: "Software Testing"}],
+    "manual": [{href: "../infoPages/Software_testing1.html#2", innerText: "Manual Unit Testing"}],
     "tools": [{href: "../infoPages/Software_testing3.html#10", innerText: "Unit testing Tools"}]
 };
 
@@ -61,26 +65,26 @@ const search = () => {
 }
 
 const currentTheme = localStorage.getItem('theme');
-console.log("It is ",currentTheme);
+console.log("It is ", currentTheme);
 
 
-$(document).ready(function(){
+$(document).ready(function () {
 
-    if(currentTheme == "light"){
+    if (currentTheme == "light") {
         console.log("Change to Light");
         $(".label").css('color', 'black');
         $('input[type="checkbox"]').prop('checked', false);
     }
-    if(currentTheme == "dark"){
+    if (currentTheme == "dark") {
         console.log("Change to dark");
-        $( document.body).toggleClass( "dark-mode" );
+        $(document.body).toggleClass("dark-mode");
         $(".label").css('color', 'white');
         $('input[type="checkbox"]').prop('checked', true);
-         
-    }   
 
-    $('input[type="checkbox"]').click(function(){
-        if($(this).prop("checked") == true){
+    }
+
+    $('input[type="checkbox"]').click(function () {
+        if ($(this).prop("checked") == true) {
             console.log("Checkbox is checked.");
             var element = document.body;
             element.classList.toggle("dark-mode");
@@ -88,12 +92,11 @@ $(document).ready(function(){
             $(".label").css('color', 'white');
             localStorage.setItem('theme', 'dark');
             console.log("Saved the state of Dark ");
-        }
-        else if($(this).prop("checked") == false){
+        } else if ($(this).prop("checked") == false) {
             console.log("Checkbox is unchecked.");
             $(".label").css('color', 'black');
             var element = document.body;
-            $(document.body).removeClass( "dark-mode" );
+            $(document.body).removeClass("dark-mode");
             localStorage.setItem('theme', 'light');
             console.log("Saved the state of Light ");
         }
@@ -101,21 +104,11 @@ $(document).ready(function(){
 });
 
 function myFunction() {
-    debugger;   
-    if(document.getElementById("day_night").checked == true){
-        
-        
-
-
-        
-
+    debugger;
+    if (document.getElementById("day_night").checked == true) {
+    } else if (document.getElementById("day_night").checked == false) {
     }
-    else if(document.getElementById("day_night").checked == false){
-        
-    }
-    
-    
- }
+}
 
 kareaChange = () => {
     const choice = document.getElementById("kareas");
@@ -172,4 +165,14 @@ changeDisplay = (i) => {
     }
 }
 
-
+const manageBookmark = (bookmarkKey, bookmarkLink, bookmarkName, buttonId) => {
+    console.log(JSON.parse(localStorage.getItem(bookmarkKey)));
+    const button = document.getElementById(buttonId);
+    if (localStorage.getItem(bookmarkKey)) {
+        localStorage.removeItem(bookmarkKey);
+        button.value = "Add Bookmark";
+        return;
+    }
+    localStorage.setItem(bookmarkKey, JSON.stringify({bookmarkLink, bookmarkName}));
+    button.value = "Remove Bookmark";
+};

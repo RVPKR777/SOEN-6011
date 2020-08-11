@@ -22,14 +22,23 @@ const searchFor = {
     "tools": [{href: "../infoPages/Software_testing3.html#10", innerText: "Unit testing Tools"}]
 };
 
-const makeLiAndOptionalAhrefTag = (href, innerHTML) => {
+const makeLiAndOptionalAhrefTag = (href, innerHTML, liInnerHtml) => {
     const li = document.createElement("li");
     if (href) {
         li.innerHTML = `<a href=${href}>${innerHTML}</a>`;
     } else {
-        li.innerHTML = "No Search Results Found for the Specified Search Query";
+        li.innerHTML = liInnerHtml;
     }
     return li;
+};
+
+const makeAhrefTagForBookmark = (key) => {
+    const ahref = document.createElement("a");
+    const bookmarkDetails = JSON.parse(localStorage.getItem(key));
+    console.log(bookmarkDetails);
+    ahref.href = bookmarkDetails.bookmarkLink;
+    ahref.innerHTML = bookmarkDetails.bookmarkName;
+    return ahref;
 };
 
 const getKeysArray = (searchKey) => {
@@ -50,7 +59,7 @@ const search = () => {
     const searchKeys = getKeysArray(input);
     if (searchKeys.length === 0) {
         ul.style.display = "block";
-        const li = makeLiAndOptionalAhrefTag();
+        const li = makeLiAndOptionalAhrefTag(null, null, "No Search Results Found for the Specified Search Query");
         ul.appendChild(li);
         return;
     }
@@ -58,7 +67,7 @@ const search = () => {
         ul.style.display = "block";
         let searchResults = searchFor[searchKey];
         for (const result of searchResults) {
-            const li = makeLiAndOptionalAhrefTag(result.href, result.innerText);
+            const li = makeLiAndOptionalAhrefTag(result.href, result.innerText, null);
             ul.appendChild(li);
         }
     }
@@ -70,12 +79,12 @@ console.log("It is ", currentTheme);
 
 $(document).ready(function () {
 
-    if (currentTheme == "light") {
+    if (currentTheme === "light") {
         console.log("Change to Light");
         $(".label").css('color', 'black');
         $('input[type="checkbox"]').prop('checked', false);
     }
-    if (currentTheme == "dark") {
+    if (currentTheme === "dark") {
         console.log("Change to dark");
         $(document.body).toggleClass("dark-mode");
         $(".label").css('color', 'white');
@@ -84,29 +93,24 @@ $(document).ready(function () {
     }
 
     $('input[type="checkbox"]').click(function () {
-        if ($(this).prop("checked") == true) {
-            console.log("Checkbox is checked.");
-            var element = document.body;
+        if ($(this).prop("checked")) {
+            const element = document.body;
             element.classList.toggle("dark-mode");
             //$(".card").toggleClass( "dark-mode-card" );
             $(".label").css('color', 'white');
             localStorage.setItem('theme', 'dark');
-            console.log("Saved the state of Dark ");
-        } else if ($(this).prop("checked") == false) {
-            console.log("Checkbox is unchecked.");
+        } else if (!($(this).prop("checked"))) {
             $(".label").css('color', 'black');
-            var element = document.body;
+            const element = document.body;
             $(document.body).removeClass("dark-mode");
-            localStorage.setItem('theme', 'light');
             console.log("Saved the state of Light ");
         }
     });
 });
 
 function myFunction() {
-    debugger;
-    if (document.getElementById("day_night").checked == true) {
-    } else if (document.getElementById("day_night").checked == false) {
+    if (document.getElementById("day_night").checked) {
+    } else if (document.getElementById("day_night").checked) {
     }
 }
 
@@ -166,15 +170,32 @@ changeDisplay = (i) => {
 }
 
 const manageBookmark = (bookmarkKey, bookmarkLink, bookmarkName, buttonId) => {
-    console.log(JSON.parse(localStorage.getItem(bookmarkKey)));
     const button = document.getElementById(buttonId);
     if (localStorage.getItem(bookmarkKey)) {
         localStorage.removeItem(bookmarkKey);
         button.value = "Add Bookmark";
-        button.className="btn btn-link";
+        button.className = "btn btn-link";
         return;
     }
     localStorage.setItem(bookmarkKey, JSON.stringify({bookmarkLink, bookmarkName}));
     button.value = "Remove Bookmark";
-    button.className="btn btn-warning";
+    button.className = "btn btn-warning";
+};
+
+const renderBookmarkList = () => {
+    const div = document.getElementById("bookmarkDropdown");
+    div.innerHTML = "";
+    const localStorageKeys = Object.keys(localStorage);
+    if (localStorageKeys.length === 1 && localStorage.getItem("theme")) {
+        const li = makeLiAndOptionalAhrefTag(null, null, "No Bookmarks Found");
+        div.appendChild(li);
+    } else {
+        for (let key of localStorageKeys) {
+            if (key !== "theme") {
+                console.log(key);
+                const ahref = makeAhrefTagForBookmark(key);
+                div.appendChild(ahref);
+            }
+        }
+    }
 };

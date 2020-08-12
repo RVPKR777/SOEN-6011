@@ -50,7 +50,9 @@ const searchFor = {
     "hpsm": [{href: "../infoPages/ConfigManagement3.html#2", innerText: "HPSM tool"}],
     "UCMDB": [{href: "../infoPages/ConfigManagement3.html#2", innerText: "UCMDB tool"}],
     "skill assessment": [{href: "../infoPages/ConfigManagement1.html#1", innerText: "Software Configuration management skill assessment"}],
-    "references": [{href: "../infoPages/ConfigManagement1.html#1", innerText: "Software Configuration management references"}]
+    "references": [{href: "../infoPages/ConfigManagement1.html#1", innerText: "Software Configuration management references"}],
+    "agile": [{href: "../infoPages/SDLC_implementation_1.html#3", innerText: "Agile model"}],
+	"git": [{href: "../infoPages/SDLC_implementation_3.html#10", innerText: "Git:"},{href: "../infoPages/SDLC_implementation_1.html#3", innerText: "Git"}]
 };
 
 const makeLiAndOptionalAhrefTag = (href, innerHTML, liInnerHtml) => {

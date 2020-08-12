@@ -1,6 +1,9 @@
 <!doctype html>
 <html lang="en-us">
 
+<title>Sestopia</title>
+<link rel="icon" href="../images/logo.png" type="image/x-icon">
+
 <head>
     <title>Sestopia - Quality Assurance</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -28,14 +31,14 @@
 </head>
 
 <body>
-<nav-bar logoPath="../images/logo.png" renderHome="true" renderSearch="true" renderSkillsDropdown="true" collapse="true"></nav-bar>
+<nav-bar logoPath="../images/logo.png" renderSearch="true" renderSkillsDropdown="true" collapse="true"></nav-bar>
 <div class="jumbotron container ">
     <h1>Contents</h1>
     <hr>
     <p>
         <a href="QualityAssurance.html#1" target="_blank" class="stretched-link btn btn-primary space-btn">Name of Skill</a>
         <a href="QualityAssurance.html#2" target="_blank" class="stretched-link btn btn-danger space-btn">Introduction</a>
-		<a href="QualityAssurance.html#3" target="_blank" class="stretched-link btn btn-danger space-btn">Classification of Skill</a>
+        <a href="QualityAssurance.html#3" target="_blank" class="stretched-link btn btn-danger space-btn">Classification of Skill</a>
         <a href="QualityAssurance.html#4" target="_blank" class="stretched-link btn btn-success space-btn">Prerequisites for Skill</a>
         <a href="QualityAssurance.html#5" target="_blank" class="stretched-link btn btn-danger space-btn">Related Software Engineering Areas(s)</a>
         <a href="QualityAssurance2.html#6" target="_blank" class="stretched-link btn btn-primary space-btn">Rationale for Skill</a>
@@ -59,7 +62,7 @@
 <div class="container">
     <div class="card" id="1">
         <div class="card-body">
-            <bookmark-button buttonId="button1" bookmarkKey="api1" bookmarkLink="../infoPages/QualityAssurance.html#1" bookmarkName="Quality Assurance: Name of Skill"
+            <bookmark-button buttonId="button1" bookmarkKey="qa1" bookmarkLink="../infoPages/QualityAssurance.html#1" bookmarkName="Quality Assurance: Name of Skill"
                              enabled="disabled"></bookmark-button>
             <h4 class="card-title">Name of Skill</h4>
             <p class="card-text">Software Quality Assurance</p>
@@ -67,12 +70,16 @@
     </div>
     <br>
 
-     <div class="card" id="2">
+    <div class="card" id="2">
         <div class="card-body">
-            <bookmark-button buttonId="button2" bookmarkKey="api2" bookmarkLink="../infoPages/QualityAssurance.html#2" bookmarkName="API Programming: Introduction"
+            <bookmark-button buttonId="button2" bookmarkKey="qa2" bookmarkLink="../infoPages/QualityAssurance.html#2" bookmarkName="API Programming: Introduction"
                              enabled="disabled"></bookmark-button>
             <h4 class="card-title">Introduction</h4>
-            <p class="card-text">Software quality assurance (SQA) is a means and practice of monitoring the software engineering processes and methods used in a project to ensure proper quality of the software. This is accomplished by many and varied approaches. It may include ensuring conformance to standards or models, such as ISO/IEC 9126 (now superseded by ISO 25010), SPICE or CMMI. SQA encompasses the entire software development process, including requirements engineering, software design, coding, code reviews, source code control, software configuration management, testing, release management and software integration. It is organized into goals, commitments, abilities, activities, measurements, verification and validation.</p>
+            <p class="card-text">Software quality assurance (SQA) is a means and practice of monitoring the software engineering processes and methods used in a project to ensure
+                proper quality of the software. This is accomplished by many and varied approaches. It may include ensuring conformance to standards or models, such as ISO/IEC 9126
+                (now superseded by ISO 25010), SPICE or CMMI. SQA encompasses the entire software development process, including requirements engineering, software design,
+                coding, code reviews, source code control, software configuration management, testing, release management and software integration. It is organized into goals,
+                commitments, abilities, activities, measurements, verification and validation.</p>
         </div>
     </div>
     <br>
@@ -80,47 +87,54 @@
 
     <div class="card" id="3">
         <div class="card-body">
-            <bookmark-button buttonId="button3" bookmarkKey="api3" bookmarkLink="../infoPages/QualityAssurance.html#3"
+            <bookmark-button buttonId="button3" bookmarkKey="qa3" bookmarkLink="../infoPages/QualityAssurance.html#3"
                              bookmarkName="Quality Assurance: Classification of Skill"></bookmark-button>
             <h4 class="card-title">Classification of Skill</h4>
-                 <p>SQA has two aspects:</p>
-                  <ul>
-                     <li>
-                       <p>Product Assurance</p>
-                         <p>SQA product assurance activities make certain to provide evidence that software products and related documentation are identified in and comply with contracts; and ensure that nonconformances are identified and addressed</p>
-                     </li>
-                  <li>
-                     <p>Process Assurance</p>
-                       <p>SQA process assurance activities make certain that the processes used to develop, install, operate, and maintain software conform to contracts, comply with any imposed laws, rules, and regulations and are adequate, efficient and effective for their intended purpose</p>
-                   </li>
-                </ul>              
-		</div>
+            <p>SQA has two aspects:</p>
+            <ul>
+                <li>
+                    <p>Product Assurance</p>
+                    <p>SQA product assurance activities make certain to provide evidence that software products and related documentation are identified in and comply with
+                        contracts; and ensure that nonconformances are identified and addressed</p>
+                </li>
+                <li>
+                    <p>Process Assurance</p>
+                    <p>SQA process assurance activities make certain that the processes used to develop, install, operate, and maintain software conform to contracts, comply with
+                        any imposed laws, rules, and regulations and are adequate, efficient and effective for their intended purpose</p>
+                </li>
+            </ul>
+        </div>
     </div>
     <br>
 
     <div class="card" id="4">
         <div class="card-body">
-            <bookmark-button buttonId="button4" bookmarkKey="api4" bookmarkLink="../infoPages/QualityAssurance.html#4"
+            <bookmark-button buttonId="button4" bookmarkKey="qa4" bookmarkLink="../infoPages/QualityAssurance.html#4"
                              bookmarkName="Quality Assurance: Prerequisites"></bookmark-button>
             <h4 class="card-title">Prerequisites for Skill</h4>
-         <ul>
-                     <li>
-                       <p>Knowledge of quality standards</p>
-                         <p>Understanding quality standards is an essential skill for quality assurance. Most employees must work within the standards set by their company. Understanding other key quality standards, such as guidelines set by the Food and Drug Administration, can also help you meet quality expectations.</p>
-                     </li>
-                  <li>
-                     <p>Problem-solving</p>
-                       <p>Problem-solving skills help you find solutions if you are struggling to meet the required quality standards. A combination of creativity, logic and critical thinking can serve you well when challenges arise in your duties.</p>
-                   </li>
-				    <li>
-                     <p>Time management</p>
-                       <p>Managing your time well ensures you have adequate time to complete your tasks to the desired quality standard, then confirm they comply with specifications.When you meet your deadlines, you also ensure others who rely on you have enough time to meet their own deadlines without reducing their work quality.</p>
-                   </li>
-				   <li>
-                     <p>Ability to work as part of a team</p>
-                       <p>Quality assurance is usually a team effort, so a key quality assurance skill is the ability to work as a part of that team.This understanding helps you collaborate together to achieve your business’ quality standards.</p>
-                   </li>
-                </ul>          
+            <ul>
+                <li>
+                    <p>Knowledge of quality standards</p>
+                    <p>Understanding quality standards is an essential skill for quality assurance. Most employees must work within the standards set by their company.
+                        Understanding other key quality standards, such as guidelines set by the Food and Drug Administration, can also help you meet quality expectations.</p>
+                </li>
+                <li>
+                    <p>Problem-solving</p>
+                    <p>Problem-solving skills help you find solutions if you are struggling to meet the required quality standards. A combination of creativity, logic and critical
+                        thinking can serve you well when challenges arise in your duties.</p>
+                </li>
+                <li>
+                    <p>Time management</p>
+                    <p>Managing your time well ensures you have adequate time to complete your tasks to the desired quality standard, then confirm they comply with
+                        specifications.When you meet your deadlines, you also ensure others who rely on you have enough time to meet their own deadlines without reducing their work
+                        quality.</p>
+                </li>
+                <li>
+                    <p>Ability to work as part of a team</p>
+                    <p>Quality assurance is usually a team effort, so a key quality assurance skill is the ability to work as a part of that team.This understanding helps you
+                        collaborate together to achieve your businessï¿½ quality standards.</p>
+                </li>
+            </ul>
         </div>
     </div>
     <br>
@@ -131,8 +145,8 @@
                              bookmarkName="Quality Assurance: Related Software Areas"></bookmark-button>
             <h4 class="card-title">Related Software Engineering Area(s)</h4>
             <ol>
-                <li>Software Configuration Management </li>
-                <li>Software Testing </li>
+                <li>Software Configuration Management</li>
+                <li>Software Testing</li>
                 <li>Software Maintanence</li>
             </ol>
         </div>

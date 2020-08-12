@@ -29,7 +29,7 @@ class NavBar extends HTMLElement {
             </li>` : ""}
                        
           ${this.getAttribute("renderSkillsDropdown") ? `<li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
+          <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" href="#"
             aria-expanded="false">Skills</a>
           <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
             <a class="dropdown-item" href="../infoPages/apiProgramming1.html">API Programming</a>
@@ -43,7 +43,7 @@ class NavBar extends HTMLElement {
           </div>
         </li>` : ""}
         ${this.renderBookmarkList ? `<li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
+          <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" href="#"
             aria-expanded="false" onclick="renderBookmarkList()">Bookmarks</a>
           <div id="bookmarkDropdown" class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
           </div>

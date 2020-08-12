@@ -1,8 +1,8 @@
 class Filter extends HTMLElement {
     connectedCallback() {
         this.innerHTML = `<div class="container-fluid">
-        <p class="label">Contents</p>
-        <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo">Filters</button>
+        <h4 class="label">Contents</h4>
+        <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#demo">Filters</button>
         <div id="demo" class="collapse">
           <div class="">
             <br>

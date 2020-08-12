@@ -1,5 +1,5 @@
 .jumbotron {
-    background-color: #323ea8 !important;
+    background-color: #2f2f73 !important;
     color: white !important;
     align-items: center;
     text-shadow: whitesmoke;
@@ -9,23 +9,25 @@ body {
     background-color: white;
 }
 
-.body-style{
+.body-style {
     background: #f7f7f7;
     color: #404040;
 }
-.dark-mode {
-    background-color: #404040;
-    /* color: white; */
-  }
 
-  .dark-mode-card {
+.dark-mode {
+    background-color: #343a40;
+    /* color: white; */
+}
+
+.dark-mode-card {
     border: white;
     background-color: #2a012d;
     color: white;
-  }
+}
 
 .card {
     background-color: white !important;
+    box-shadow: black !important;
 }
 
 .footer {
@@ -211,4 +213,9 @@ body {
 i {
     font-size: 24px;
     color: red
+}
+
+#bookmarkDropdown {
+    height: 200px;
+    overflow: auto;
 }

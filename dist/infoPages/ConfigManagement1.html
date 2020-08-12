@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
-    <head>
-      <title>Sestopia -API Design</title>
+<head>
+    <title>Sestopia -API Design</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
@@ -23,25 +23,25 @@
     <script src="../components/bookmarkButton.js"></script>
     <link rel="stylesheet" type="text/css" href="../css/content.css">
     <script src="../components/navbar.js"></script>
-	<style>
-					table {
-					  font-family: arial, sans-serif;
-					  border-collapse: collapse;
-					  width: 80%;
-					}
+    <style>
+        table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            width: 80%;
+        }
 
-					td, th {
-					  border: 1px solid #bbb;
-					  text-align: left;
-					  padding: 8px;
-					}
+        td, th {
+            border: 1px solid #bbb;
+            text-align: left;
+            padding: 8px;
+        }
 
-					tr:nth-child(even) {
-					  background-color: #ddd;
-					}
-					</style>
+        tr:nth-child(even) {
+            background-color: #ddd;
+        }
+    </style>
 
-    </head>
+</head>
 
 <body>
 <nav-bar logoPath="../images/logo.png" renderHome="true" renderSearch="true" renderSkillsDropdown="true" collapse="true"></nav-bar>
@@ -74,7 +74,8 @@
 <div class="container">
     <div class="card" id="1">
         <div class="card-body">
-		<bookmark-button buttonId="button1" bookmarkKey="SCM1" bookmarkLink="../infoPages/ConfigManagement1.html#1" bookmarkName="Software Configuration Management: Name of Skill"
+            <bookmark-button buttonId="button1" bookmarkKey="SCM1" bookmarkLink="../infoPages/ConfigManagement1.html#1"
+                             bookmarkName="Software Configuration Management: Name of Skill"
                              enabled="disabled"></bookmark-button>
             <h4 class="card-title">Name of Skill</h4>
             <p class="card-text">Software Configuration Management and Support </p>
@@ -82,144 +83,144 @@
     </div>
     <br>
 
-          <div class="card">
-            <div class="card-body" id = "2">
-				<bookmark-button buttonId="button2" bookmarkKey="SCM2" bookmarkLink="../infoPages/ConfigManagement1.html#2" bookmarkName="Software Configuration Management: Classification of Skill"
+    <div class="card">
+        <div class="card-body" id="2">
+            <bookmark-button buttonId="button2" bookmarkKey="SCM2" bookmarkLink="../infoPages/ConfigManagement1.html#2"
+                             bookmarkName="Software Configuration Management: Classification of Skill"
                              enabled="disabled"></bookmark-button>
-              <h4 class="card-title">Classification of Skill</h4>
-              <p class="card-text">In Software Engineering, Software Configuration Management(SCM or S/W CM) is a process to manage, organize, track and control changes to all the entities of the software during software development lifecycle in a systematic way. The purpose of SCM is to see that a software is produced with minimal mistakes. SCM practices include revision control and it can accurately determine who made it.</br>
-			  The main procedures found in a typical software configuration management system are :
-			  <li><b>Configuration identification : </b>It is the process which defines the properties of configuration items and the following attributes are baselined.</li>
-			  <li><b>Configuration control : </b>It is a set of instructions which are required to change a configuration and to rebaseline them.</li>
-			  <li><b>Configuration status documentation : </b>It is the ability to record/report the any information related to that configuration object.</li>
-			  <li><b>Configuration audits : </b>An audit occurs everytime at project delivery or when a change is made whether it is functional or physical configuration.</li></p>
-              
-            </div>
-          </div>
-          <br>
-
-          <div class="card" id ="Prerequisites" name="Prerequisites">
-            <div class="card-body" id = "3">
-			<bookmark-button buttonId="button3" bookmarkKey="SCM3" bookmarkLink="../infoPages/ConfigManagement1.html#3" bookmarkName="Software Configuration Management: Prerequisites for Skill"
-                             enabled="disabled"></bookmark-button>
-              <h4 class="card-title">Prerequisites for Skill</h4>
-              <p>A Software Configuration Management Administrator/Engineer should posses the following skills: </p>
-                <p><b>1: Experience with version control systems:</b></br>
-				<ul>
-				<li>Tracking changes</li>
-				<li>Committing</li>
-				<li>Revisions and changesets</li>
-				<li>Getting updates</li>
-				<li>Resolving conflicts</li>
-				<li>Branching and Merging</li>
-				</ul></p>
-				
-				<p><b>2: Experience with Software Development LifeCycle(SDLC) process:</b></br>
-				<ul>
-				<li>Planning and Requirement Analysis</li>
-				<li>Defining Requirements</li>
-				<li>Designing Architecture</li>
-				<li>Building the product</li>
-				<li>Testing</li>
-				<li>Deployement</li>
-				</ul></p>
-				
-				<p><b>3: Knowledge on Infrastructure/Applicaton and Configuration items:</b></br></p>
-				<p><b>Configuration Item(CI):</b> A part of the system which can be self contained unit for change control.</br>
-				The most commonly used CI's are the following:
-				<ul>
-				<li><b>HWCI : </b>Hardware type configuration item</li>
-				<li><b>CI or CSCI : </b> Software type configuration item</li>
-				<li><b>System CI : </b>System type configuration item</li>
-				<li><b>NDCI : </b>Non-developed configuration item</li>
-				<li><b>COTSCI : </b>Component Off the shelf configuration item</li>
-				</p>
-				</ul>
-				
-				
-				
-				<p><b>Below are few examples for Configuration Items:</b></br>
-					
-				<table>
-				  <tr>
-					<th>Configuration Items</th>
-					<th>Common CI's</th>
-				  </tr>
-				  <tr>
-					<td>Services</td>
-					<td>Email, printing, collaboration, presentation, data processing, user registration</td>
-				  </tr>
-				  <tr>
-					<td>Software</td>
-					<td>Applications, databases, virtual machines, containers, licenses</td>
-				  </tr>
-				  <tr>
-					<td>Hardware</td>
-					<td>Servers, routers, computers, swetches</td>
-				  </tr>
-				  <tr>
-					<td>Devices</td>
-					<td>Laptops, tablets, smartphones,, keyboards, mice, monitors</td>
-				  </tr>
-				  <tr>
-					<td>Documents</td>
-					<td>Policies, governance, release notes, user guides, troubleshooting manuals</td>
-				  </tr>
-				  <tr>
-					<td>Locations</td>
-					<td>Offices, data centers, server rooms</td>
-				  </tr>
-				  <tr>
-					<td>Staff</td>
-					<td>Service desk agents, support specialists, developers</td>
-				  </tr>
-				</table>
-				</p>
-				</div>
-          </div>
-          <br>
-
-          <div class="card">
-            <div class="card-body" id = "4">
-			<bookmark-button buttonId="button4" bookmarkKey="SCM4" bookmarkLink="../infoPages/ConfigManagement1.html#4" bookmarkName="Software Configuration Management: Related Software Engineering Area(s)"
-                             enabled="disabled"></bookmark-button>
-              <h4 class="card-title">Related Software Engineering Area(s)</h4>
-			  <p><b>1 - Release Management</b>
-               Release management is nothing but the process of planing, scheduling and managing a software build during different stages of software development lifecycle.</p>
-			   <p><b>2 - Software Testing</b>
-               Software Testing is verification of the application in different with different use cases</p>
-			   <p><b>3 - Devops</b>
-               DevOps is the process of automating and integration between software development and teams for faster building of applications with more reliable features.</p>
-                
-            </div>
-          </div>
-          <br>
-
-          <div class="row">
-              <div class="col-sm-4"></div>
-              <div class="col-sm-4"></div>
-              <div class="col-sm-4">
-                <ul class="pagination">
-                    
-                    <li class="page-item active"><a class="page-link" href="#">1</a></li>
-                    <li class="page-item "><a class="page-link" href="ConfigManagement2.html">2</a></li>
-                    <li class="page-item"><a class="page-link" href="ConfigManagement3.html">3</a></li>
-                    <li class="page-item"><a class="page-link" href="ConfigManagement2.html">Next</a></li>
-                  </ul>
-              </div>
-          </div>
+            <h4 class="card-title">Classification of Skill</h4>
+            <p class="card-text">In Software Engineering, Software Configuration Management(SCM or S/W CM) is a process to manage, organize, track and control changes to all the
+                entities of the software during software development lifecycle in a systematic way. The purpose of SCM is to see that a software is produced with minimal mistakes.
+                SCM practices include revision control and it can accurately determine who made it.</p><br>
+            The main procedures found in a typical software configuration management system are :
+            <ol>
+                <li><b>Configuration identification : </b>It is the process which defines the properties of configuration items and the following attributes are baselined.</li>
+                <li><b>Configuration control : </b>It is a set of instructions which are required to change a configuration and to rebaseline them.</li>
+                <li><b>Configuration status documentation : </b>It is the ability to record/report the any information related to that configuration object.</li>
+                <li><b>Configuration audits : </b>An audit occurs everytime at project delivery or when a change is made whether it is functional or physical configuration.</li>
+            </ol>
         </div>
+    </div>
+    <br>
 
-    
-        <div class="footer">
-          <p>This website is made for education purpose only.</p>
+    <div class="card" id="Prerequisites">
+        <div class="card-body" id="3">
+            <bookmark-button buttonId="button3" bookmarkKey="SCM3" bookmarkLink="../infoPages/ConfigManagement1.html#3"
+                             bookmarkName="Software Configuration Management: Prerequisites for Skill"
+                             enabled="disabled"></bookmark-button>
+            <h4 class="card-title">Prerequisites for Skill</h4>
+            <p>A Software Configuration Management Administrator/Engineer should posses the following skills: </p>
+            <p><b>1: Experience with version control systems:</b></p>s</br>
+            <ul>
+                <li>Tracking changes</li>
+                <li>Committing</li>
+                <li>Revisions and changesets</li>
+                <li>Getting updates</li>
+                <li>Resolving conflicts</li>
+                <li>Branching and Merging</li>
+            </ul>
 
-      </div>
+            <p><b>2: Experience with Software Development LifeCycle(SDLC) process:</b></p><br>
+            <ul>
+                <li>Planning and Requirement Analysis</li>
+                <li>Defining Requirements</li>
+                <li>Designing Architecture</li>
+                <li>Building the product</li>
+                <li>Testing</li>
+                <li>Deployement</li>
+            </ul>
+
+            <p><b>3: Knowledge on Infrastructure/Applicaton and Configuration items:</b></p><br>
+            <p><b>Configuration Item(CI):</b> A part of the system which can be self contained unit for change control.</p><br>
+            The most commonly used CI's are the following:
+            <ul>
+                <li><b>HWCI : </b>Hardware type configuration item</li>
+                <li><b>CI or CSCI : </b> Software type configuration item</li>
+                <li><b>System CI : </b>System type configuration item</li>
+                <li><b>NDCI : </b>Non-developed configuration item</li>
+                <li><b>COTSCI : </b>Component Off the shelf configuration item</li>
+            </ul>
+
+            <p><b>Below are few examples for Configuration Items:</b></p><br>
+
+            <table>
+                <tr>
+                    <th>Configuration Items</th>
+                    <th>Common CI's</th>
+                </tr>
+                <tr>
+                    <td>Services</td>
+                    <td>Email, printing, collaboration, presentation, data processing, user registration</td>
+                </tr>
+                <tr>
+                    <td>Software</td>
+                    <td>Applications, databases, virtual machines, containers, licenses</td>
+                </tr>
+                <tr>
+                    <td>Hardware</td>
+                    <td>Servers, routers, computers, swetches</td>
+                </tr>
+                <tr>
+                    <td>Devices</td>
+                    <td>Laptops, tablets, smartphones,, keyboards, mice, monitors</td>
+                </tr>
+                <tr>
+                    <td>Documents</td>
+                    <td>Policies, governance, release notes, user guides, troubleshooting manuals</td>
+                </tr>
+                <tr>
+                    <td>Locations</td>
+                    <td>Offices, data centers, server rooms</td>
+                </tr>
+                <tr>
+                    <td>Staff</td>
+                    <td>Service desk agents, support specialists, developers</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <br>
+
+    <div class="card">
+        <div class="card-body" id="4">
+            <bookmark-button buttonId="button4" bookmarkKey="SCM4" bookmarkLink="../infoPages/ConfigManagement1.html#4"
+                             bookmarkName="Software Configuration Management: Related Software Engineering Area(s)"
+                             enabled="disabled"></bookmark-button>
+            <h4 class="card-title">Related Software Engineering Area(s)</h4>
+            <p><b>1 - Release Management</b>
+                Release management is nothing but the process of planing, scheduling and managing a software build during different stages of software development lifecycle.</p>
+            <p><b>2 - Software Testing</b>
+                Software Testing is verification of the application in different with different use cases</p>
+            <p><b>3 - Devops</b>
+                DevOps is the process of automating and integration between software development and teams for faster building of applications with more reliable features.</p>
+
+        </div>
+    </div>
+    <br>
+
+    <div class="row">
+        <div class="col-sm-4"></div>
+        <div class="col-sm-4"></div>
+        <div class="col-sm-4">
+            <ul class="pagination">
+
+                <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                <li class="page-item "><a class="page-link" href="ConfigManagement2.html">2</a></li>
+                <li class="page-item"><a class="page-link" href="ConfigManagement3.html">3</a></li>
+                <li class="page-item"><a class="page-link" href="ConfigManagement2.html">Next</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+<div class="footer">
+    <p>This website is made for education purpose only.</p>
+
+</div>
 
 
 </body>
 
-    
 
-
-    </html>
+</html>

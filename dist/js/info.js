@@ -13,8 +13,10 @@ const searchFor = {
         {href: "../infoPages/Software_testing1.html#2", innerText: "Types of Unit Testing"},
         {href: "../infoPages/Software_testing1.html#2", innerText: "Automated Unit Testing"}, {href: "../infoPages/Software_testing1.html#2", innerText: "Manual Unit Testing"},
         {href: "../infoPages/ConfigManagement1.html#4", innerText: "Software testing in SCM"},
-        {href: "../infoPages/Elicitation1.html#4", innerText: "Software testing in Software Requirements Elicitation"}],
-    "automated": [{href: "../infoPages/Software_testing1.html#2", innerText: "Automated Unit Testing"}],
+        {href: "../infoPages/Elicitation1.html#4", innerText: "Software testing in Software Requirements Elicitation"},
+        {href: "../infoPages/QualityAssurance2.html#9", innerText: "Choosing a Right Testing Tool"}],
+    "automated": [{href: "../infoPages/Software_testing1.html#2", innerText: "Automated Unit Testing"},
+        {href: "../infoPages/QualityAssurance2.html#9", innerText: "Automated Software Quality Market"}],
     "manual": [{href: "../infoPages/Software_testing1.html#2", innerText: "Manual Unit Testing"}],
     "SCM configuration management documentation audit": [{href: "../infoPages/ConfigManagement1.html#1", innerText: "Software Configuration management"}],
     "configuration identification": [{href: "../infoPages/ConfigManagement1.html#2", innerText: "Classification of SCM"}],
@@ -29,9 +31,28 @@ const searchFor = {
     "hpsm": [{href: "../infoPages/ConfigManagement3.html#2", innerText: "HPSM tool"}],
     "UCMDB": [{href: "../infoPages/ConfigManagement3.html#2", innerText: "UCMDB tool"}],
     "agile": [{href: "../infoPages/SDLC_implementation_1.html#3", innerText: "Agile model"}],
-    "git": [{href: "../infoPages/SDLC_implementation_3.html#10", innerText: "Git"}, {href: "../infoPages/SDLC_implementation_1.html#3", innerText: "Git"},
+    "git github": [{href: "../infoPages/SDLC_implementation_3.html#10", innerText: "GitHub"}, {href: "../infoPages/SDLC_implementation_1.html#3", innerText: "Git"},
         {href: "../infoPages/ConfigManagement1.html#1", innerText: "Git in SCM"}],
-    "smart": [{href: "../infoPages/Elicitation2.html#7", innerText: "Software Requirements Elicitation"}]
+    "smart": [{href: "../infoPages/Elicitation2.html#7", innerText: "Software Requirements Elicitation"}],
+    "hci human computer interaction": [{href: "../infoPages/interfaceDesign2.html#7", innerText: "Work Related to HCI"}],
+    "ui ux user interface design": [{href: "../infoPages/interfaceDesign1.html#3", innerText: "Prerequisites For UI Design"},
+        {href: "../infoPages/interfaceDesign2.html#6", innerText: "Types of UI Design and Roles"},
+        {href: "../infoPages/interfaceDesign2.html#7", innerText: "Work Related To UI Design"},
+        {href: "../infoPages/interfaceDesign2.html#6", innerText: "Real World Examples"},
+        {href: "../infoPages/QualityAssurance2.html#6", innerText: "Maintain User Experience"}],
+    "adobe photoshop sketch unity framer": [{href: "../infoPages/interfaceDesign3.html#10", innerText: "Tools For UI Design"}],
+    "elicitation": [{href: "../infoPages/Elicitation1.html#3", innerText: "What is Requirements Elicitation"}],
+    "jad joint application development ethnography questionnaires surveys interviews": [{
+        href: "../infoPages/Elicitation2.html#7", innerText: "Work Related to Software Requirements Elicitation"
+    }],
+    "requisite objectiver doors gmarc": [{href: "../infoPages/Elicitation3.html#10", innerText: "Tools for Software Requirements Elicitation"}],
+    "corrective adaptive perfective preventive maintenance cost": [{href: "..infoPages/maintenance1.html#3", innerText: "Types of Software Maintenance"},
+        {href: "..infoPages/maintenance1.html#3", innerText: "Maintenance Tools"}],
+    "cmms eam enterprise asset computerized": [{href: "..infoPages/maintenance1.html#3", innerText: "Maintenance Software"}],
+    "pf p-f curve fmea failure mode root six-sigma scada": [{href: "..infoPages/maintenance3.html#10", innerText: "Tools Supporting Software Maintenance"}],
+    "product process assurance": [{href: "../infoPages/QualityAssurance.html#3", innerText: "Process Product Assurance"}],
+    "time management problem-solving": [{href: "../infoPages/QualityAssurance.html#4", innerText: "Prerequisites for Quality Assurance"}],
+    "catastrophic": [{href: "../infoPages/QualityAssurance2.html#6", innerText: "Prevent Catastrophic Corporate Emergencies"}]
 };
 
 const makeLiAndOptionalAhrefTag = (href, innerHTML, liInnerHtml) => {

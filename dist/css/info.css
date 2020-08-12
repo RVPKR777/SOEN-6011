@@ -1,18 +1,15 @@
-body {   
-    font-family: 'HelveticaNeue', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    font-size: 13px;
-    font-weight: bold;
+body {
     line-height: 20px;
 }
-.body-style{
+
+.body-style {
     background: #f7f7f7;
     color: #404040;
 }
+
 .dark-mode {
     background-color: #343a40;
-    /* color: white; */
-  }
-
+}
 
 
 .centerForm {
@@ -41,7 +38,8 @@ a:hover {
     margin-right: auto;
     height: auto;
 }
-.navbar{
+
+.navbar {
     width: auto;
 }
 
@@ -49,13 +47,9 @@ a:hover {
     margin-top: 50px
 }
 
-.container-fluid{
+.container-fluid {
     width: 85%;
-    /* margin-left: 7%; */
-    
 }
-
-
 
 input {
     font-family: 'HelveticaNeue', 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -84,9 +78,8 @@ input {
 .card:hover {
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
-.navbar
-.bg-dark
-.navbar-dark{
+
+.navbar .bg-dark .navbar-dark {
     background-color: #2f2f73 !important;
     color: white !important;
 }
@@ -296,7 +289,7 @@ input {
 }
 
 .btn-primary {
-    background-color:#696969;
+    background-color: #696969;
     color: white !important;
     border-color: white;
 
@@ -332,7 +325,7 @@ img:hover {
 }
 
 .breadcrumb {
-    background-color: none !important;
+    background-color: snow !important;
 }
 
 .col-xs-3 {
@@ -349,4 +342,7 @@ img:hover {
     width: 100%;
 }
 
-
+#bookmarkDropdown {
+    height: 200px;
+    overflow: auto;
+}

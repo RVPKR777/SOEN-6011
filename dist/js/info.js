@@ -20,38 +20,37 @@ const searchFor = {
     "software": [{href: "../infoPages/Software_testing1.html#2", innerText: "Software Testing"}],
     "manual": [{href: "../infoPages/Software_testing1.html#2", innerText: "Manual Unit Testing"}],
     "tools": [{href: "../infoPages/Software_testing3.html#10", innerText: "Unit testing Tools"}],
-	"SCM": [{href: "../infoPages/ConfigManagement1.html#1", innerText: "Software Configuration management"}],
-	"configuration": [{href: "../infoPages/ConfigManagement1.html#1", innerText: "Software Configuration management"}],
-	"management": [{href: "../infoPages/ConfigManagement1.html#1", innerText: "Software Configuration management"}],
-	"software configuration": [{href: "../infoPages/ConfigManagement1.html#1", innerText: "Software Configuration management"}],
-	"configuration identification": [{href: "../infoPages/ConfigManagement1.html#2", innerText: "classification of SCM"}],
-	"configuration control": [{href: "../infoPages/ConfigManagement1.html#2", innerText: "Software Configuration management"}],
-	"configuration documentation": [{href: "../infoPages/ConfigManagement1.html#2", innerText: "Software Configuration management"}],
-	"version control": [{href: "../infoPages/ConfigManagement1.html#3", innerText: "Software Configuration management version control systems"}],
-	"SDLC": [{href: "../infoPages/ConfigManagement1.html#3", innerText: "Software Configuration management SDLC"}],
-	"configuration items": [{href: "../infoPages/ConfigManagement1.html#3", innerText: "configuration items"}],
-	"CI": [{href: "../infoPages/ConfigManagement1.html#3", innerText: "cinfiguration items"}],
-	"HWCI": [{href: "../infoPages/ConfigManagement1.html#3", innerText: "Configuration items"}],
-	"CSCI": [{href: "../infoPages/ConfigManagement1.html#3", innerText: "configuration items"}],
-	"system ci": [{href: "../infoPages/ConfigManagement1.html#3", innerText: "configuration items"}],
-	"NDCI": [{href: "../infoPages/ConfigManagement1.html#3", innerText: "configuration items"}],
-	"release": [{href: "../infoPages/ConfigManagement1.html#4", innerText: "release management"}],
-	"software testing": [{href: "../infoPages/ConfigManagement1.html#4", innerText: "Software testing in SCM"}],
-	"devops": [{href: "../infoPages/ConfigManagement1.html#4", innerText: "devops in SCM"}],
-	"administrator": [{href: "../infoPages/ConfigManagement2.html#2", innerText: "Software Configuration management administrator"}],
-	"support engineer": [{href: "../infoPages/ConfigManagement2.html#2", innerText: "Software Configuration management support engineer"}],
-	"roles": [{href: "../infoPages/ConfigManagement2.html#2", innerText: "Software Configuration management roles"}],
-	"rationale": [{href: "../infoPages/ConfigManagement2.html#1", innerText: "Software Configuration management rationale"}],
-	"work related": [{href: "../infoPages/ConfigManagement2.html#3", innerText: "work related to Software Configuration management "}],
-	"real world example": [{href: "../infoPages/ConfigManagement2.html#4", innerText: "real world example for Software Configuration management"}],
-	"role of academia": [{href: "../infoPages/ConfigManagement3.html#1", innerText: "role of academia in Software Configuration management"}],
-	"tools": [{href: "../infoPages/ConfigManagement3.html#2", innerText: "Software Configuration management tools"}],
-	"servicenow": [{href: "../infoPages/ConfigManagement3.html#2", innerText: "servicenow tool"}],
-	"hpsm": [{href: "../infoPages/ConfigManagement3.html#2", innerText: "HPSM tool"}],
-	"UCMDB": [{href: "../infoPages/ConfigManagement3.html#2", innerText: "UCMDB tool"}],
-	"skill assessment": [{href: "../infoPages/ConfigManagement1.html#1", innerText: "Software Configuration management skill assessment"}],
-	"references": [{href: "../infoPages/ConfigManagement1.html#1", innerText: "Software Configuration management references"}]
-	
+    "SCM": [{href: "../infoPages/ConfigManagement1.html#1", innerText: "Software Configuration management"}],
+    "configuration": [{href: "../infoPages/ConfigManagement1.html#1", innerText: "Software Configuration management"}],
+    "management": [{href: "../infoPages/ConfigManagement1.html#1", innerText: "Software Configuration management"}],
+    "software configuration": [{href: "../infoPages/ConfigManagement1.html#1", innerText: "Software Configuration management"}],
+    "configuration identification": [{href: "../infoPages/ConfigManagement1.html#2", innerText: "classification of SCM"}],
+    "configuration control": [{href: "../infoPages/ConfigManagement1.html#2", innerText: "Software Configuration management"}],
+    "configuration documentation": [{href: "../infoPages/ConfigManagement1.html#2", innerText: "Software Configuration management"}],
+    "version control": [{href: "../infoPages/ConfigManagement1.html#3", innerText: "Software Configuration management version control systems"}],
+    "SDLC": [{href: "../infoPages/ConfigManagement1.html#3", innerText: "Software Configuration management SDLC"}],
+    "configuration items": [{href: "../infoPages/ConfigManagement1.html#3", innerText: "configuration items"}],
+    "CI": [{href: "../infoPages/ConfigManagement1.html#3", innerText: "cinfiguration items"}],
+    "HWCI": [{href: "../infoPages/ConfigManagement1.html#3", innerText: "Configuration items"}],
+    "CSCI": [{href: "../infoPages/ConfigManagement1.html#3", innerText: "configuration items"}],
+    "system ci": [{href: "../infoPages/ConfigManagement1.html#3", innerText: "configuration items"}],
+    "NDCI": [{href: "../infoPages/ConfigManagement1.html#3", innerText: "configuration items"}],
+    "release": [{href: "../infoPages/ConfigManagement1.html#4", innerText: "release management"}],
+    "software testing": [{href: "../infoPages/ConfigManagement1.html#4", innerText: "Software testing in SCM"}],
+    "devops": [{href: "../infoPages/ConfigManagement1.html#4", innerText: "devops in SCM"}],
+    "administrator": [{href: "../infoPages/ConfigManagement2.html#2", innerText: "Software Configuration management administrator"}],
+    "support engineer": [{href: "../infoPages/ConfigManagement2.html#2", innerText: "Software Configuration management support engineer"}],
+    "roles": [{href: "../infoPages/ConfigManagement2.html#2", innerText: "Software Configuration management roles"}],
+    "rationale": [{href: "../infoPages/ConfigManagement2.html#1", innerText: "Software Configuration management rationale"}],
+    "work related": [{href: "../infoPages/ConfigManagement2.html#3", innerText: "work related to Software Configuration management "}],
+    "real world example": [{href: "../infoPages/ConfigManagement2.html#4", innerText: "real world example for Software Configuration management"}],
+    "role of academia": [{href: "../infoPages/ConfigManagement3.html#1", innerText: "role of academia in Software Configuration management"}],
+    "tools": [{href: "../infoPages/ConfigManagement3.html#2", innerText: "Software Configuration management tools"}],
+    "servicenow": [{href: "../infoPages/ConfigManagement3.html#2", innerText: "servicenow tool"}],
+    "hpsm": [{href: "../infoPages/ConfigManagement3.html#2", innerText: "HPSM tool"}],
+    "UCMDB": [{href: "../infoPages/ConfigManagement3.html#2", innerText: "UCMDB tool"}],
+    "skill assessment": [{href: "../infoPages/ConfigManagement1.html#1", innerText: "Software Configuration management skill assessment"}],
+    "references": [{href: "../infoPages/ConfigManagement1.html#1", innerText: "Software Configuration management references"}]
 };
 
 const makeLiAndOptionalAhrefTag = (href, innerHTML, liInnerHtml) => {
@@ -217,7 +216,7 @@ const renderBookmarkList = () => {
     const div = document.getElementById("bookmarkDropdown");
     div.innerHTML = "";
     const localStorageKeys = Object.keys(localStorage);
-    if (localStorageKeys.length === 1 && localStorage.getItem("theme")) {
+    if ((localStorageKeys.length === 1 && localStorage.getItem("theme")) || localStorageKeys.length === 0) {
         const li = makeLiAndOptionalAhrefTag(null, null, "No Bookmarks Found");
         div.appendChild(li);
     } else {

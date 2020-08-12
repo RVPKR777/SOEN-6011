@@ -2,76 +2,82 @@
 <html lang="en">
 
 <head>
-  <title>Sestopia -User Interface Design</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" type="text/css" href="style.css">
-  <!-- Latest compiled and minified CSS -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>Sestopia -API Design</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="../css/content.css">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
-  <!-- jQuery library -->
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-    crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-    crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-    crossorigin="anonymous"></script>
+    <!-- jQuery library -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+            crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+            crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+            crossorigin="anonymous"></script>
 
-  <!-- Latest compiled JavaScript -->
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="data.js"></script>
-  <script src="index.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script src="../js/info.js"></script>
+    <script src="../components/bookmarkButton.js"></script>
+    <link rel="stylesheet" type="text/css" href="../css/content.css">
+    <script src="../components/navbar.js"></script>
+    <script src="../components/skillCardComponent.js"></script>
 
 </head>
 
+
 <body>
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <a class="navbar-brand" href="#">Sestopia</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item active">
-          <a class="nav-link" href="../index.html">Home <span class="sr-only"></span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">References</a>
-        </li>
-      </ul>
-
-    </div>
-  </nav>
-  <br>
-  <nav aria-label="breadcrumb container float-right">
+<nav-bar logoPath="../images/logo.png" renderHome="true" renderSearch="true" renderSkillsDropdown="true" collapse="true"></nav-bar>
+<div class="jumbotron container">
+    <h1>Contents</h1>
+    <hr>
+    <p>
+       <p>
+        <a href="QualityAssurance.html#1" target="_blank" class="stretched-link btn btn-primary space-btn">Name of Skill</a>
+        <a href="QualityAssurance.html#2" target="_blank" class="stretched-link btn btn-danger space-btn">Introduction</a>
+		<a href="QualityAssurance.html#3" target="_blank" class="stretched-link btn btn-danger space-btn">Classification of Skill</a>
+        <a href="QualityAssurance.html#4" target="_blank" class="stretched-link btn btn-success space-btn">Prerequisites for Skill</a>
+        <a href="QualityAssurance.html#5" target="_blank" class="stretched-link btn btn-danger space-btn">Related Software Engineering Areas(s)</a>
+        <a href="QualityAssurance2.html#6" target="_blank" class="stretched-link btn btn-primary space-btn">Rationale for Skill</a>
+        <a href="QualityAssurance2.html#7" target="_blank" class="stretched-link btn btn-danger space-btn">Roles for Skill</a>
+        <a href="QualityAssurance2.html#8" target="_blank" class="stretched-link btn btn-success space-btn">Work Related To Skill</a>
+        <a href="QualityAssurance2.html#9" target="_blank" class="stretched-link btn btn-danger space-btn">Real World Example</a>
+        <a href="QualityAssurance3.html#10" target="_blank" class="stretched-link btn btn-primary space-btn">Role of Academia/Industry</a>
+        <a href="QualityAssurance3.html#11" target="_blank" class="stretched-link btn btn-danger space-btn">Tools supporting the skill</a>
+        <a href="QualityAssurance3.html#12" target="_blank" class="stretched-link btn btn-success space-btn">Skill Self Assessment</a>
+        <a href="QualityAssurance3.html#13" target="_blank" class="stretched-link btn btn-danger space-btn">References</a>
+    </p>
+    </p>
+</div>
+<nav aria-label="breadcrumb container float-right">
     <ol class="breadcrumb container bg-transparent ">
-      <li class="breadcrumb-item"><a href="../index.html">Home</a></li>
-      <li class="breadcrumb-item"><a href="#">User Interface Design </a></li>
-      <li class="breadcrumb-item active" aria-current="page">Page 3</li>
+        <li class="breadcrumb-item"><a href="../index.html">Home</a></li>
+        <li class="breadcrumb-item"><a href="apiProgramming1.html">Quality Assurance</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Page 3</li>
     </ol>
-  </nav>
-  <br>
-  <div class="container jumbotron">
-    <br>
-
-    <div class="card">
-      <div class="card-body">
-        <h4 class="card-title">Role of Academia or Industry in Cultivating the Skill </h4>
-		<p>Academics have provided variuos process and principles which are followed in software quality assurance. By using which we car improve process and product quality and Industries provide medium to apply these knowledge on various projects.</p>
-      </div>
+</nav>
+<br/>
+<div class="container">
+    <br/>
+    <div class="card" id="10">
+        <div class="card-body">
+            <bookmark-button buttonId="button10" bookmarkKey="api10" bookmarkLink="../infoPages/QualityAssurance.html#10"
+                             bookmarkName="Quality Assurance: Role of Academia and Industry"></bookmark-button>
+            <h4 class="card-title">Role of Academia or Industry in Cultivating the Skill </h4>
+           <p>Academics have provided variuos process and principles which are followed in software quality assurance. By using which we car improve process and product quality and Industries provide medium to apply these knowledge on various projects.</p>
+        </div>
     </div>
     <br>
 
-    <div class="card">
-      <div class="card-body">
-        <h4 class="card-title">Tools Supporting the Skill </h4>
-        <ul>
+    <div class="card" id="11">
+        <div class="card-body">
+            <bookmark-button buttonId="button11" bookmarkKey="api11" bookmarkLink="../infoPages/QualityAssurance.html#11" bookmarkName="Quality Assurance: Tools"></bookmark-button>
+            <h4 class="card-title">Tools Supporting the Skill</h4>
+           <ul>
 		   <li> Watir</li>
 		   <li> Tosca Testsuite</li>
 		   <li>TestingWhiz</li>
@@ -79,23 +85,27 @@
           <li>Jenkins</li>
 		  <li>Selenium</li>
         </ul>
-      </div>
+        </div>
     </div>
     <br>
 
-    <div class="card">
-      <div class="card-body">
-        <h4 class="card-title">Skill Self-Assessment (My Skill Score (1 – 10) and Reasons for Self-Assigned Score)</h4>
-        <p>7</p>
+    <div class="card" id="12">
+        <div class="card-body">
+            <bookmark-button buttonId="button12" bookmarkKey="api12" bookmarkLink="../infoPages/QualityAssurance.html#12"
+                             bookmarkName="API Programming: Self-Assigned Score"></bookmark-button>
+            <h4 class="card-title">Skill Self-Assessment (My Skill Score (1 - 10) and Reasons for Self-Assigned Score</h4>
+            <p>7</p>
         <p><strong> Haven't worked on any Software Quality Assurance projects.</strong></p>
-      </div>
+        </div>
     </div>
     <br>
 
-    <div class="card">
-      <div class="card-body">
-        <h4 class="card-title">References</h4>
-		<li>http://www.qasigma.com/2008/12/process-and-product-assurance-methods-and-supporting-technologies.html</li>
+    <div class="card" id="13">
+        <div class="card-body">
+            <bookmark-button buttonId="button13" bookmarkKey="api13" bookmarkLink="../infoPages/QualityAssurance.html#13"
+                             bookmarkName="API Programming: References"></bookmark-button>
+            <h4 class="card-title">References</h4>
+           <li>http://www.qasigma.com/2008/12/process-and-product-assurance-methods-and-supporting-technologies.html</li>
 
          <li>https://en.wikipedia.org/wiki/Software_quality_assurance</li>
 
@@ -106,29 +116,29 @@
                <li>https://www.getreskilled.com/what-is-a-quality-assurance-associate/</li>
 
                  <li>https://business.linkedin.com/talent-solutions/resources/talent-engagement/job-descriptions/quality-assurance#:~:text=A%20quality%20assurance%20specialist%20ensures,the%20delivery%20of%20satisfactory%20outcomes.</li>
-      </div>
+        </div>
     </div>
 
     <div class="row">
-      <div class="col-sm-4"></div>
-      <div class="col-sm-4"></div>
-      <div class="col-sm-4">
-        <ul class="pagination">
-          <li class="page-item"><a class="page-link" href="QualityAssurance2.html">Previous</a></li>
+        <div class="col-sm-4"></div>
+        <div class="col-sm-4"></div>
+        <div class="col-sm-4">
+            <ul class="pagination">
+           <li class="page-item"><a class="page-link" href="QualityAssurance2.html">Previous</a></li>
           <li class="page-item"><a class="page-link" href="QualityAssurance.html">1</a></li>
           <li class="page-item "><a class="page-link" href="QualityAssurance2.html">2</a></li>
           <li class="page-item active"><a class="page-link" href="#">3</a></li>
 
-        </ul>
-      </div>
+            </ul>
+        </div>
     </div>
-  </div>
+</div>
 
-
-  <div class="footer">
-    <p>This website is made for education purpose only.</p>
-
-  </div>
+<footer class="footer container">
+    <div class="container">
+        <span class="text-muted"> &copy; Authored and Designed by <b> TEAM I</b></span>
+    </div>
+</footer>
 
 </body>
 

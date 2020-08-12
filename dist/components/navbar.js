@@ -15,7 +15,7 @@ class NavBar extends HTMLElement {
         <a class="navbar-brand" href="#">
           <img src="${this.getAttribute("logoPath")}" width="30" height="30" alt="Sestopia Logo">
         </a>
-        <a class="navbar-brand" href="#">Sestopia</a>
+        <a class="navbar-brand" href="../index.html">Sestopia</a>
     
         ${this.getAttribute("collapse") ? `<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
           aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -54,10 +54,13 @@ class NavBar extends HTMLElement {
         </form>
         </li>` : ""}
           </ul>
+          <ul class="navbar-nav">
+          <a class="navbar-brand" href="../about.html">About Us</a>
           ${this.renderDarkLightMode ? `
-          <label style="padding-right:1%; color :white" class="form-inline">Dark /Light Mode</Label>   
+          <label style="padding-right:1%; color :white" class="form-inline">Dark /Light</Label>   
           <input type="checkbox" id="day_night" onchange="myFunction()">
          ` : ""}
+         </ul>
           
         </div>
       </nav>`

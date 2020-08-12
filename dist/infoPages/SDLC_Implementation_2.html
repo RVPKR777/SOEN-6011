@@ -1,72 +1,65 @@
 <!doctype html>
 <html lang="en">
-    <head>
-      <title>Sestopia -Software Development Life Cycle implementation</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" type="text/css" href="style.css">
-        <!-- Latest compiled and minified CSS -->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
-        <!-- jQuery library -->
-        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<head>
+    <title>Sestopia -Software Development Life Cycle Implementation</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
-        <!-- Latest compiled JavaScript -->
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="data.js"></script>    
-    <script src="index.js"></script>
+    <!-- jQuery library -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+            crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+            crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+            crossorigin="anonymous"></script>
 
-    </head>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script src="../js/info.js"></script>
+    <link rel="stylesheet" type="text/css" href="../css/content.css">
+    <script src="../components/navbar.js"></script>
+    <script src="../components/skillCardComponent.js"></script>
+
+</head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="/index.html">Sestopia</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-      
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-              <a class="nav-link"  href="/index.html">Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">References</a>
-            </li>
-           
-           
-          </ul>
-          
-        </div>
-      </nav>
-      <br>
-      <nav aria-label="breadcrumb container float-right">
-        <ol class="breadcrumb container bg-transparent ">
-          <li class="breadcrumb-item"><a href="../index.html">Home</a></li>
-          <li class="breadcrumb-item"><a href="interfaceDesign1.html#User_Interface_Design">SDLC implementation</a></li>
-          <li class="breadcrumb-item active" aria-current="page">Page 2</li>
-        </ol>
-      </nav>
-      <br>
-      <div class="container jumbotron"> 
-       <!--<div class="card">
-            <div class="card-body">
-              <h4 class="card-title">Related Software Engineering Area(s)</h4>
-              <ul>
-                <li>Software Testing - Usability Tasting</li>
-                <li>User Experience Design (User Interface design is part of it)</li>
-                </ul>
-
-            </div>
-          </div>  <br>-->
-         
-
-          <div class="card">
-            <div class="card-body">
-              <h4 class="card-title">Rationale for Skill</h4>
-              <ul>
+<nav-bar logoPath="../images/logo.png" renderHome="true" renderSearch="true" renderSkillsDropdown="true" collapse="true"></nav-bar>
+<div class="jumbotron container">
+    <h1>Contents</h1>
+    <hr>
+    <p>
+        <a href="maintenance1.html#1" target="_blank" class="stretched-link btn btn-primary space-btn">Name of Skill</a>
+        <a href="maintenance1.html#2" target="_blank" class="stretched-link btn btn-danger space-btn">Classification of Skill</a>
+        <a href="maintenance1.html#3" target="_blank" class="stretched-link btn btn-success space-btn">Prerequisites for Skill</a>
+        <a href="maintenance1.html#4" target="_blank" class="stretched-link btn btn-danger space-btn">Related Software Engineering Area(s)</a>
+        <a href="maintenance2.html#5" target="_blank" class="stretched-link btn btn-primary space-btn">Rationale for Skill</a>
+        <a href="maintenance2.html#6" target="_blank" class="stretched-link btn btn-danger space-btn">Roles for Skill</a>
+        <a href="maintenance2.html#7" target="_blank" class="stretched-link btn btn-success space-btn">Work Related To Skill</a>
+        <a href="maintenance2.html#8" target="_blank" class="stretched-link btn btn-danger space-btn">Real World Example</a>
+        <a href="maintenance3.html#9" target="_blank" class="stretched-link btn btn-primary space-btn">Role of Academia/Industry</a>
+        <a href="maintenance3.html#10" target="_blank" class="stretched-link btn btn-danger space-btn">Tools supporting the skill</a>
+        <a href="maintenance3.html#11" target="_blank" class="stretched-link btn btn-success space-btn">Skill Self Assessment</a>
+        <a href="maintenance3.html#12" target="_blank" class="stretched-link btn btn-danger space-btn">References</a>
+    </p>
+</div>
+<nav aria-label="breadcrumb container float-right">
+    <ol class="breadcrumb container bg-transparent ">
+        <li class="breadcrumb-item"><a href="../index.html">Home</a></li>
+        <li class="breadcrumb-item"><a href="SDLC_Implementation_2".html">Software Development Life Cycle</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Page 2</li>
+    </ol>
+</nav>
+</br>
+<div class="container">
+    <div class="card" id="5">
+        <div class="card-body">
+            <h4 class="card-title">Rationale for Skill</h4>
+            <ul>
                 <li>SDLC lowers the cost of software development while simultaneously improving quality and shortening production time. </li>
                 <li>SDLC defines the requirements of the new system. It then creates the software through the stages of analysis, planning, design, development, testing, and deployment.  </li>
                 </ul>
@@ -75,9 +68,9 @@
           </div>
           <br>
 
-          <div class="card">
-            <div class="card-body">
-              <h4 class="card-title">Roles for Skill</h4>
+         <div class="card" id="6">
+        <div class="card-body">
+         <h4 class="card-title">Roles for Skill</h4>
               <ul>
                 <li>Determine one or more organization-wide
 life cycle models.</li>
@@ -87,9 +80,9 @@ life cycle models.</li>
             </div>
           </div>
           <br>
-
-          <div class="card">
-            <div class="card-body">
+		  
+  <div class="card" id="7">
+        <div class="card-body">
               <h4 class="card-title">Work Related to Skill (Related Activities and Artifacts)</h4>
               <ol>
                 <li> Identify the Current Problems</li>
@@ -101,11 +94,11 @@ life cycle models.</li>
             </div>
           </div>
           <br>
-          <div class="card">
-            <div class="card-body">
+		  <div class="card" id="8">
+        <div class="card-body">
               <h4 class="card-title">Real-World Example/Scenario of Skill (Text, Graphic, Audio, Video)</h4>
               <ol>
-                <li>Real time Application: Waterfall model is like a making of TEA where all the above specified phase
+                <li><b>Waterfall Model</b>: Waterfall model is like a making of TEA where all the above specified phase
 is same like<br>
  Requirement Gathering and analysis: Find out the need of making Tea
  System Design: Making of tea in various phases, following the sequential order
@@ -123,30 +116,27 @@ the finally testing of tea is done
           </div>
           <br>
   
-          <div class="row">
-              <div class="col-sm-4"></div>
-              <div class="col-sm-4"></div>
-              <div class="col-sm-4">
-                <ul class="pagination">
-                    <li class="page-item"><a class="page-link" href="SDLC_Implementation_1.html">Previous</a></li>
-                    <li class="page-item"><a class="page-link" href="SDLC_Implementation_1.html">1</a></li>
-                    <li class="page-item active"><a class="page-link" href="#">2</a></li>
-                    <li class="page-item"><a class="page-link" href="SDLC_Implementation_3.html">3</a></li>
-                    <li class="page-item"><a class="page-link" href="SDLC_Implementation_3.html">Next</a></li>
-                  </ul>
-              </div>
-          </div>
+        <div class="row">
+        <div class="col-sm-4"></div>
+        <div class="col-sm-4"></div>
+        <div class="col-sm-4">
+            <ul class="pagination">
+                <li class="page-item"><a class="page-link" href="SDLC_Implementation_1.html">Previous</a></li>
+                <li class="page-item"><a class="page-link" href="SDLC_Implementation_1.html">1</a></li>
+                <li class="page-item active"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="SDLC_Implementation_3.html">3</a></li>
+                <li class="page-item"><a class="page-link" href="SDLC_Implementation_3.html">Next</a></li>
+            </ul>
         </div>
+    </div>
+</div>
 
-    
-     
-        <div class="footer">
-          <p>This website is made for education purpose only.</p>
-
-      </div>
+<footer class="footer container">
+    <div class="container">
+        <span class="text-muted"> &copy; Authored and Designed by <b> TEAM I</b></span>
+    </div>
+</footer>
 
 </body>
 
-    
-
-    </html>
+</html>

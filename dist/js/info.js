@@ -19,7 +19,9 @@ const searchFor = {
     "automated": [{href: "../infoPages/Software_testing1.html#2", innerText: "Automated Unit Testing"}],
     "software": [{href: "../infoPages/Software_testing1.html#2", innerText: "Software Testing"}],
     "manual": [{href: "../infoPages/Software_testing1.html#2", innerText: "Manual Unit Testing"}],
-    "tools": [{href: "../infoPages/Software_testing3.html#10", innerText: "Unit testing Tools"}]
+    "tools": [{href: "../infoPages/Software_testing3.html#10", innerText: "Unit testing Tools"}],
+	"agile": [{href: "../infoPages/SDLC_implementation_1.html#3", innerText: "Agile model"}],
+	"git": [{href: "../infoPages/SDLC_implementation_3.html#10", innerText: "Git:"},{href: "../infoPages/SDLC_implementation_1.html#3", innerText: "Git"}]
 };
 
 const makeLiAndOptionalAhrefTag = (href, innerHTML, liInnerHtml) => {

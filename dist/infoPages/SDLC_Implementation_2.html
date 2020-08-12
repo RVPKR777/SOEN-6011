@@ -25,28 +25,29 @@
     <script src="../js/info.js"></script>
     <link rel="stylesheet" type="text/css" href="../css/content.css">
     <script src="../components/navbar.js"></script>
+    <script src="../components/bookmarkButton.js"></script>
     <script src="../components/skillCardComponent.js"></script>
 
 </head>
 
 <body>
-<nav-bar logoPath="../images/logo.png" renderHome="true" renderSearch="true" renderSkillsDropdown="true" collapse="true"></nav-bar>
+<nav-bar logoPath="../images/logo.png" renderSearch="true" renderSkillsDropdown="true" collapse="true"></nav-bar>
 <div class="jumbotron container">
     <h1>Contents</h1>
     <hr>
     <p>
-        <a href="maintenance1.html#1" target="_blank" class="stretched-link btn btn-primary space-btn">Name of Skill</a>
-        <a href="maintenance1.html#2" target="_blank" class="stretched-link btn btn-danger space-btn">Classification of Skill</a>
-        <a href="maintenance1.html#3" target="_blank" class="stretched-link btn btn-success space-btn">Prerequisites for Skill</a>
-        <a href="maintenance1.html#4" target="_blank" class="stretched-link btn btn-danger space-btn">Related Software Engineering Area(s)</a>
-        <a href="maintenance2.html#5" target="_blank" class="stretched-link btn btn-primary space-btn">Rationale for Skill</a>
-        <a href="maintenance2.html#6" target="_blank" class="stretched-link btn btn-danger space-btn">Roles for Skill</a>
-        <a href="maintenance2.html#7" target="_blank" class="stretched-link btn btn-success space-btn">Work Related To Skill</a>
-        <a href="maintenance2.html#8" target="_blank" class="stretched-link btn btn-danger space-btn">Real World Example</a>
-        <a href="maintenance3.html#9" target="_blank" class="stretched-link btn btn-primary space-btn">Role of Academia/Industry</a>
-        <a href="maintenance3.html#10" target="_blank" class="stretched-link btn btn-danger space-btn">Tools supporting the skill</a>
-        <a href="maintenance3.html#11" target="_blank" class="stretched-link btn btn-success space-btn">Skill Self Assessment</a>
-        <a href="maintenance3.html#12" target="_blank" class="stretched-link btn btn-danger space-btn">References</a>
+        <a href="SDLC_Implementation_1.html#1" target="_blank" class="stretched-link btn btn-primary space-btn">Name of Skill</a>
+        <a href="SDLC_Implementation_1.html#2" target="_blank" class="stretched-link btn btn-danger space-btn">Classification of Skill</a>
+        <a href="SDLC_Implementation_1.html#3" target="_blank" class="stretched-link btn btn-success space-btn">Prerequisites for Skill</a>
+        <a href="SDLC_Implementation_1.html#4" target="_blank" class="stretched-link btn btn-danger space-btn">Related Software Engineering Area(s)</a>
+        <a href="SDLC_Implementation_2.html#5" target="_blank" class="stretched-link btn btn-primary space-btn">Rationale for Skill</a>
+        <a href="SDLC_Implementation_2.html#6" target="_blank" class="stretched-link btn btn-danger space-btn">Roles for Skill</a>
+        <a href="SDLC_Implementation_2.html#7" target="_blank" class="stretched-link btn btn-success space-btn">Work Related To Skill</a>
+        <a href="SDLC_Implementation_2.html#8" target="_blank" class="stretched-link btn btn-danger space-btn">Real World Examples</a>
+        <a href="SDLC_Implementation_3.html#9" target="_blank" class="stretched-link btn btn-primary space-btn">Role of Academia/Industry</a>
+        <a href="SDLC_Implementation_3.html#10" target="_blank" class="stretched-link btn btn-danger space-btn">Tools supporting the skill</a>
+        <a href="SDLC_Implementation_3.html#11" target="_blank" class="stretched-link btn btn-success space-btn">Skill Self Assessment</a>
+        <a href="SDLC_Implementation_3.html#12" target="_blank" class="stretched-link btn btn-danger space-btn">References</a>
     </p>
 </div>
 <nav aria-label="breadcrumb container float-right">
@@ -56,10 +57,12 @@
         <li class="breadcrumb-item active" aria-current="page">Page 2</li>
     </ol>
 </nav>
-</br>
+<br/>
 <div class="container">
     <div class="card" id="5">
         <div class="card-body">
+            <bookmark-button buttonId="button5" bookmarkKey="sdlc5" bookmarkLink="../infoPages/SDLC_Implementation_2.html#5" bookmarkName="SDLC: Rationale For Skill"
+                             enabled="disabled"></bookmark-button>
             <h4 class="card-title">Rationale for Skill</h4>
             <ul>
                 <li>SDLC lowers the cost of software development while simultaneously improving quality and shortening production time.</li>
@@ -74,6 +77,8 @@
 
     <div class="card" id="6">
         <div class="card-body">
+            <bookmark-button buttonId="button6" bookmarkKey="sdlc6" bookmarkLink="../infoPages/SDLC_Implementation_2.html#6" bookmarkName="SDLC: Roles For Skill"
+                             enabled="disabled"></bookmark-button>
             <h4 class="card-title">Roles for Skill</h4>
             <ul>
                 <li>Determine one or more organization-wide
@@ -88,6 +93,8 @@
 
     <div class="card" id="7">
         <div class="card-body">
+            <bookmark-button buttonId="button7" bookmarkKey="sdlc7" bookmarkLink="../infoPages/SDLC_Implementation_2.html#7" bookmarkName="SDLC: Related Work"
+                             enabled="disabled"></bookmark-button>
             <h4 class="card-title">Work Related to Skill (Related Activities and Artifacts)</h4>
             <ol>
                 <li> Identify the Current Problems</li>
@@ -101,6 +108,8 @@
     <br>
     <div class="card" id="8">
         <div class="card-body">
+            <bookmark-button buttonId="button8" bookmarkKey="sdlc8" bookmarkLink="../infoPages/SDLC_Implementation_2.html#8" bookmarkName="SDLC: Real-World Examples"
+                             enabled="disabled"></bookmark-button>
             <h4 class="card-title">Real-World Example/Scenario of Skill (Text, Graphic, Audio, Video)</h4>
             <ol>
                 <li><b>Waterfall Model</b>: Waterfall model is like a making of TEA where all the above specified phase
@@ -128,7 +137,7 @@
             <ul class="pagination">
                 <li class="page-item"><a class="page-link" href="SDLC_Implementation_1.html">Previous</a></li>
                 <li class="page-item"><a class="page-link" href="SDLC_Implementation_1.html">1</a></li>
-                <li class="page-item active"><a class="page-link" href="#">2</a></li>
+                <li class="page-item active"><a class="page-link" href="SDLC_Implementation_2.html">2</a></li>
                 <li class="page-item"><a class="page-link" href="SDLC_Implementation_3.html">3</a></li>
                 <li class="page-item"><a class="page-link" href="SDLC_Implementation_3.html">Next</a></li>
             </ul>

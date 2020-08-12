@@ -1,11 +1,14 @@
 <!doctype html>
 <html lang="en">
+
 <title>Sestopia</title>
 <link rel="icon" href="../images/logo.png" type="image/x-icon">
+
 <head>
     <title>Sestopia -Software Development
         Life Cycle Implementation</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="style.css">
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
           integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -25,34 +28,36 @@
     <script src="../js/info.js"></script>
     <link rel="stylesheet" type="text/css" href="../css/content.css">
     <script src="../components/navbar.js"></script>
+    <script src="../components/bookmarkButton.js"></script>
     <script src="../components/skillCardComponent.js"></script>
-
 </head>
 
 <body>
-<nav-bar logoPath="../images/logo.png" renderHome="true" renderSearch="true" renderSkillsDropdown="true" collapse="true"></nav-bar>
+
+<nav-bar logoPath="../images/logo.png" renderSearch="true" renderSkillsDropdown="true" collapse="true"></nav-bar>
 <div class="jumbotron container ">
     <h1>Contents</h1>
     <hr>
     <p>
-        <a href="maintenance1.html#1" target="_blank" class="stretched-link btn btn-primary space-btn">Name of Skill</a>
-        <a href="maintenance1.html#2" target="_blank" class="stretched-link btn btn-danger space-btn">Classification of Skill</a>
-        <a href="maintenance1.html#3" target="_blank" class="stretched-link btn btn-success space-btn">Prerequisites for Skill</a>
-        <a href="maintenance1.html#4" target="_blank" class="stretched-link btn btn-danger space-btn">Related Software Engineering Area(s)</a>
-        <a href="maintenance2.html#5" target="_blank" class="stretched-link btn btn-primary space-btn">Rationale for Skill</a>
-        <a href="maintenance2.html#6" target="_blank" class="stretched-link btn btn-danger space-btn">Roles for Skill</a>
-        <a href="maintenance2.html#7" target="_blank" class="stretched-link btn btn-success space-btn">Work Related To Skill</a>
-        <a href="maintenance2.html#8" target="_blank" class="stretched-link btn btn-danger space-btn">Real World Examples</a>
-        <a href="maintenance3.html#9" target="_blank" class="stretched-link btn btn-primary space-btn">Role of Academia/Industry</a>
-        <a href="maintenance3.html#10" target="_blank" class="stretched-link btn btn-danger space-btn">Tools supporting the skill</a>
-        <a href="maintenance3.html#11" target="_blank" class="stretched-link btn btn-success space-btn">Skill Self Assessment</a>
-        <a href="maintenance3.html#12" target="_blank" class="stretched-link btn btn-danger space-btn">References</a>
+        <a href="SDLC_Implementation_1.html#1" target="_blank" class="stretched-link btn btn-primary space-btn">Name of Skill</a>
+        <a href="SDLC_Implementation_1.html#2" target="_blank" class="stretched-link btn btn-danger space-btn">Classification of Skill</a>
+        <a href="SDLC_Implementation_1.html#3" target="_blank" class="stretched-link btn btn-success space-btn">Prerequisites for Skill</a>
+        <a href="SDLC_Implementation_1.html#4" target="_blank" class="stretched-link btn btn-danger space-btn">Related Software Engineering Area(s)</a>
+        <a href="SDLC_Implementation_2.html#5" target="_blank" class="stretched-link btn btn-primary space-btn">Rationale for Skill</a>
+        <a href="SDLC_Implementation_2.html#6" target="_blank" class="stretched-link btn btn-danger space-btn">Roles for Skill</a>
+        <a href="SDLC_Implementation_2.html#7" target="_blank" class="stretched-link btn btn-success space-btn">Work Related To Skill</a>
+        <a href="SDLC_Implementation_2.html#8" target="_blank" class="stretched-link btn btn-danger space-btn">Real World Examples</a>
+        <a href="SDLC_Implementation_3.html#9" target="_blank" class="stretched-link btn btn-primary space-btn">Role of Academia/Industry</a>
+        <a href="SDLC_Implementation_3.html#10" target="_blank" class="stretched-link btn btn-danger space-btn">Tools supporting the skill</a>
+        <a href="SDLC_Implementation_3.html#11" target="_blank" class="stretched-link btn btn-success space-btn">Skill Self Assessment</a>
+        <a href="SDLC_Implementation_3.html#12" target="_blank" class="stretched-link btn btn-danger space-btn">References</a>
     </p>
 </div>
+<br>
 <nav aria-label="breadcrumb container float-right">
     <ol class="breadcrumb container bg-transparent ">
         <li class="breadcrumb-item"><a href="../index.html">Home</a></li>
-        <li class="breadcrumb-item"><a href="SDLC_Implementation_1.html">Software Development Life Cycle Implementation</a></li>
+        <li class="breadcrumb-item"><a href="#">Software Development Life Cycle Implementation </a></li>
         <li class="breadcrumb-item active" aria-current="page">Page 1</li>
     </ol>
 </nav>
@@ -60,6 +65,8 @@
 <div class="container">
     <div class="card" id="1">
         <div class="card-body">
+            <bookmark-button buttonId="button1" bookmarkKey="sdlc1" bookmarkLink="../infoPages/SDLC_Implementation_1.html#1" bookmarkName="SDLC: Name of Skill"
+                             enabled="disabled"></bookmark-button>
             <h4 class="card-title">Name of Skill</h4>
             <p class="card-text"><h6>Software Development Life Cycle Implementation</h6>
             SDLC is a process followed for a software project, within a software organization.
@@ -71,6 +78,8 @@
 
     <div class="card" id="2">
         <div class="card-body">
+            <bookmark-button buttonId="button2" bookmarkKey="sdlc2" bookmarkLink="../infoPages/SDLC_Implementation_1.html#2" bookmarkName="SDLC: Classification of Skill"
+                             enabled="disabled"></bookmark-button>
             <h4 class="card-title">Classification of Skill</h4>
             <ul>
                 <li>It is a Technical Skill as well as management skill. It requires deep knowledge of life cycle models and team software process.</li>
@@ -82,6 +91,8 @@
 
     <div class="card" id="3">
         <div class="card-body">
+            <bookmark-button buttonId="button3" bookmarkKey="sdlc3" bookmarkLink="../infoPages/SDLC_Implementation_1.html#3" bookmarkName="SDLC: Prerequisites"
+                             enabled="disabled"></bookmark-button>
             <h4 class="card-title">Prerequisites for Skill</h4>
             <p>To be a good SDLC implementer , a person should have : </p>
             <ol>
@@ -94,8 +105,6 @@
                         <li>Agile model</li>
                         <li><a href="https://existek.com/blog/sdlc-models/" target="_blank">https://existek.com/blog/sdlc-models/</a></li>
                     </ul>
-
-
                 </li>
                 <li>Have proper knowledge and experience and understanding of which methodology to be applied. Some of known team software processes are:
 
@@ -109,14 +118,10 @@
                         <li><a href="https://www.projectmanager.com/blog/project-management-methodology" target="_blank">https://www.projectmanager.com/blog/project-management-methodology</a>
                         </li>
                     </ul>
-
                 </li>
-
-
                 <li>Able to drive team into some of software life cycle process models such as software design.</li>
                 <li>Must be able to follow process activities specified in a life cycle process models.</li>
                 <li>Must know tools needed for SDLC such as
-
                     <ul>
                         <li>Confluence</li>
                         <li>Jira</li>
@@ -124,49 +129,60 @@
                         <li>Stash</li>
                         <li><a href="https://www.atlassian.com/software/confluence" target="_blank">https://www.atlassian.com/software/confluence</a></li>
                     </ul>
-
                 </li>
-
-
+                <li>Deep knowledge of life cycle models such as waterfall, spiral,
+                    V-model, incremental, maturity models.
+                </li>
+                <li>Understanding software processes such as plan driven and adaptive.</li>
+                <li>Able to drive team into some of software life cycle process models such as software design.</li>
+                <li>Must be able to follow process activities specified in a life cycle process models.</li>
             </ol>
         </div>
     </div>
     <br>
 
     <div class="card" id="4">
-        <div class="card-body">
-            <h4 class="card-title">Related Software Engineering Area(s)</h4>
-            <ul>
-                <li>Software Testing - Usability Tasting</li>
-                <li>Software Requirements</li>
-                <li>Software Development</li>
-                <li>Software Construction</li>
-                <li>Software System Engineering</li>
-            </ul>
+        <div class="card">
+            <div class="card-body">
+                <bookmark-button buttonId="button4" bookmarkKey="sdlc4" bookmarkLink="../infoPages/SDLC_Implementation_1.html#4" bookmarkName="SDLC: Related Software Areas"
+                                 enabled="disabled"></bookmark-button>
+                <h4 class="card-title">Related Software Engineering Area(s)</h4>
+                <ul>
+                    <li>Software Testing - Usability Tasting</li>
+                    <li>Software Requirements</li>
+                    <li>Software Development</li>
+                    <li>Software Construction</li>
+                    <li>Software System Engineering</li>
+                </ul>
+            </div>
         </div>
-    </div>
-    <br>
+        <br>
 
 
-    <div class="row">
-        <div class="col-sm-4"></div>
-        <div class="col-sm-4"></div>
-        <div class="col-sm-4">
-            <ul class="pagination">
-                <li class="page-item active"><a class="page-link" href="#">1</a></li>
-                <li class="page-item "><a class="page-link" href="SDLC_Implementation_2.html">2</a></li>
-                <li class="page-item"><a class="page-link" href="SDLC_Implementation_3.html">3</a></li>
-                <li class="page-item"><a class="page-link" href="SDLC_Implementation_2.html">Next</a></li>
-            </ul>
+        <div class="row">
+            <div class="col-sm-4"></div>
+            <div class="col-sm-4"></div>
+            <div class="col-sm-4">
+                <ul class="pagination">
+                    <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item "><a class="page-link" href="SDLC_Implementation_2.html">2</a></li>
+                    <li class="page-item"><a class="page-link" href="SDLC_Implementation_3.html">3</a></li>
+                    <li class="page-item"><a class="page-link" href="SDLC_Implementation_2.html">Next</a></li>
+                </ul>
+            </div>
         </div>
     </div>
+
+    <footer class="footer container">
+        <div class="container">
+            <span class="text-muted"> &copy; Authored and Designed by <b> TEAM I</b></span>
+        </div>
+    </footer>
+
 </div>
 
-<footer class="footer container">
-    <div class="container">
-        <span class="text-muted"> &copy; Authored and Designed by <b> TEAM I</b></span>
-    </div>
-</footer>
+
 </body>
+
 
 </html>

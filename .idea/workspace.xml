@@ -2,9 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cb9bac86-7b36-49c0-8528-1b0a49692a1b" name="Default Changelist" comment="">
+<<<<<<< Updated upstream
       <change beforePath="$PROJECT_DIR$/dist/infoPages/SDLC_Implementation_1.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/infoPages/SDLC_Implementation_1.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/infoPages/SDLC_Implementation_2.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/infoPages/SDLC_Implementation_2.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/infoPages/SDLC_Implementation_3.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/infoPages/SDLC_Implementation_3.html" afterDir="false" />
+=======
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/infoPages/Elicitation1.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/infoPages/Elicitation1.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/infoPages/SDLC_Implementation_1.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/infoPages/SDLC_Implementation_1.html" afterDir="false" />
+>>>>>>> Stashed changes
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

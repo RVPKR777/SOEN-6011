@@ -111,10 +111,13 @@ $(document).ready(function () {
     if (currentTheme === "light") {
         $(".label").css('color', 'black');
         $('input[type="checkbox"]').prop('checked', false);
+        $("hr").css('height', ' 1px');
     }
     if (currentTheme === "dark") {
         $(document.body).toggleClass("dark-mode");
         $(".label").css('color', 'white');
+        $("hr").css('background-color', 'white');
+        $("hr").css('height', ' 6px');
         $('input[type="checkbox"]').prop('checked', true);
 
     }
@@ -124,11 +127,14 @@ $(document).ready(function () {
             var element = document.body;
             element.classList.toggle("dark-mode");
             $(".label").css('color', 'white');
+            $("hr").css('background-color', 'white');
+            $("hr").css('height', ' 6px');
             localStorage.setItem('theme', 'dark');
         } else {
             $(".label").css('color', 'black');
             $(document.body).removeClass("dark-mode");
             localStorage.setItem('theme', 'light');
+            $("hr").css('height', ' 1px');
         }
     });
 });

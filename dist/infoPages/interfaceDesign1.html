@@ -20,6 +20,7 @@
   <link rel="stylesheet" type="text/css" href="../css/content.css">
   <script src="../components/navbar.js"></script>
   <script src="../components/skillCardComponent.js"></script>
+  <script src="../components/bookmarkButton.js"></script>
 
   </head>
 
@@ -47,16 +48,18 @@
       <nav aria-label="breadcrumb container float-right">
         <ol class="breadcrumb container bg-transparent ">
           <li class="breadcrumb-item"><a href="../index.html">Home</a></li>
-          <li class="breadcrumb-item"><a href="#">User Interface Design </a></li>
+          <li class="breadcrumb-item"><a href="#">Software User Interface Design </a></li>
           <li class="breadcrumb-item active" aria-current="page">Page 1</li>
         </ol>
       </nav>
       <br>
       <div class="container "> 
-        <div class="card" id ="User_Interface_Design" name="User_Interface_Design">
+        <div class="card" id ="User_Interface_Design" name="User_Interface_Design">          
             <div class="card-body">
+              <bookmark-button buttonId="button1" bookmarkKey="uid1" bookmarkLink="../infoPages/interfaceDesign1.html#User_Interface_Design" bookmarkName="Interface Design: Name of Skill"
+          ></bookmark-button>
               <h4 class="card-title">Name of Skill</h4>
-              <p class="card-text">User Interface Design</p>
+              <p class="card-text">Software User Interface Design</p>
 
             </div>
           </div>
@@ -64,6 +67,8 @@
 
           <div class="card" id ="2">
             <div class="card-body" >
+              <bookmark-button buttonId="button2" bookmarkKey="uid2" bookmarkLink="../infoPages/interfaceDesign1.html#2" bookmarkName="Interface Design: Classification of Skill"
+              ></bookmark-button>
               <h4 class="card-title">Classification of Skill</h4>
               <p class="card-text">Software Design Process</p>
               
@@ -73,26 +78,42 @@
 
           <div class="card" id ="Prerequisites" name="Prerequisites">
             <div class="card-body">
+              <bookmark-button buttonId="button3" bookmarkKey="uid3" bookmarkLink="../infoPages/interfaceDesign1.html#Prerequisites" bookmarkName="Interface Design: Prerequisites"
+              ></bookmark-button>
               <h4 class="card-title">Prerequisites for Skill</h4>
-              <p>To be a good User Interface Designer , a person should have : </p>
-                <ol>
-                    <li>Understand user requirements and identify target users. </li>
-                    <li>Knowledge of prototyping tools, HTML, CSS</li>
-                    <li>Working knowledge about UI design and Usuability Principals</li>
-                    <li>A detail oriented aesthetic sense and creative thinking, with the proper choice of color, typeset and composition.</li>
+              
+                    <dt>Requirement Data Gathering</dt>
+                     <dd>- Must be able to gather UI Requirement from the stakholders.</dd>
+                      
+                      <dt>Analyzing</dt>
+                      <dd>- The business requirement needs to be converted into a technical solution or a prototype, so proper analytical mindset is required for that. </dd>
+
+                      <dt>Design, Prototype & Constructing</dt>
+                      <dd>- Should be able to give shape to the requirements and produce the tangible product.</dd>
+
+                      <dt>Evaluation</dt>
+                      <dd>- Should be able to test the application for usuabilty issues.</dd>
+                      
+
                 
-                </ol>
+                <!-- </ol> -->
             </div>
           </div>
           <br>
 
           <div class="card" id ="4">
             <div class="card-body">
+              <bookmark-button buttonId="button4" bookmarkKey="uid4" bookmarkLink="../infoPages/interfaceDesign1.html#4" bookmarkName="Interface Design: Related Software Engineering Area(s)"
+              ></bookmark-button>
               <h4 class="card-title">Related Software Engineering Area(s)</h4>
-              <ul>
-                <li>Software Testing - Usability Tasting</li>
-                <li>User Experience Design (User Interface design is part of it)</li>
-                </ul>
+              <p>User Interface Designing can be linked to various spheres of software engineering, some of them are listed below:</p>
+              <dl>
+                <dt>Software Testing & Evaluation</dt>
+                <dd>- Usuabilty Testing</dd>
+                
+                <dt>Software Construction</dt>
+                <dd>- API Construction</dd>               
+              </dl>
             </div>
           </div>
           <br>

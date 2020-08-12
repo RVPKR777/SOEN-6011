@@ -84,9 +84,19 @@ input {
 .card:hover {
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
+.navbar
+.bg-dark
+.navbar-dark{
+    background-color: #2f2f73 !important;
+    color: white !important;
+}
+
+.navbar-custom {
+    background-color: #ff5500;
+}
 
 .card-header {
-    background-color: darkred;
+    background-color: #2f2f73;
     color: white;
 }
 

@@ -32,7 +32,7 @@ class NavBar extends HTMLElement {
             <a class="dropdown-item" href="../infoPages/apiProgramming1.html">API Programming</a>
             <a class="dropdown-item" href="../infoPages/interfaceDesign1.html">Interface Design</a>
             <a class="dropdown-item" href="../infoPages/Software_testing1.html">Writing Unit Tests</a>
-            <a class="dropdown-item" href="#">Software Requirements</a>
+            <a class="dropdown-item" href="../infoPages/Elicitation1.html">Software Requirements</a>
             <a class="dropdown-item" href="../infoPages/QualityAssurance.html">Software Quality</a>
             <a class="dropdown-item" href="../infoPages/ConfigManagement1.html">Software Configuration Management</a>
             <a class="dropdown-item" href="../infoPages/SDLC_Implementation_1.html">Software Process & Life-Cycle</a>

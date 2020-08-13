@@ -48,8 +48,8 @@ const searchFor = {
     "requisite objectiver doors gmarc": [{href: "../infoPages/Elicitation3.html#10", innerText: "Tools for Software Requirements Elicitation"}],
     "corrective adaptive perfective preventive maintenance cost": [{href: "..infoPages/maintenance1.html#3", innerText: "Types of Software Maintenance"},
         {href: "..infoPages/maintenance1.html#3", innerText: "Maintenance Tools"}],
-    "cmms eam enterprise asset computerized": [{href: "..infoPages/maintenance1.html#3", innerText: "Maintenance Software"}],
-    "pf p-f curve fmea failure mode root six-sigma scada": [{href: "..infoPages/maintenance3.html#10", innerText: "Tools Supporting Software Maintenance"}],
+    "cmms eam enterprise asset computerized": [{href: "../infoPages/maintenance1.html#3", innerText: "Maintenance Software"}],
+    "pf p-f curve fmea failure mode root six-sigma scada": [{href: "../infoPages/maintenance3.html#10", innerText: "Tools Supporting Software Maintenance"}],
     "product process assurance": [{href: "../infoPages/QualityAssurance.html#3", innerText: "Process Product Assurance"}],
     "time management problem-solving": [{href: "../infoPages/QualityAssurance.html#4", innerText: "Prerequisites for Quality Assurance"}],
     "catastrophic": [{href: "../infoPages/QualityAssurance2.html#6", innerText: "Prevent Catastrophic Corporate Emergencies"}]

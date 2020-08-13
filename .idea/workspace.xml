@@ -3,13 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="cb9bac86-7b36-49c0-8528-1b0a49692a1b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/components/navbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/components/navbar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/css/info.css" beforeDir="false" afterPath="$PROJECT_DIR$/dist/css/info.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/infoPages/Elicitation2.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/infoPages/Elicitation2.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/infoPages/Elicitation3.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/infoPages/Elicitation3.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/infoPages/QualityAssurance.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/infoPages/QualityAssurance.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/infoPages/QualityAssurance2.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/infoPages/QualityAssurance2.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/js/info.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/js/info.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
